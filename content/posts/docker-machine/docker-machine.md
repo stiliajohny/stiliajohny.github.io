@@ -1,14 +1,16 @@
 ---
 Title: 100mph on a docker-machine
 date: 2021-09-13
-author: "John Stilia"
-description: "Use multiple envidonments on your Local or Remote development with docker-machine"
-categories: [Docker, Linux]
-tags: [Development, Docker]
+author: 'John Stilia'
+description: 'Use multiple envidonments on your Local or Remote development with docker-machine'
+categories: [DevOps]
+tags: [Development, Docker, Docker-Machine, DevOps, DevOps-Tooling]
 
 resources:
-  - name: "featured-image"
-    src: "featured-image.jpg"
+  - name: featured-image
+    src: dockermachine-banner.png
+  - name: featured-image-preview
+    src: dockermachine-banner.png
 
 lightgallery: true
 fontawesome: true

@@ -2,7 +2,7 @@
 title: "Devcontainers: Clean environment everytime"
 date: 2022-04-18
 author: "John Stilia"
-categories: ["Docker", "VSCode"]
+categories: [DevOps]
 tags: ["VSCode", "Docker", "Devcontainers", "Developement"]
 
 resources:

@@ -4,6 +4,7 @@ date: 2021-09-01
 author: "John Stilia"
 description: "There have been few occasions recently where I needed to have a Docker container to be able to ssh into other machines in the network"
 tags: [Linux, SSH, Docker]
+categories: [DevOps]
 
 # resources:
 # - name: featured-image

@@ -1,4 +1,4 @@
-baseURL = "https://iusearchbtw.blog/"
+baseURL = "https://indraft.blog/"
 # [en, zh-cn, fr, pl, ...] determines default content language
 defaultContentLanguage = "en"
 # theme
@@ -6,7 +6,7 @@ defaultContentLanguage = "en"
 theme = ["LoveIt", "hugo-shortcode-gallery"]
 
 # website title
-title = "i use Arch btw"
+title = "in draft"
 
 # whether to use robots.txt
 enableRobotsTXT = true
@@ -16,8 +16,7 @@ enableGitInfo = true
 enableEmoji = true
 
 #Increase the timout for bigger image rendering (default is 30 seconds)
-timeout = 60000
-
+timeout = 60000000
 
 [languages]
   [languages.en]
@@ -45,21 +44,13 @@ timeout = 60000
         title = ""
         weight = 1
       [[languages.en.menu.main]]
-        identifier = "tags"
-        pre = "<i class='fas fa-tag fa-fw'></i>"
-        post = ""
-        name = "Tags"
-        url = "/tags/"
-        title = ""
-        weight = 2
-      [[languages.en.menu.main]]
         identifier = "categories"
         pre = "<i class='fas fa-stream fa-fw'></i>"
         post = ""
         name = "Categories"
         url = "/categories/"
         title = ""
-        weight = 3
+        weight = 2
       [[languages.en.menu.main]]
         identifier = "photography"
         pre = "<i class='fas fa-camera'></i>"
@@ -67,39 +58,16 @@ timeout = 60000
         name = "Photo"
         url = "/photography/"
         title = "Photo"
+        weight = 3
+      [[languages.en.menu.main]]
+        identifier = "books"
+        pre = "<i class='fas fa-book'></i>"
+        post = ""
+        name = "Books"
+        url = "/books/"
+        title = "Books"
         weight = 4
-      [[languages.en.menu.main]]
-        identifier = "bookmarks"
-        pre = "<i class='fas fa-bookmark'></i>"
-        post = ""
-        name = "Bookmarks"
-        url = "/my-bookmarks/"
-        title = "Bookmarks"
-        weight = 5
-      [[languages.en.menu.main]]
-        identifier = "Pypi"
-        pre = "<i class='fab fa-python fa-fw'></i>"
-        post = ""
-        name = "Pypi"
-        url = "https://pypi.org/user/stilia.johny/"
-        title = "Pypi"
-        weight = 6
-      [[languages.en.menu.main]]
-        identifier = "Ansible Galaxy"
-        pre = "<i class='fab fa-brands fa-adn'></i>"
-        post = ""
-        name = "Ansible Galaxy"
-        url = "https://galaxy.ansible.com/stiliajohny"
-        title = "Ansible Galaxy"
-        weight = 7
-      [[languages.en.menu.main]]
-        identifier = "github"
-        pre = "<i class='fab fa-github fa-fw'></i>"
-        post = ""
-        name = "GitHub"
-        url = "https://github.com/stiliajohny"
-        title = "GitHub"
-        weight = 8
+
       [[languages.en.menu.main]]
         identifier = "about"
         pre = "<i class='fas fa-snowboarding fa-fw'></i>"
@@ -107,20 +75,52 @@ timeout = 60000
         name = "About"
         url = "/about/"
         title = ""
-        weight =9
+        weight =6
+      [[languages.en.menu.main]]
+        identifier = "CV"
+        pre = "<i class='fas fa-file-pdf fa-fw'></i>"
+        post = ""
+        name = "CV"
+        url = "https://github.com/stiliajohny/latex-my-cv/raw/gh-pages/JohnStilia-CV.pdf"
+        title = ""
+        weight =7
+      [[languages.en.menu.main]]
+        identifier = "Pypi"
+        pre = "<i class='fab fa-python fa-fw'></i>"
+        post = ""
+        name = ""
+        url = "https://pypi.org/user/stilia.johny/"
+        title = "Pypi"
+        weight = 8
+      [[languages.en.menu.main]]
+        identifier = "Ansible Galaxy"
+        pre = "<i class='fab fa-brands fa-adn'></i>"
+        post = ""
+        name = ""
+        url = "https://galaxy.ansible.com/stiliajohny"
+        title = "Ansible Galaxy"
+        weight = 8
+      [[languages.en.menu.main]]
+        identifier = "github"
+        pre = "<i class='fab fa-github fa-fw'></i>"
+        post = ""
+        name = ""
+        url = "https://github.com/stiliajohny"
+        title = "GitHub"
+        weight = 9
     [languages.en.params]
       # site description
-      description = "i use Arch btw"
+      description = "in draft"
       # site keywords
       keywords = ["John", "Stilia", "Blog", "Security", "Hugo", "Arch", "Arch Linux", "Linux"]
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
-        title = "i use Arch btw"
+        title = "in draft"
         # whether to omit favicon resource links
-        noFavicon = true
+        noFavicon = false
         # modern SVG favicon to use in place of older style .png and .ico files
-        svgFavicon = ""
+        svgFavicon = "https://avatars.githubusercontent.com/u/17669235?v=4"
         # Android browser theme color
         themeColor = "#ffffff"
         # Safari mask icon color
@@ -135,7 +135,7 @@ timeout = 60000
         # max index length of the chunked content
         contentLength = 4000
         # placeholder of the search bar
-        placeholder = "Find Something"
+        placeholder = "Looking for Nemo?"
         # max number of results length
         maxResultLength = 10
         # snippet length of the result
@@ -147,7 +147,7 @@ timeout = 60000
       # Home page config
       [languages.en.params.home]
         # amount of RSS pages
-        rss = 10
+        rss = 999
         # Home page profile
         [languages.en.params.home.profile]
           enable = true
@@ -164,7 +164,7 @@ timeout = 60000
           # whether to show social links
           social = true
           # disclaimer (HTML format is supported)
-          disclaimer = ""
+          disclaimer = "All opinions are my own and do not reflect the opinions of my employer. <br><b><font color=red> This site might run Beef XSS on the client side, so don't click on anything you don't trust.</font></b>"
         # Home page posts
         [languages.en.params.home.posts]
           enable = true
@@ -233,18 +233,19 @@ timeout = 60000
         XMPP = ""
         Matrix = ""
         Bilibili = ""
-        Email = "stilia.johny@gmail.com"
+        Email = "john.stilia@indraft.blog"
         RSS = true
 #        [languages.en.params.social.Mastodon]
 #          id = ""
 #          prefix = ""
 
-
 [params]
   # LoveIt theme version
   version = "0.2.X"
+  # version = "0.1.X"
+  # version = "1.0.X"
   # site default theme ("light", "dark", "auto")
-  defaultTheme = "auto"
+  defaultTheme = "dark"
   # public git repo url only then enableGitInfo is true
   gitRepo = "https://github.com/stiliajohny/stiliajohny.github.io"
   # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
@@ -254,7 +255,7 @@ timeout = 60000
   # website images for Open Graph and Twitter Cards
   images = ["card_image.png"]
 
-  galleryRowHeight    = 200
+  galleryRowHeight    = 500
   galleryMargins      = 10
   galleryResizeOptions= "800x800 q88"
   galleryPreviewType  = "blur"
@@ -269,9 +270,9 @@ timeout = 60000
     # Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "https://simpleicons.org/icons/archlinux.svg"
+      logo = "https://github.com/stiliajohny/stiliajohny.github.io/raw/master/static/draft.png"
       # title name
-      name = " i use arch btw"
+      name = " in draft"
       # you can add extra information before the name (HTML format is supported), such as icons
       # pre = "<i class='far fa-kiss-wink-heart fa-fw'></i>"
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -283,7 +284,7 @@ timeout = 60000
   [params.footer]
     enable = true
     # Custom content (HTML format is supported)
-    custom = ''
+    custom = 'All media copyright belongs to their respective owners'
     # whether to show Hugo and theme info
     hugo = false
     # whether to show copyright info
@@ -304,7 +305,7 @@ timeout = 60000
     # date format (month and day)
     dateFormat = "01-02"
     # amount of RSS pages
-    rss = 10
+    rss = 999
 
   # List (category or tag) page config
   [params.list]
@@ -313,7 +314,7 @@ timeout = 60000
     # date format (month and day)
     dateFormat = "01-02"
     # amount of RSS pages
-    rss = 10
+    rss = 999
 
   # Page config
   [params.page]
@@ -348,7 +349,7 @@ timeout = 60000
       # whether to show the copy button of the code block
       copy = true
       # the maximum number of lines of displayed code by default
-      maxShownLines = 10
+      maxShownLines = 4
     # KaTeX mathematical formulas config (KaTeX https://katex.org/)
     [params.page.math]
       enable = true
@@ -543,7 +544,7 @@ timeout = 60000
     [params.cookieconsent.content]
       message = "Have some cookies"
       dismiss = "Maybe not"
-      link = "https://en.wikipedia.org/wiki/HTTP_cookie"
+      link = "https://tasty.co/recipe/the-best-chewy-chocolate-chip-cookies"
 
   # CDN config for third-party library files
   [params.cdn]
@@ -595,12 +596,12 @@ timeout = 60000
   # 目录设置
   [markup.tableOfContents]
     startLevel = 1
-    endLevel = 6
+    endLevel = 3
 
 # Author config
 [author]
   name = "John Stilia"
-  email = "stilia.johny@gmail.com"
+  email = "john.stilia@indraft.blog"
   link = ""
 
 # Sitemap config

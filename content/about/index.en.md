@@ -5,24 +5,18 @@ Hi there, I'm John
 I am a diverse DevOps Engineer with a passion for automation and security.
 Most of my free time I spend learning new technologies and building tools.
 
-<br>
-
 I have a particular interest in Security, Incident Response and Threat Management.
-
-<br>
 
 I enjoy writing code or developing my own microcontroller-based devices in my free time.
 I used to be a semi-professional photographer and amateur skater.
 
-<br>
-
-Late evenings I enjoy a good ride with my motorbike.
+In the late evenings, I enjoy a good ride on my motorbike.
 
 <br>
 
-Ask me about linux, security, automation, arduino, raspberryPi and more.
+Ask me about Linux, Security, Automation, Arduino, RaspberryPi and more.
 
-# Random Picture
+---
 
 <!Doctype>
 <html>
@@ -30,22 +24,24 @@ Ask me about linux, security, automation, arduino, raspberryPi and more.
   <style>
     .img {
         width: 100%;
-        height: 350px;
+        height: 1024px;
         display: block;
         margin-left: auto;
         margin-right: auto;
         border:2px solid #fff;
-        background: url(https://picsum.photos/768/350) no-repeat;
-        -moz-box-shadow: inset 10px 10px 10px #fff;
-        -webkit-box-shadow: inset 10px 10px 60px #fff;
-        box-shadow: inset 10px 10px 60px #fff;
-        -moz-border-radius:25px;
+        background: url(https://picsum.photos/3840/2160) no-repeat;
+        -moz-box-shadow: inset 5px 5px 5px #fff;
+        -webkit-box-shadow: inset 50px 5px 30px #f0f;
+        box-shadow: inset 0px 0px 50px #fff;
+        -moz-border-radius:50px;
         border-radius:15px;
     }
 
-  </style>
+</style>
+
 </head>
 <body>
-  <div class="img"></div>
+  <div class="img" ></div>
+
 </body>
 </html>
