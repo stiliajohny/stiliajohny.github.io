@@ -1,30 +1,54 @@
-name: Hugo github pages
-
-
+name: Deploy site to GitHub Pages
 on:
-  pull_request:
   push:
-
+    branches:
+      - master
 jobs:
-  hugo:
+  build:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout master
         uses: actions/checkout@v2
-      - name: Run Hugo
-        uses: crazy-max/ghaction-hugo@v1
         with:
-          version: latest
-          extended: true
-          args: --cleanDestinationDir --minify --verbose
-      - name: Deploy to GitHub Pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v2
-        with:
-          target_branch: gh-pages
-          build_dir: docs
+          submodules: "true"
+
+      - name: Deploy the site
+        uses: benmatselby/hugo-deploy-gh-pages@master
         env:
-          GITHUB_TOKEN: ${{ secrets.HUGO_TOKEN }}
+          TARGET_REPO: stiliajohny/stiliajohny.github.io
+          TARGET_BRANCH: gh_pages
+          TOKEN: ${{ secrets.HUGO_TOKEN }}
+          #HUGO_ARGS: '-t academic'
+          # CNAME: xmr.gift
+
+# name: Hugo github pages
+
+
+# on:
+#   pull_request:
+#   push:
+
+# jobs:
+#   hugo:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
+#       - name: Run Hugo
+#         uses: crazy-max/ghaction-hugo@v1
+#         with:
+#           version: latest
+#           extended: true
+#           args: --cleanDestinationDir --minify --verbose
+#       - name: Deploy to GitHub Pages
+#         if: success()
+#         uses: crazy-max/ghaction-github-pages@v2
+#         with:
+#           target_branch: gh-pages
+#           build_dir: docs
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.HUGO_TOKEN }}
 
 
 # jobs:
