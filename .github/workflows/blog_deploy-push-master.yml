@@ -57,23 +57,3 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 14
-
-    - name: Publish articles on dev.to
-      uses: sinedied/publish-devto@v2
-      with:
-        # Your dev.to personal API key to publish and update articles.
-        # See https://docs.dev.to/api/#section/Authentication/api_key
-        devto_key: ${{ secrets.DEVTO_TOKEN }}
-        # Your GitHub personal access token, used to create commits for updated files.
-        # If you have a protected branch, you need to create a commit with the
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        # (Optional) The files to publish. Default is "posts/**/*.md"
-        files: 'content/posts/**/*.md'
-        # (Optional) The git branch to use. Default is 'main'.
-        branch: master
-        # (Optional) Use conventional commit messages. Default is false.
-        # See https://www.conventionalcommits.org.
-        conventional_commits: true
-      env:
-        GIT_COMMITTER_NAME: John Stilia
-        GIT_COMMITTER_EMAIL: stilia.johny+gh_actions@gmail.com
