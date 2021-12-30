@@ -6,17 +6,9 @@ on:
       - master
 
 jobs:
- potential-conflicts-checker:
-    name: Conflict Checker
-    runs-on: ubuntu-latest
-    steps:
-      - uses: outsideris/potential-conflicts-checker-action@0.1.0
-        with:
-          ghToken: ${{ secrets.GITHUB_TOKEN }}
 
  hugo-deploy:
     name: Deploy to GitHub Pages
-    needs: potential-conflicts-checker
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
