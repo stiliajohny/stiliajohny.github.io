@@ -15,6 +15,9 @@ jobs:
 
       - name: Deploy the site
         uses: benmatselby/hugo-deploy-gh-pages@master
+        with:
+          version: latest
+          extended: true
         env:
           TARGET_REPO: stiliajohny/stiliajohny.github.io
           TARGET_BRANCH: gh_pages
