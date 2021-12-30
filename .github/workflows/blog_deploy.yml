@@ -6,24 +6,49 @@ on:
       - master
 
 jobs:
-  build:
-    name: Deploy
-    runs-on: ubuntu-latest
+ hugo-deploy:
+    runs-on: ubuntu-20.04
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v1
+      - uses: actions/checkout@v2
         with:
-          submodules: recursive
-      - name: Deploy the site
-        uses: benmatselby/hugo-deploy-gh-pages@master
-        env:
-          HUGO_VERSION: 0.91.2
-          TARGET_REPO: stiliajohny/stiliajohny.github.io
-          TARGET_BRANCH: gh_pages
-          TOKEN: ${{ secrets.HUGO_TOKEN }}
-          HUGO_EXTENDED: true
-          # HUGO_ARGS: '-t academic'
-          # CNAME: benmatselby.github.io
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/master'
+        with:
+          github_token: ${{ secrets.HUGO_TOKEN  }}
+
+
+# jobs:
+#   build:
+#     name: Deploy
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout master
+#         uses: actions/checkout@v1
+#         with:
+#           submodules: recursive
+#       - name: Deploy the site
+#         uses: benmatselby/hugo-deploy-gh-pages@master
+#         env:
+#           HUGO_VERSION: 0.91.2
+#           TARGET_REPO: stiliajohny/stiliajohny.github.io
+#           TARGET_BRANCH: gh_pages
+#           TOKEN: ${{ secrets.HUGO_TOKEN }}
+#           HUGO_EXTENDED: true
+#           # HUGO_ARGS: '-t academic'
+#           # CNAME: benmatselby.github.io
 
 # name: Deploy site to GitHub Pages
 # on:
