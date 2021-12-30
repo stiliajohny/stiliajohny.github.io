@@ -9,19 +9,16 @@ jobs:
   hugo:
     runs-on: ubuntu-latest
     steps:
-      -
-        name: Checkout
+      - name: Checkout
         uses: actions/checkout@v2
-      -
-        name: Run Hugo
+      - name: Run Hugo
         uses: crazy-max/ghaction-hugo@v1
         with:
           version: latest
           extended: true
           args: --cleanDestinationDir --minify --verbose
-      -
-        name: Deploy to GitHub Pages
-        if: success() && github.event_name != 'pull_request'
+      - name: Deploy to GitHub Pages
+        if: success()
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
