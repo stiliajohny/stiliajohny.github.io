@@ -18,7 +18,7 @@ jobs:
         uses: benmatselby/hugo-deploy-gh-pages@master
         env:
           HUGO_VERSION: 0.91.2
-          TARGET_REPO: benmatselby/benmatselby.github.io
+          TARGET_REPO: stiliajohny/stiliajohny.github.io
           TARGET_BRANCH: gh_pages
           TOKEN: ${{ secrets.HUGO_TOKEN }}
           HUGO_EXTENDED: true
