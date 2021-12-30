@@ -1,25 +1,49 @@
 name: Hugo github pages
 
-on:
-  push:
-    branches:
-      - master
 
+on:
+  pull_request:
+  push:
 
 jobs:
-  build:
+  hugo:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-      with:
-        submodules: recursive
-    - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
-      with:
-        args: --minify
-    - uses: actions/upload-artifact@master
-      with:
-        name: website
-        path: './public'
+      -
+        name: Checkout
+        uses: actions/checkout@v2
+      -
+        name: Run Hugo
+        uses: crazy-max/ghaction-hugo@v1
+        with:
+          version: latest
+          extended: false
+          args: --cleanDestinationDir --minify --verbose
+      -
+        name: Deploy to GitHub Pages
+        if: success() && github.event_name != 'pull_request'
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.HUGO_TOKEN }}
+
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@master
+#       with:
+#         submodules: recursive
+#     - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
+#       with:
+#         args: --minify
+#     - uses: actions/upload-artifact@master
+#       with:
+#         name: website
+#         path: './public'
 
 
 
