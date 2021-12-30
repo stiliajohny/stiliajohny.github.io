@@ -5,23 +5,41 @@ on:
     branches:
       - master
 
+
 jobs:
   build:
-    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v1
+    - uses: actions/checkout@master
+      with:
+        submodules: recursive
+    - uses: jakejarvis/hugo-build-action@master  # ...or replace 'master' with a full version tag, such as: v0.64.1
+      with:
+        args: --minify
+    - uses: actions/upload-artifact@master
+      with:
+        name: website
+        path: './public'
 
-      - name: Deploy the site
-        uses: benmatselby/hugo-deploy-gh-pages@master
-        env:
-          HUGO_VERSION: 0.91.2
-          TARGET_REPO: benmatselby/benmatselby.github.io
-          TARGET_BRANCH: master
-          TOKEN: ${{ secrets.Hugo_TOKEN }}
-          # HUGO_ARGS: '-t academic'
-          CNAME: benmatselby.github.io
+
+
+# jobs:
+#   build:
+#     name: Deploy
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout master
+#         uses: actions/checkout@v1
+
+#       - name: Deploy the site
+#         uses: benmatselby/hugo-deploy-gh-pages@master
+#         env:
+#           HUGO_VERSION: 0.91.2
+#           TARGET_REPO: benmatselby/benmatselby.github.io
+#           TARGET_BRANCH: master
+#           TOKEN: ${{ secrets.Hugo_TOKEN }}
+#           # HUGO_ARGS: '-t academic'
+#           CNAME: benmatselby.github.io
 
   # sitemap-ping:
   #   name: Google Sitemap Ping
