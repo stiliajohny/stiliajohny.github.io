@@ -4,63 +4,43 @@ on:
   push:
     branches:
       - master
-  pull_request:
-
-  schedule:
-    - cron:  '0 7 * * 1,4'
-    # scheduled at 07:00 every Monday and Thursday
-  workflow_dispatch:
-
 
 jobs:
-  merge_conflict_job:
-    runs-on: ubuntu-latest
-    name: Find merge conflicts
-    steps:
-      - uses: actions/checkout@v2
-      - name: Merge Conflict finder
-        uses: olivernybroe/action-conflict-finder@v2.0
-  hugo-deploy:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: 'latest'
-          extended: true
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/master'
-        with:
-          github_token: ${{ secrets.HUGO_TOKEN  }}
-          publish_dir: ./docs
-  sitemap-ping:
-    name: Google Sitemap Ping
-    needs: hugo-deploy
+  build:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: "Checkout Repository"
-        uses: actions/checkout@v2
-      - name: ping
+      - name: Checkout master
+        uses: actions/checkout@v1
+
+      - name: Deploy the site
+        uses: benmatselby/hugo-deploy-gh-pages@master
         env:
-          MAP_URL: "NULL" # set custom URL if you use it
-        run: |
-          BASE_URL="https://stiliajohny.github.io"
-          MAP_URL="${BASE_URL}/sitemap.xml"
-          RSS_URL="${BASE_URL}/index.xml"
-          sleep 3
-          curl -v "http://www.google.com/ping?sitemap=${MAP_URL}" &> /dev/null &
-          curl -v "http://www.bing.com/ping?sitemap=${RSS_URL}" &> /dev/null &
-          curl -v "http://www.google.com/ping?sitemap=${MAP_URL}" &> /dev/null &
-          curl -v "http://www.bing.com/ping?sitemap=${RSS_URL}" &> /dev/null &
-          wait
-          echo "Done"
+          HUGO_VERSION: 0.91.2
+          TARGET_REPO: benmatselby/benmatselby.github.io
+          TARGET_BRANCH: master
+          TOKEN: ${{ secrets.Hugo_TOKEN }}
+          HUGO_ARGS: '-t academic'
+          CNAME: benmatselby.github.io
+
+  # sitemap-ping:
+  #   name: Google Sitemap Ping
+  #   needs: hugo-deploy
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: "Checkout Repository"
+  #       uses: actions/checkout@v2
+  #     - name: ping
+  #       env:
+  #         MAP_URL: "NULL" # set custom URL if you use it
+  #       run: |
+  #         BASE_URL="https://stiliajohny.github.io"
+  #         MAP_URL="${BASE_URL}/sitemap.xml"
+  #         RSS_URL="${BASE_URL}/index.xml"
+  #         sleep 3
+  #         curl -v "http://www.google.com/ping?sitemap=${MAP_URL}" &> /dev/null &
+  #         curl -v "http://www.bing.com/ping?sitemap=${RSS_URL}" &> /dev/null &
+  #         curl -v "http://www.google.com/ping?sitemap=${MAP_URL}" &> /dev/null &
+  #         curl -v "http://www.bing.com/ping?sitemap=${RSS_URL}" &> /dev/null &
+  #         wait
+  #         echo "Done"
