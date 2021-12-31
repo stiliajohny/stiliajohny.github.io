@@ -55,8 +55,11 @@ Ask me about linux, security, automation, arduino, raspberryPi and more.
 <head>
   <style>
     .img {
-        width: 768px;
+        width: 100%;
         height: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         border:2px solid #fff;
         background: url(https://picsum.photos/768/350) no-repeat;
         -moz-box-shadow: inset 10px 10px 10px #fff;
