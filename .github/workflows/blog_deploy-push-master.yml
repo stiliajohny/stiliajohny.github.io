@@ -50,7 +50,7 @@ jobs:
           echo "Done"
 
  create-nojekyll:
-    name: Google Sitemap Ping
+    name: File .nojekyll
     needs: sitemap-ping
     runs-on: ubuntu-latest
     steps:
