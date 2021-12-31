@@ -4,8 +4,24 @@ date: 2020-10-21T18:45:32+02:00
 draft: false
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+<style>
+img {
+    box-shadow: inset 10px 10px 60px #fff !important;
+    -moz-border-radius:25px !important;
+    border-radius:10px !important;
+}
 
-Here is an example gallery:
+.justified-gallery-filterbar button {
+    padding: 6px !important;
+    border: 1px solid #fff !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    font-weight: bold !important;
+    color: #000  !important;
+    line-height: 1em !important;
+}
+</style>
 
-{{< gallery match="*" showExif="true" sortOrder="desc" loadJQuery="true" embedPreview="true" filterOptions="[{label: 'All', tags: '._'}, {label: 'Amphibian', tags: 'animal|amphibian'}]" >}}
+Coming Soon!
+
+{{< gallery match="*" showExif="true" sortOrder="desc" loadJQuery="true" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'Amphibian', tags: 'animal|amphibian'}]" >}}
