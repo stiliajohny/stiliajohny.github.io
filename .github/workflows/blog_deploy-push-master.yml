@@ -48,3 +48,14 @@ jobs:
           curl -v "http://www.bing.com/ping?sitemap=${RSS_URL}" &> /dev/null &
           wait
           echo "Done"
+
+ create-nojekyll:
+    name: Google Sitemap Ping
+    needs: sitemap-ping
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create .nojekyll file
+        uses: "finnp/create-file-action@master"
+        env:
+          FILE_NAME: ".nojekyll"
+          FILE_DATA: ""
