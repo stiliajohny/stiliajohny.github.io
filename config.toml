@@ -92,13 +92,21 @@ enableEmoji = true
         title = "Photo"
         weight = 7
       [[languages.en.menu.main]]
+        identifier = "bookmarks"
+        pre = "<i class='fas fa-bookmark'></i>"
+        post = ""
+        name = "Bookmarks"
+        url = "/my-bookmarks/"
+        title = "Bookmarks"
+        weight = 8
+      [[languages.en.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
         name = ""
         url = "https://github.com/stiliajohny"
         title = "GitHub"
-        weight = 8
+        weight = 9
     [languages.en.params]
       # site description
       description = "John's blog"
