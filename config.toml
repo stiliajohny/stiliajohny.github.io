@@ -101,7 +101,7 @@ enableEmoji = true
         weight = 8
       [[languages.en.menu.main]]
         identifier = "Pypi"
-        pre = "<i class="fab fa-python"></i>"
+        pre = "<i class='fab fa-python fa-fw'></i>"
         post = ""
         name = ""
         url = "https://pypi.org/user/stilia.johny/"
