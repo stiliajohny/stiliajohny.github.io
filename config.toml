@@ -100,13 +100,21 @@ enableEmoji = true
         title = "Bookmarks"
         weight = 8
       [[languages.en.menu.main]]
+        identifier = "Pypi"
+        pre = "<i class="fab fa-python"></i></i>"
+        post = ""
+        name = ""
+        url = "https://pypi.org/user/stilia.johny/"
+        title = "Pypi"
+        weight = 9
+      [[languages.en.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
         name = ""
         url = "https://github.com/stiliajohny"
         title = "GitHub"
-        weight = 9
+        weight = 10
     [languages.en.params]
       # site description
       description = "John's blog"
