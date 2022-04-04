@@ -103,18 +103,26 @@ enableEmoji = true
         identifier = "Pypi"
         pre = "<i class='fab fa-python fa-fw'></i>"
         post = ""
-        name = ""
+        name = "Pypi"
         url = "https://pypi.org/user/stilia.johny/"
         title = "Pypi"
         weight = 9
       [[languages.en.menu.main]]
+        identifier = "Ansible Galaxy"
+        pre = "<i class='fab fa-brands fa-adn'></i>"
+        post = ""
+        name = "Ansible Galaxy"
+        url = "https://galaxy.ansible.com/stiliajohny"
+        title = "Ansible Galaxy"
+        weight = 10
+      [[languages.en.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
-        name = ""
+        name = "GitHub"
         url = "https://github.com/stiliajohny"
         title = "GitHub"
-        weight = 10
+        weight = 11
     [languages.en.params]
       # site description
       description = "John's blog"
