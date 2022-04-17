@@ -22,6 +22,4 @@ img {
 }
 </style>
 
-Coming Soon!
-
 {{< gallery match="*" showExif="true" sortOrder="desc" loadJQuery="true" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'Alexandra', tags: 'Alexandra'},{label: 'Joe', tags: 'Joe'},{label: 'Santana and Carla', tags: 'Santana and Carla'}]" >}}
