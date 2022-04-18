@@ -1,0 +1,22 @@
+---
+name: Pull Request Build and Deploy
+
+on:
+  pull_request:
+    branches: [ development ]
+
+
+env:
+  PR_REPO_NAME: app-pr-${{ github.event.pull_request.node_id }}
+
+jobs:
+  create-page-host:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create new repository for temporary deployment
+        uses: octobay/create-repository-action@v1
+        with:
+          name: ${{ env.PR_REPO_NAME }}
+          org: octobay
+          access-token: ${{ secrets.HUGO_TOKEN }}
+    
