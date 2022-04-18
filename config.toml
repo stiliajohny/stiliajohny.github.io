@@ -15,7 +15,6 @@ enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
 
-
 [languages]
   [languages.en]
     weight = 1
