@@ -30,31 +30,18 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
         with:
-          path: "pr-build2"
+          path: "pr-build"
 
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
+      # - name: Setup tmate session
+      #   uses: mxschmitt/action-tmate@v3
 
       - name: Build Pull Request
         run: |
-          pwd
           wget -q https://github.com/gohugoio/hugo/releases/download/v0.88.1/hugo_extended_0.88.1_Linux-64bit.deb
           sudo dpkg --install hugo_extended_0.88.1_Linux-64bit.deb
           rm hugo_extended_0.88.1_Linux-64bit.deb
-          hugo -v -s pr-build -d pr-build -b pr-build -D
-
-          cd ../
-          tree -L 4
-          pwd
-          ls -lah
           cd pr-build
-          pwd
-          ls -lah
-          cd pr-build
-          ls -lah
-          pwd
-          cd ../..
-          pwd
+          hugo -v -d hugo-pr-build
 
       - name: Checkout temporary deployment target repo
         uses: actions/checkout@v2
@@ -66,7 +53,7 @@ jobs:
       - name: Push files to target
         run: |
           ls -la
-          cp -r pr-build/public pr-deploy
+          cp -r pr-build/hugo-pr-build pr-deploy
           cd pr-deploy
           touch .nojekyll
           git add .
