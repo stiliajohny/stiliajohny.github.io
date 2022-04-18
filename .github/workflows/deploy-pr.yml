@@ -37,14 +37,21 @@ jobs:
 
       - name: Build Pull Request
         run: |
+          pwd
           wget -q https://github.com/gohugoio/hugo/releases/download/v0.88.1/hugo_extended_0.88.1_Linux-64bit.deb
           sudo dpkg --install hugo_extended_0.88.1_Linux-64bit.deb
           rm hugo_extended_0.88.1_Linux-64bit.deb
           hugo -v -s pr-build -d pr-build -b pr-build -D
+          pwd
+          ls -lah
+          cd pr-build
+          pwd
           ls -lah
           cd pr-build
           ls -lah
-          cd ..
+          pwd
+          cd ../..
+          pwd
 
       - name: Checkout temporary deployment target repo
         uses: actions/checkout@v2
