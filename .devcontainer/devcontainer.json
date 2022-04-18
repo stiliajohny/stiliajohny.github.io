@@ -1,0 +1,39 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.231.6/containers/alpine
+{
+	"name": "Alpine",
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick an Alpine version: 3.12, 3.13, 3.14, 3.15
+		"args": {
+			"VARIANT": "3.14"
+		}
+	},
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"default": {
+			"shell": "/bin/sh",
+			"auto-start": true,
+			"editor.saveFiles": "afterDelay",
+			"editor.tabSize": 2,
+		}
+	},
+},
+// Add the IDs of extensions you want installed when the container is created.
+// Note that some extensions may not work in Alpine Linux. See https://aka.ms/vscode-remote/linux.
+"extensions": [
+	"ms-vscode.vscode-typescript-tslint-plugin",
+	"ms-vscode.vscode-typescript-tslint-autofix",
+],
+// Use 'forwardPorts' to make a list of ports inside the container available locally.
+// "forwardPorts": [],
+// Use 'postCreateCommand' to run commands after the container is created.
+"postCreateCommand": "uname -a",
+"runArgs": [
+	"--init",
+	"--cap-add=SYS_PTRACE",
+	"--security-opt",
+	"seccomp=unconfined"
+],
+"remoteUser": "vscode"
+}
