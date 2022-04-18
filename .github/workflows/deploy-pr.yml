@@ -35,31 +35,25 @@ jobs:
         with:
           path: "pr-build"
 
-  #     - name: Build Pull Request
-  #       run: |
-  #         cd pr-build
-  #         yarn
-  #         export NUXT_ROUTER_BASE_DIR=/${{ env.PR_REPO_NAME }}/
-  #         export API_URL=https://octobay.uber.space
-  #         export GITHUB_CLIENT_ID=79c2b8f305ad223cfb5e
-  #         export OCTOBAY_ADDRESS=0xEC1dA9EeE346A67C121E4fce746C64b4e31b61A4
-  #         export CHAIN_ID=42
-  #         yarn app:generate
-  #         cd ..
+      - name: Build Pull Request
+        run: |
+          cd pr-build
+          echo "Hello"> index.html
+          cd ..
 
-  #     - name: Checkout temporary deployment target repo
-  #       uses: actions/checkout@v2
-  #       with:
-  #         repository: octobay/${{ env.PR_REPO_NAME }}
-  #         path: "pr-deploy"
-  #         token: ${{ secrets.PAT }}
+      - name: Checkout temporary deployment target repo
+        uses: actions/checkout@v2
+        with:
+          repository: stiliajohny/${{ env.PR_REPO_NAME }}
+          path: "pr-deploy"
+          token: ${{ secrets.ORG_ADMIN_TOKEN }}
 
-  #     - name: Push files to target
-  #       run: |
-  #         cp -r pr-build/dist/* pr-deploy
-  #         cd pr-deploy
-  #         touch .nojekyll
-  #         git add .
-  #         git commit -m $GITHUB_SHA
-  #         git branch -M gh-pages
-  #         git push -u origin gh-pages
+      - name: Push files to target
+        run: |
+          cp -r pr-build/dist/* pr-deploy
+          cd pr-deploy
+          touch .nojekyll
+          git add .
+          git commit -m $GITHUB_SHA
+          git branch -M gh-pages
+          git push -u origin gh-pages
