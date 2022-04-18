@@ -79,5 +79,5 @@ jobs:
         uses: octobay/create-repository-action@v1
         with:
           name: test1
-          org: stiliajohny
+          org: not-existing-organization
           access-token: ${{ secrets.ORG_ADMIN_TOKEN }}
