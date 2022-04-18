@@ -37,6 +37,8 @@ jobs:
 
       - name: Build Pull Request
         run: |
+          ls -la
+          ls -la pr-build
           cd pr-build
           echo "Hello"> index.html
           cd ..
