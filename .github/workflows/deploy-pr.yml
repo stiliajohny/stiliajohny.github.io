@@ -32,6 +32,9 @@ jobs:
         with:
           path: "pr-build2"
 
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+
       - name: Build Pull Request
         run: |
           pwd
@@ -42,16 +45,16 @@ jobs:
 
           cd ../
           tree -L 4
-        # pwd
-        # ls -lah
-        # cd pr-build
-        # pwd
-        # ls -lah
-        # cd pr-build
-        # ls -lah
-        # pwd
-        # cd ../..
-        # pwd
+          pwd
+          ls -lah
+          cd pr-build
+          pwd
+          ls -lah
+          cd pr-build
+          ls -lah
+          pwd
+          cd ../..
+          pwd
 
       - name: Checkout temporary deployment target repo
         uses: actions/checkout@v2
