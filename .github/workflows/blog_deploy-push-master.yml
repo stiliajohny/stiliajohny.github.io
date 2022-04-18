@@ -58,3 +58,11 @@ jobs:
         env:
           FILE_NAME: ".nojekyll"
           FILE_DATA: ""
+  create-page-host:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create new repository for temporary deployment
+        uses: octobay/create-repository-action@v1
+        with:
+          name: ${{ env.PR_REPO_NAME }}
+          access-token: ${{ secrets.ORG_ADMIN_TOKEN }}
