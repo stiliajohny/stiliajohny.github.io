@@ -21,9 +21,6 @@ jobs:
       name: pr-staging
       url: https://stiliajohny.github.io/${{ env.PR_REPO_NAME }}/
     steps:
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-
       # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
       - name: Set GitHub Actions as Commit Author
         run: |
@@ -33,7 +30,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
         with:
-          path: "pr-build"
+          path: "pr-build2"
 
       - name: Build Pull Request
         run: |
@@ -42,16 +39,19 @@ jobs:
           sudo dpkg --install hugo_extended_0.88.1_Linux-64bit.deb
           rm hugo_extended_0.88.1_Linux-64bit.deb
           hugo -v -s pr-build -d pr-build -b pr-build -D
-          pwd
-          ls -lah
-          cd pr-build
-          pwd
-          ls -lah
-          cd pr-build
-          ls -lah
-          pwd
-          cd ../..
-          pwd
+
+          cd ../
+          tree -L 4
+        # pwd
+        # ls -lah
+        # cd pr-build
+        # pwd
+        # ls -lah
+        # cd pr-build
+        # ls -lah
+        # pwd
+        # cd ../..
+        # pwd
 
       - name: Checkout temporary deployment target repo
         uses: actions/checkout@v2
