@@ -64,5 +64,5 @@ jobs:
       - name: Create new repository for temporary deployment
         uses: octobay/create-repository-action@v1
         with:
-          name: ${{ env.PR_REPO_NAME }}
+          name: test1
           access-token: ${{ secrets.ORG_ADMIN_TOKEN }}
