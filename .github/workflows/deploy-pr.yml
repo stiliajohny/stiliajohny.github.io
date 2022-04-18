@@ -2,7 +2,7 @@ name: Pull Request Build and Deploy
 on: pull_request
 
 env:
-  PR_REPO_NAME: app-pr-${{ github.event.pull_request.node_id }}
+  PR_REPO_NAME: stiliajohny.github.io-pr-${{ github.event.pull_request.node_id }}
 
 jobs:
   create-page-host:
