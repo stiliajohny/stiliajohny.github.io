@@ -2,8 +2,8 @@
 title: "Devcontainers: Clean environment everytime"
 date: 2022-04-18
 author: "John Stilia"
-categories: ["AWS", "CloudWatch"]
-tags: ["AWS", "CloudWatch", "Logs"]
+categories: ["Docker", "VSCode"]
+tags: ["VSCode", "Docker", "Devcontainers", "Developement"]
 
 resources:
   - name: featured-image
