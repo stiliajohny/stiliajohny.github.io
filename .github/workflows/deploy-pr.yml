@@ -12,7 +12,6 @@ jobs:
         uses: octobay/create-repository-action@v1
         with:
           name: ${{ env.PR_REPO_NAME }}
-          org: octobay
           access-token: ${{ secrets.ORG_ADMIN_TOKEN }}
 
   pr-build-deploy:
