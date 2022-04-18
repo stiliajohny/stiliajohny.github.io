@@ -1,4 +1,4 @@
-
+---
 name: master deployment
 on:
   push:
@@ -6,15 +6,14 @@ on:
       - master
 
 jobs:
-
- hugo-deploy:
+  hugo-deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Deploy the site
         uses: benmatselby/hugo-deploy-gh-pages@master
@@ -27,7 +26,7 @@ jobs:
           # HUGO_ARGS: '-t academic'
           # CNAME: benmatselby.github.io
 
- sitemap-ping:
+  sitemap-ping:
     name: Google Sitemap Ping
     needs: hugo-deploy
     runs-on: ubuntu-latest
@@ -49,7 +48,7 @@ jobs:
           wait
           echo "Done"
 
- create-nojekyll:
+  create-nojekyll:
     name: File .nojekyll
     needs: sitemap-ping
     runs-on: ubuntu-latest
@@ -59,3 +58,16 @@ jobs:
         env:
           FILE_NAME: ".nojekyll"
           FILE_DATA: ""
+
+  create-repository:
+    runs-on: ubuntu-latest
+    name: Creating Organization Repository
+    steps:
+      - name: Creating GitHub Organization Repository
+        uses: repo-ctrl/create-repo-action@main
+        id: create-repo
+        with:
+          repo-name: "temp-repo"
+          org-admin-token: "${{ secrets.ORG_ADMIN_TOKEN }}"
+      - name: Log URL to the repo
+        run: echo "The new repo is ${{ steps.create-repo.outputs.repo-url }}"
