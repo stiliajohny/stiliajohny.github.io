@@ -1,5 +1,4 @@
-
-name: PR to master
+name: Check for merge conflicts
 on: pull_request
 
 jobs:
