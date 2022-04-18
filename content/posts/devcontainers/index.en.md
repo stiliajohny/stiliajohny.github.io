@@ -64,13 +64,13 @@ Using devcontainers, you can:
 You have now installed all the prerequisites and are ready to use devcontainers.
 VSCode provides you with a simple and easy way to do so.
 
-Follow those steps:
+Follow these steps:
 
 - Open VSCode
-- Add te repository or folder of your choise
+- Add the repository or folder of your choise
 - Open the Command Pallet ( <kbd>Ctrl/Cmd</kbd> + <kbd>Shift</kbd> + <kbd>p</kbd> )
 - Select `Remote-Containers - Add Development Container Configuration ...`
-  - Select one of the predefined Docker Images variants
+  - Select one of the predefined Docker Image variants
   - Select one of the availables Docker Image versions
 
 After finalizing the process of adding a devcontainer configuration, you will be presented with a new folder containing the following files:
