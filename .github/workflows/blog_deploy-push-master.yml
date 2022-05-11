@@ -38,7 +38,7 @@ jobs:
           TOKEN: ${{ secrets.HUGO_TOKEN }}
           HUGO_EXTENDED: true
           # HUGO_ARGS: '-t academic'
-          CNAME: irunarchbtw.blog
+          CNAME: iusearchbtw.blog
 
   sitemap-ping:
     name: Google Sitemap Ping
