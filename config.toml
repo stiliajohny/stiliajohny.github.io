@@ -238,7 +238,6 @@ timeout = 60000
 #          id = ""
 #          prefix = ""
 
-
 [params]
   # LoveIt theme version
   version = "0.2.X"
