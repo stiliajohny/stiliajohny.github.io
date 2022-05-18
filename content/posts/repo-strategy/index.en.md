@@ -118,7 +118,7 @@ We have all been in a situation where different teams have different ways of wor
 
 Working on multi-repos allows the team to work autonomy. A significant contributing factor to choosing monorepo vs multi-repo is the team's size and impact through a project on the broader product.
 
-## Independently version different components/libraries.
+## Independently version different components/libraries
 
 Using the GitOps way of working, if your VSC manages versions via git tags, multi-repo offers the only way to version different components/libraries.
 Having multiple repos makes it easier to create dependencies graphs and manage them.
@@ -145,7 +145,7 @@ In short, terraform suggests:
 
 Libraries and components need to be synced constantly via a CI/CD pipeline or a periodic PR to the primary branch.
 
-## Could fragment the team.
+## Could fragment the team
 
 A smaller team with multiple repos could split the group into front-end and back-end sub-teams, r to Dev and DevOps.
 Even though this could be a good idea if it is necessary, it will be a terrible idea if the opposite is required.
@@ -177,11 +177,11 @@ Meta is powered by plugins that wrap common commands, letting you execute them a
 # References
 
 - My own codebase
-  - https://github.com/stiliajohny/monorepo-ansible-provisioning
-- https://www.freecodecamp.org/news/git-under-the-hood/
-- https://kinsta.com/blog/monorepo-vs-multi-repo/#what-is-a-monorepo
-- https://blog.nrwl.io/misconceptions-about-monorepos-monorepo-monolith-df1250d4b03c
-- https://adinermie.com/mono-vs-multi-which-repo-structure-is-right-for-you/
-- https://github.com/mateodelnorte/meta/issues/296
-- https://medium.com/outbrain-engineering/mono-repo-vs-multi-repo-vs-hybrid-whats-the-right-approach-5436c575c6e0
-- https://semaphoreci.com/blog/what-is-monorepo
+  - <>https://github.com/stiliajohny/monorepo-ansible-provisioning>
+- <https://www.freecodecamp.org/news/git-under-the-hood/>
+- <https://kinsta.com/blog/monorepo-vs-multi-repo/#what-is-a-monorepo>
+- <https://blog.nrwl.io/misconceptions-about-monorepos-monorepo-monolith-df1250d4b03c>
+- <https://adinermie.com/mono-vs-multi-which-repo-structure-is-right-for-you/>
+- <https://github.com/mateodelnorte/meta/issues/296>
+- <https://medium.com/outbrain-engineering/mono-repo-vs-multi-repo-vs-hybrid-whats-the-right-approach-5436c575c6e0>
+- <https://semaphoreci.com/blog/what-is-monorepo>
