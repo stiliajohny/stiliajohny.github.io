@@ -281,7 +281,7 @@ timeout = 60000
   [params.footer]
     enable = true
     # Custom content (HTML format is supported)
-    custom = ''
+    custom = 'All Media belong to their respective owners'
     # whether to show Hugo and theme info
     hugo = false
     # whether to show copyright info
