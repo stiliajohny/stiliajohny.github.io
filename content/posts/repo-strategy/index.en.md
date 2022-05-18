@@ -177,7 +177,7 @@ Meta is powered by plugins that wrap common commands, letting you execute them a
 # References
 
 - My own codebase
-  - <>https://github.com/stiliajohny/monorepo-ansible-provisioning>
+  - <https://github.com/stiliajohny/monorepo-ansible-provisioning>
 - <https://www.freecodecamp.org/news/git-under-the-hood/>
 - <https://kinsta.com/blog/monorepo-vs-multi-repo/#what-is-a-monorepo>
 - <https://blog.nrwl.io/misconceptions-about-monorepos-monorepo-monolith-df1250d4b03c>
