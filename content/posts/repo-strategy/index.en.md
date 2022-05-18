@@ -31,7 +31,7 @@ img {
 }
 </style>
 
-LIke tabs VS spaces, but better :D
+Like tabs VS spaces, but better :D
 
 <!--more-->
 
@@ -54,7 +54,7 @@ So you and your team have a front end, back end and terraform code, and currentl
 "We will have to release all the sack in one day; I don't like monoliths."
 
 It is a common misconception that monorepo is not the same as monolith based on the association of a repository with a deployment artefact.<br>
-See companies like Google and Facebook have used monorepo, yet they release their applications in different versions. Because monorepos simplify code sharing and cross-project refactorings, they significantly lower the cost of creating libs, microservices and micro-frontends. So adopting a monorepo often enables more deployment flexibility.
+See companies like Google and Facebook have used monorepo, yet they release their applications in different versions. Because monorepos simplify code sharing and cross-project refactoring, they significantly lower the cost of creating libs, microservices and micro-frontends. So adopting a monorepo often enables more deployment flexibility.
 
 ## It lets other teams change my code
 
