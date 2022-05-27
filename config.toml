@@ -232,7 +232,7 @@ timeout = 60000
         XMPP = ""
         Matrix = ""
         Bilibili = ""
-        Email = "stilia.johny@gmail.com"
+        Email = "john.stilia@iusearchbtw.blog"
         RSS = true
 #        [languages.en.params.social.Mastodon]
 #          id = ""
@@ -598,7 +598,7 @@ timeout = 60000
 # Author config
 [author]
   name = "John Stilia"
-  email = "stilia.johny@gmail.com"
+  email = "john.stilia@iusearchbtw.blog"
   link = ""
 
 # Sitemap config
