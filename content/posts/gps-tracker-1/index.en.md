@@ -51,7 +51,7 @@ So I decided to build a **GPS Tracker for Theft and Performance tracking**
 I started with some research. I wanted to know what was out there and what I could do to improve it.
 I found a few trackers on the market, but they were all costly. I wanted to build something cheap and easy to use, with features only Elon Musk would have thought of.
 
-## The Arduino version
+## The Arduino family
 
 I started with an Arduino Nano. I had a few of them lying around, and I knew I could get a GPS module.
 The code worked out of the box. I got the GPS coordinates and sent them to a Serial port.
@@ -65,7 +65,7 @@ My next step was sending them to a server and visualising them.
 
 - CPU is not the greatest. It's not very power efficient. It's not very fast. It's not very good at anything.
 
-## The ESP8266 version
+## The ESP family
 
 The ESP32 is a great little board. It has WiFi, Bluetooth, and a lot of other features. I decided to use it for my project during prototyping and testing.
 I got the GPS coordinates and sent them to a Serial port. I was also able to send them to a server. For that, I used [dweet.io](https://dweet.io/), which acts as a store of the last values sent to it. I could get the coordinates from the server and display them on a map.
