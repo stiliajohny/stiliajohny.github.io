@@ -57,7 +57,7 @@ I started with an Arduino Nano. I had a few of them lying around, and I knew I c
 The code worked out of the box. I got the GPS coordinates and sent them to a Serial port.
 My next step was sending them to a server and visualising them.
 
-- Prons
+- Pros
 
   - The code exists and works out of the box. It's easy to get started with.
 
@@ -70,7 +70,7 @@ The ESP32 is a great little board. It has WiFi, Bluetooth, and a lot of other fe
 I got the GPS coordinates and sent them to a Serial port. I was also able to send them to a server. For that, I used [dweet.io](https://dweet.io/), which acts as a store of the last values sent to it. I could get the coordinates from the server and display them on a map.
 For the visualisation, I used [freeboard.io](https://freeboard.io/). It is an excellent tool for visualising data. It is accessible as a trial and has a lot of features.
 
-- Prons
+- Pros
   - It has WiFi and Bluetooth. It's easy to get started with.
 - Cons
   - Limited number of GPIO for the sensors I want to connect to it.
@@ -81,7 +81,7 @@ Following the most recent trends, I thought of exploring the ARM family of RP204
 Each ARM processor had its own SDK, and I had to RTFM to use it in a Native way. I am more accustomed to using Arduino IDE, so I had to learn many new things.
 Luckily there is an Arduino IDE Library that allows using of Arduino C++ on ARM.[https://github.com/earlephilhower/arduino-pico](https://github.com/earlephilhower/arduino-pico)
 
-- Prons
+- Pros
 
   - Loads of ports fully customisable
   - Dual-core
