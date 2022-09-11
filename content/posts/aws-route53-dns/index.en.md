@@ -64,6 +64,8 @@ There you will see a **Nameservers** section. Click on **Manage Nameservers**.
 
 By default, the **Domain Provider** will have a set of nameservers for your domain.
 
+![Domain Nameservers](domain-registar-nsrecord.png)
+
 > **Note:** A nameserver is a server that stores the DNS records for a domain, like an IP address, for example.
 
 # How to check if it's working?
