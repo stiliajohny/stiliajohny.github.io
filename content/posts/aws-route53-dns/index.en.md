@@ -107,7 +107,7 @@ iusearchbtw.blog. 21600 IN  NS  ns-825.awsdns-39.net.
 
 # Risks
 
-# Order of execution
+## Order of execution
 
 Ensure your DNS records are set correctly before you update your nameservers.
 This will ensure that your domain is not down for some time.
