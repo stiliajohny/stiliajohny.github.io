@@ -24,7 +24,7 @@ Ask me about Linux, Security, Automation, Arduino, RaspberryPi and more.
   <style>
     .img {
         width: 100%;
-        height: 350px;
+        height: 1024px;
         display: block;
         margin-left: auto;
         margin-right: auto;
