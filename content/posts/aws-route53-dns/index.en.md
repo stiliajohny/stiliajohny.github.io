@@ -1,5 +1,5 @@
 ---
-title: "Change my DNS to AWS Route53, in Layman's terms"
+title: "Use AWS as DNS instead of your Domain Registrar (in simple steps)."
 date: 2022-09-11
 author: "John Stilia"
 categories: ["AWS", "DNS", Hosting]
