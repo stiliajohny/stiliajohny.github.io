@@ -42,7 +42,7 @@ If you have already purchased a domain outside AWS and you cannot transfer it bu
 
 # Steps
 
-## AWS Route 53 Preparation.
+## AWS Route 53 Preparation
 
 First login to **AWS** and head to **Route53**.
 There you will see a **Hosted Zones** section. Click on **Create Hosted Zone**.
@@ -57,7 +57,7 @@ After the Zone is created, you will see a **NS** record. This is the **Nameserve
 
 > **Note:** A hosted zone acts as a domain manager for your domain
 
-## Domain Provider Preparation.
+## Domain Provider Preparation
 
 Login to your **Domain Provider** and head to the **DNS** section.
 There you will see a **Nameservers** section. Click on **Manage Nameservers**.
@@ -99,9 +99,9 @@ iusearchbtw.blog. 21600 IN  NS  ns-825.awsdns-39.net.
 
 ## The Online Way
 
-- https://dnschecker.org/ns-lookup.php
-- https://www.whatsmydns.net/dns-lookup/ns-records?query=iusearchbtw.blog&server=google
-- https://mxtoolbox.com/SuperTool.aspx?action=dns%3aiusearchbtw.blog&run=toolpage
+- <https://dnschecker.org/ns-lookup.php>
+- <https://www.whatsmydns.net/dns-lookup/ns-records?query=iusearchbtw.blog&server=google>
+- <https://mxtoolbox.com/SuperTool.aspx?action=dns%3aiusearchbtw.blog&run=toolpage>
 
 # Risks
 
