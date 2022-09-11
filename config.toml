@@ -549,7 +549,7 @@ timeout = 60000
     [params.cookieconsent.content]
       message = "Have some cookies"
       dismiss = "Maybe not"
-      link = "https://en.wikipedia.org/wiki/HTTP_cookie"
+      link = "https://tasty.co/recipe/the-best-chewy-chocolate-chip-cookies"
 
   # CDN config for third-party library files
   [params.cdn]
