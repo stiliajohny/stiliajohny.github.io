@@ -16,8 +16,14 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
     <style type="text/css">
+        img {
+            box-shadow: inset 10px 10px 60px rgba(0,0,0,0.0);
+            -moz-border-radius:25px;
+            border-radius:10px;
+        }
+
         .gpx {
-            width: 80%;
+            width: 90%;
             margin: 1em auto;
         }
 
@@ -94,12 +100,12 @@
             new L.GPX(url, {
                 async: true,
                 marker_options: {
-                    startIconUrl: './green-pin.png',
+                    startIconUrl: 'https://github.com/stiliajohny/stiliajohny.github.io/raw/master/static/green-pin.png',
 
-                    endIconUrl: './red-pin.png',
-                    shadowUrl: './pin-shadow.png',
+                    endIconUrl: 'https://github.com/stiliajohny/stiliajohny.github.io/raw/master/static/red-pin.png',
+                    shadowUrl: 'https://github.com/stiliajohny/stiliajohny.github.io/raw/master/static/pin-shadow.png',
                     wptIconUrls: {
-                        '': 'yellow-pin.png',
+                        '': 'https://github.com/stiliajohny/stiliajohny.github.io/raw/master/static/yellow-pin.png',
                     },
                     iconSize: [24, 24],
 
