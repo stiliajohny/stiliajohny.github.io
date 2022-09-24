@@ -118,7 +118,6 @@ Happy riding and stay safe!
 
 {{</ table >}}
 
-
 ### Others
 
 {{< table id="sample" class="bordered" data-sample=10 >}}
@@ -134,7 +133,6 @@ Happy riding and stay safe!
 |Prescribed meds|Long-lasting snacks|
 
 {{</ table >}}
-
 
 ## References
 
