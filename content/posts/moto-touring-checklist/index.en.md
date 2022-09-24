@@ -52,12 +52,12 @@ Just got my new motorbike. It is a Yamah Tracer 9 GT. I am planning to do some t
 
 All adventures are unique, to different parts of the world, climates and conditions, so adapt the list according to your personal needs. Consider this a base line.
 
-
 Happy riding and stay safe!
 
 ## Checklist
 
 ### Bike
+
 {{< table id="sample" class="bordered" data-sample=10 >}}
 |||
 |------|------|
@@ -74,6 +74,7 @@ Happy riding and stay safe!
 {{</ table >}}
 
 ### Clothes & Toiletries
+
 {{< table id="sample" class="bordered" data-sample=10 >}}
 |||
 |------|------|
@@ -86,6 +87,7 @@ Happy riding and stay safe!
 {{</ table >}}
 
 ### Riding Gear & Documents
+
 {{< table id="sample" class="bordered" data-sample=10 >}}
 |||
 |------|------|
@@ -102,7 +104,8 @@ Happy riding and stay safe!
 
 {{</ table >}}
 
-### Tech & Navigation:
+### Tech & Navigation
+
 {{< table id="sample" class="bordered" data-sample=10 >}}
 |||
 |------|------|
@@ -117,6 +120,7 @@ Happy riding and stay safe!
 
 
 ### Others
+
 {{< table id="sample" class="bordered" data-sample=10 >}}
 |||
 |------|------|
@@ -130,8 +134,6 @@ Happy riding and stay safe!
 |Prescribed meds|Long-lasting snacks|
 
 {{</ table >}}
-
-
 
 
 ## References
