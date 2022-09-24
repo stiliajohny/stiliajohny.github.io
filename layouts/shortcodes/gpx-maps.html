@@ -1,0 +1,126 @@
+<!-- more info at https://formkeep.com/guides/contact-form-hugo -->
+{{/* <form accept-charset="UTF-8" action="https://formkeep.com/f/{{ $id }}" method="POST">
+    <input type="hidden" name="utf8" value="✓">
+    {{ if $redirect }}<input type="hidden" name="_redirect_url" value="{{ $redirect }}"> {{ end }}
+    <input type="email" name="email" placeholder="name@example.com">
+    <button type="submit">{{ $button_name }}</button>
+</form>
+
+*/}}
+
+
+{{ $id := default "exampletoken" (.Get 0) }}{{ $button_name := default "Submit" (.Get 1) }}{{ $redirect := .Get 2 }}
+
+
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <style type="text/css">
+        .gpx {
+            width: 80%;
+            margin: 1em auto;
+        }
+
+        .gpx header {}
+
+        .gpx h3 {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        .gpx .start {
+            font-size: smaller;
+        }
+
+        .gpx .map {
+            border-left: none;
+            border-right: none;
+            /* make the width and height to be responsive to the screen */
+            width: 100%;
+            height: 500px;
+            margin: 0;
+        }
+
+        .gpx ul.info {
+            list-style: none;
+        }
+
+        .gpx ul.info li {
+            padding: 2px;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="demo" class="gpx" data-gpx-source="{{ $id }}" data-map-target="demo-map">
+        <header>
+            <h3>Loading...</h3>
+            <ul class="info">
+                <li>Distance:&nbsp;<span class="distance"></span>&nbsp;mi</li>
+                <li> <a href="{{ $id }}" download>Download GPX</a>
+                    </span></li>
+            </ul> <span class="start"></span>
+        </header>
+
+        <article>
+            <div class="map" id="demo-map"></div>
+        </article>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.5.1/gpx.js"></script>
+    <script type="application/javascript">
+        function display_gpx(elt) {
+            if (!elt) return;
+
+            var url = elt.getAttribute('data-gpx-source');
+            var mapid = elt.getAttribute('data-map-target');
+            if (!url || !mapid) return;
+
+            function _t(t) { return elt.getElementsByTagName(t)[0]; }
+            function _c(c) { return elt.getElementsByClassName(c)[0]; }
+
+            var map = L.map(mapid);
+            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
+            }).addTo(map);
+
+            var control = L.control.layers(null, null).addTo(map);
+
+
+            new L.GPX(url, {
+                async: true,
+                marker_options: {
+                    startIconUrl: './green-pin.png',
+
+                    endIconUrl: './red-pin.png',
+                    shadowUrl: './pin-shadow.png',
+                    wptIconUrls: {
+                        '': 'yellow-pin.png',
+                    },
+                    iconSize: [24, 24],
+
+                },
+            }).on('loaded', function (e) {
+                var gpx = e.target;
+                L.marker([51.5413, 0.2778]).addTo(map);
+
+                map.fitBounds(gpx.getBounds());
+                control.addOverlay(gpx, gpx.get_name());
+
+                /*
+                 * Note: the code below relies on the fact that the demo GPX file is
+                 * an actual GPS track with timing and heartrate information.
+                 */
+                _t('h3').textContent = gpx.get_name();
+                _c('distance').textContent = gpx.get_distance_imp().toFixed(2);
+
+            }).addTo(map);
+        }
+
+        display_gpx(document.getElementById('demo'));
+    </script>
+</body>
