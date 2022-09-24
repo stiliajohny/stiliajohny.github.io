@@ -52,6 +52,9 @@ Just got my new motorbike. It is a Yamah Tracer 9 GT. I am planning to do some t
 
 All adventures are unique, to different parts of the world, climates and conditions, so adapt the list according to your personal needs. Consider this a base line.
 
+
+Happy riding and stay safe!
+
 ## Checklist
 
 ### Bike
