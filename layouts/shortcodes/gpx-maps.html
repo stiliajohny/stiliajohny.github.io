@@ -9,8 +9,7 @@
 */}}
 
 
-{{ $id := default "exampletoken" (.Get 0) }}{{ $button_name := default "Submit" (.Get 1) }}{{ $redirect := .Get 2 }}
-
+{{ $gpxFileName := default "demo.gpx" (.Get 0) }}
 
 
 <head>
@@ -24,7 +23,6 @@
 
         .gpx {
             width: 90%;
-            margin: 1em auto;
         }
 
         .gpx header {}
@@ -53,19 +51,26 @@
         }
 
         .gpx ul.info li {
-            padding: 2px;
+            padding: 1px;
             display: inline;
         }
+
+        .gpx ul.info {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: smaller;
+          }
     </style>
 </head>
 
 <body>
-    <section id="demo" class="gpx" data-gpx-source="{{ $id }}" data-map-target="demo-map">
+    <section id="demo" class="gpx" data-gpx-source="{{ $gpxFileName }}" data-map-target="demo-map">
         <header>
             <h3>Loading...</h3>
             <ul class="info">
                 <li>Distance:&nbsp;<span class="distance"></span>&nbsp;mi</li>
-                <li> <a href="{{ $id }}" download>Download GPX</a>
+                <li> <a href="{{ $gpxFileName }}" download>Download GPX</a>
                     </span></li>
             </ul> <span class="start"></span>
         </header>
@@ -108,11 +113,13 @@
                         '': 'https://github.com/stiliajohny/stiliajohny.github.io/raw/master/static/yellow-pin.png',
                     },
                     iconSize: [24, 24],
+                    iconAnchor: [10, 24],
+                    shadowAnchor: [12, 28],
+                    shadowSize: [36, 36],
 
                 },
             }).on('loaded', function (e) {
                 var gpx = e.target;
-                L.marker([51.5413, 0.2778]).addTo(map);
 
                 map.fitBounds(gpx.getBounds());
                 control.addOverlay(gpx, gpx.get_name());
