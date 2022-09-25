@@ -53,7 +53,7 @@ Old tour, posting for reference.
 **How long does it take?** 7 hours <small>(without stops)</small><br>
 **What is the best time of year?** Summer/Autumn <br>
 **What is the best time of day?** Sunset/Sunrise <br>
-**Approximate fuel cost:**  £54.30 <small> (fuel: 1.72L,MPG:45.5)</small><br>
+**Approximate fuel cost:**  £54.30 <small> (fuel: £1.72L,MPG:45.5)</small><br>
 **Places to stop:** <br>
 - Ace Cafe <br>
 - Bwlch y Groes
