@@ -16,7 +16,7 @@ enableGitInfo = true
 enableEmoji = true
 
 #Increase the timout for bigger image rendering (default is 30 seconds)
-timeout = 60000
+timeout = 60000000
 
 [languages]
   [languages.en]
