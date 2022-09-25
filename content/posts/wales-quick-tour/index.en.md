@@ -55,11 +55,11 @@ Old tour, posting for reference.
 **What is the best time of day?** Sunset/Sunrise <br>
 **Approximate fuel cost:**  £54.30 <small> (fuel: 1.72L,MPG:45.5)</small><br>
 **Places to stop:** <br>
-- [ ] Ace Cafe <br>
-- [ ] Bwlch y Groes
-- [ ] Lake Vyrnwy<br>
-- [ ] Pen-y-Pass
-- [ ] Llyn Ogwen <br>
+- Ace Cafe <br>
+- Bwlch y Groes
+- Lake Vyrnwy<br>
+- Pen-y-Pass
+- Llyn Ogwen <br>
 
 **CampSites:**
 - [ Gwern Gof Isaf Campsite ](https://gwerngofisaf.co.uk/)
