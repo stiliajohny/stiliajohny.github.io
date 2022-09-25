@@ -49,8 +49,8 @@ Old tour, posting for reference.
 
 **Where does it start?** Ace Cafe <br>
 **Where does it end?** Llyn Ogwen <br>
-**How long is it?** 273 miles <br>
-**How long does it take?** 6 hours <small>(without stops)</small><br>
+**How long is it?** 311 miles <br>
+**How long does it take?** 7 hours <small>(without stops)</small><br>
 **What is the best time of year?** Summer/Autumn <br>
 **What is the best time of day?** Sunset/Sunrise <br>
 **Approximate fuel cost:**  £47.69 <small> (fuel: 1.72L,MPG:45.5)</small><br>
@@ -92,10 +92,6 @@ From there, I had a pleasant ride around with the bike and started heading back 
 
 {{< gallery match="images/*" showExif="false" sortOrder="desc" loadJQuery="false" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'B-Roads' , tags: 'B-Roads' },{label: 'B-Roads', tags: 'B-Roads'}, {label: 'Bridge', tags: 'Bridge'}, {label: 'Camping', tags: 'Camping'},{label: 'Coffee', tags: 'Coffee'},{label: 'Farm', tags: 'Farm'},{label: 'Lake', tags: 'Lake'},{label: 'Night', tags: 'Night'},{label: 'Packing', tags: 'Packing'},{label: 'Riding', tags: 'Riding'},{label: 'River', tags: 'River'},{label: 'Sheeps', tags: 'Sheeps'},{label: 'Stars', tags: 'Stars'},{label: 'Sunset', tags: 'Sunset'},{label: 'Tent', tags: 'Tent'},{label: 'Wales', tags: 'Wales'},{label: 'XSR900', tags: 'XSR900'}]" >}}
 
-
-
-
-<!-- {label: 'B-Roads', tags: 'B-Roads'}, {label: 'Bridge', tags: 'Bridge'}, {label: 'Camping', tags: 'Camping'},{label: 'Coffee', tags: 'Coffee'},{label: 'Farm', tags: 'Farm'},{label: 'Lake', tags: 'Lake'},{label: 'Night', tags: 'Night'},{label: 'Packing', tags: 'Packing'},{label: 'Riding', tags: 'Riding'},{label: 'River', tags: 'River'},{label: 'Sheeps', tags: 'Sheeps'},{label: 'Stars', tags: 'Stars'},{label: 'Sunset', tags: 'Sunset'},{label: 'Tent', tags: 'Tent'},{label: 'Wales', tags: 'Wales'},{label: 'XSR900', tags: 'XSR900'}, -->
 
 
 # References
