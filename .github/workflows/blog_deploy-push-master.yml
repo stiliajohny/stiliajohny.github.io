@@ -6,22 +6,8 @@ on:
       - master
 
 jobs:
-  markdown-lint:
-    name: Markdown Lint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-      - uses: articulate/actions-markdownlint@v1
-        with:
-          config: markdownlint-config.json
-          files: "./content/posts/**/*.md "
-
   hugo-deploy:
     name: Deploy to GitHub Pages
-    needs: markdown-lint
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
