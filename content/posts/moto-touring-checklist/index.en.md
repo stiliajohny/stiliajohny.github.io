@@ -48,7 +48,7 @@ What you need to know before you start touring with your motorcycle.
 
 ## Introduction
 
-I just got my new motorbike. It is a Yamah Tracer 9 GT. I am planning to do some touring with it. I have been doing a couple of things with my old bike, a Yamaha XSR900, but I am unsure if I have everything I need. So I decided to make a checklist. I will update it as I go.
+I just got my new motorbike. It is a Yamaha Tracer 9 GT. I am planning to do some touring with it. I have been doing a couple of things with my old bike, a Yamaha XSR900, but I am unsure if I have everything I need. So I decided to make a checklist. I will update it as I go.
 
 All adventures are unique to different parts of the world, climates and conditions, so adapt the list according to your personal needs. Consider this a baseline.
 
