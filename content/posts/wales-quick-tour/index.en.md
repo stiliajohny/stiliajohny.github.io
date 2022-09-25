@@ -53,7 +53,7 @@ Old tour, posting for reference.
 **How long does it take?** 7 hours <small>(without stops)</small><br>
 **What is the best time of year?** Summer/Autumn <br>
 **What is the best time of day?** Sunset/Sunrise <br>
-**Approximate fuel cost:**  £47.69 <small> (fuel: 1.72L,MPG:45.5)</small><br>
+**Approximate fuel cost:**  £54.30 <small> (fuel: 1.72L,MPG:45.5)</small><br>
 **Places to stop:** <br>
 - [ ] Ace Cafe <br>
 - [ ] Bwlch y Groes
@@ -98,4 +98,4 @@ From there, I had a pleasant ride around with the bike and started heading back 
 
 - <https://www.bennetts.co.uk/bikesocial/news-and-views/features/travel/what-are-the-best-motorcycle-routes-in-the-uk>
 - <https://www.facebook.com/groups/283734250214471>
-- <https://www.fleetnews.co.uk/costs/fuel-cost-calculator/?FuelType=Unleaded&PencePerLitre=172.84&Mileage=250&Mpg=45#>
+- <https://www.fleetnews.co.uk/costs/fuel-cost-calculator/?FuelType=Unleaded&PencePerLitre=172.84&Mileage=311&Mpg=45>
