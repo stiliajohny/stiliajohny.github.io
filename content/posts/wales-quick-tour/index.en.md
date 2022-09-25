@@ -37,9 +37,12 @@ Old tour, posting for reference.
 
 <!--more-->
 
+# The map
+
 {{< gpx-maps quick-tour-to-wales.gpx >}}
 
----
+<!-- add a download button for the gpx file-->
+[Download GPX file](./quick-tour-to-wales.gpx) | [Calimoto link](https://calimoto.com/calimotour/wales-trip-with-xsr900-r-H5OaldnSgr)
 
 
 # Details
