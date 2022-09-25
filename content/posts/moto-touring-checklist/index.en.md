@@ -59,78 +59,78 @@ Happy riding, and stay safe!
 ### Bike
 
 {{< table id="sample" class="bordered" data-sample=10 >}}
-|||
-|------|------|
-| Bike safety check (from mechanic) |Headtorch |
-| Consider new tyres |Hi-viz jacket (legal requirement)|
-| Spare keys (bike & luggage) |Disc lock|
-| Heated grips/gloves (fitted & working)|Cargo net|
-| 12V USB / Power Bank|Gaffer tape|
-| Warning triangle (legal requirement)|Zip ties|
-| Country sticker (GB, D, FR, E, etc.)|Bungee or ratchet straps|
-| Tools & multi-tool|Kickstand plate|
-| Puncture repair kit|Ziplock bags (documents & cash)|
-| Spare bulbs (legal requirement)|Chain lube|
+|                                        |                                   |
+| -------------------------------------- | --------------------------------- |
+| Bike safety check (from mechanic)      | Headtorch                         |
+| Consider new tyres                     | Hi-viz jacket (legal requirement) |
+| Spare keys (bike & luggage)            | Disc lock                         |
+| Heated grips/gloves (fitted & working) | Cargo net                         |
+| 12V USB / Power Bank                   | Gaffer tape                       |
+| Warning triangle (legal requirement)   | Zip ties                          |
+| Country sticker (GB, D, FR, E, etc.)   | Bungee or ratchet straps          |
+| Tools & multi-tool                     | Kickstand plate                   |
+| Puncture repair kit                    | Ziplock bags (documents & cash)   |
+| Spare bulbs (legal requirement)        | Chain lube                        |
 {{</ table >}}
 
 ### Clothes & Toiletries
 
 {{< table id="sample" class="bordered" data-sample=10 >}}
-|||
-|------|------|
-|Travel shampoo|Socks|
-|Travel shower gel|Underwear|
-|Oral care|T-shirts|
-|Deodorant|Zip-off pants|
-|Lip balm|Trainers (comfortable evening shoes)|
-|Sun cream/sunblock|Mid-layer|
+|                    |                                      |
+| ------------------ | ------------------------------------ |
+| Travel shampoo     | Socks                                |
+| Travel shower gel  | Underwear                            |
+| Oral care          | T-shirts                             |
+| Deodorant          | Zip-off pants                        |
+| Lip balm           | Trainers (comfortable evening shoes) |
+| Sun cream/sunblock | Mid-layer                            |
 {{</ table >}}
 
 ### Riding Gear & Documents
 
 {{< table id="sample" class="bordered" data-sample=10 >}}
-|||
-|------|------|
-|Cash & credit card|Helmet|
-|Passport & driving licence|Winter & summer gloves|
-|Motorcycle insurance certificate|Textile jacket|
-|MOT certificate (if required)|Textile pants|
-|Green card|Waterproof boots|
-|Breakdown cover|2-piece waterproof suit|
-|Inform motorcycle insurance|Base layers (pants and top)|
-|Inform breakdown company|Mid-layer (fleece)|
-|Inform bank|Riding socks|
-|Ensure phone works abroad|Heated jacket|
+|                                  |                             |
+| -------------------------------- | --------------------------- |
+| Cash & credit card               | Helmet                      |
+| Passport & driving licence       | Winter & summer gloves      |
+| Motorcycle insurance certificate | Textile jacket              |
+| MOT certificate (if required)    | Textile pants               |
+| Green card                       | Waterproof boots            |
+| Breakdown cover                  | 2-piece waterproof suit     |
+| Inform motorcycle insurance      | Base layers (pants and top) |
+| Inform breakdown company         | Mid-layer (fleece)          |
+| Inform bank                      | Riding socks                |
+| Ensure phone works abroad        | Heated jacket               |
 
 {{</ table >}}
 
 ### Tech & Navigation
 
 {{< table id="sample" class="bordered" data-sample=10 >}}
-|||
-|------|------|
-|Phone charger|Sat nav|
-|Camera gear|Paper maps|
-|Action camera gear|Smartphone apps|
-|Plug adaptor|Backed-up routes (hard drive)|
-|Tablet or laptop if needed|Any location guides/notes|
-|External hard drive|Offline maps on smartphone|
+|                            |                               |
+| -------------------------- | ----------------------------- |
+| Phone charger              | Sat nav                       |
+| Camera gear                | Paper maps                    |
+| Action camera gear         | Smartphone apps               |
+| Plug adaptor               | Backed-up routes (hard drive) |
+| Tablet or laptop if needed | Any location guides/notes     |
+| External hard drive        | Offline maps on smartphone    |
 
 {{</ table >}}
 
 ### Others
 
 {{< table id="sample" class="bordered" data-sample=10 >}}
-|||
-|------|------|
-|Toilet paper (just in case!)|Accident plan|
-|Petrol station gloves|Breathalysers (legal requirement)|
-|First aid kit|Hydration pack if required|
-|Drybag(s)|Carrier bags (multiuse)|
-|Spare glasses/shades|Earplugs|
-|Washing powder/liquid|Face mask (COVID requirements)|
-|Coffee!|Sunglasses|
-|Prescribed meds|Long-lasting snacks|
+|                              |                                   |
+| ---------------------------- | --------------------------------- |
+| Toilet paper (just in case!) | Accident plan                     |
+| Petrol station gloves        | Breathalysers (legal requirement) |
+| First aid kit                | Hydration pack if required        |
+| Drybag(s)                    | Carrier bags (multiuse)           |
+| Spare glasses/shades         | Earplugs                          |
+| Washing powder/liquid        | Face mask (COVID requirements)    |
+| Coffee!                      | Sunglasses                        |
+| Prescribed meds              | Long-lasting snacks               |
 
 {{</ table >}}
 
