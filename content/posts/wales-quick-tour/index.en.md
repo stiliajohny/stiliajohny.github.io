@@ -64,24 +64,25 @@ Old tour, posting for reference.
 
 # The journey
 
-I will take the M40 till after Birmingham, then follow the twisty roads passing through the Brecon Beacons National Park. I will stop at the Bwlch y Groes and Pen-y-Pass before heading to Llyn Ogwen.
+I took the M40 until after Birmingham and followed the twisty roads passing through the Brecon Beacons National Park. I stopped at the Bwlch y Groes and Pen-y-Pass before heading to Llyn Ogwen.
 
-The journey was brilliant with a bit of rain. I mostly took the motorway until I reached the first roads in Snowdonia, just around Lake Llanwddyn.
+The journey was enjoyable with a bit of rain. I mostly took the motorway until I reached the first roads in Snowdonia, just around Lake Llanwddyn.
 
-From there, I took some twisty roads and enjoyed the ride and, admittedly, a good amount of rain.
-The roads were great. The journey was filled with nature, fresh air and excellent roads to enjoy a good ride.
-The days were getting dark, so I headed to Lake Ogwen and set the tent.
-I had no plan of where to stay; I only knew I wanted to stay next to a lake and make a coffee at sunrise.
+From there, I took some twisty roads and enjoyed the ride and, admittedly, a good amount of rain.<br>
+The roads were great. The journey was filled with nature, fresh air and pleasing roads to enjoy a good ride.<br>
+The days were getting dark, so I headed to Lake Ogwen and set the tent.<br>
+I had no plan of where to stay; I only knew I wanted to stay next to a lake and brew a coffee at sunrise.<br>
 
+It was windy beneath the mountain. My first attempt to set the tent was proven unsuccessful, with the tent flying away. Under the clear sky and a half moon, I could see the sheep glowing in the field. This was when I realised there was a farm nearby. I found a corner spot near the farm, where the wind was milder. I set the tent, and the bike, heated some baked bins and tried to enjoy the rain and wind outside.
 
-It was windy under the mountain. My first attempt to set the tent was proven unsuccessful, with the ten flying away. Under the clear sky and a half moon, I could see the sheep glowing in the field. This was when I realised there was a farm nearby. I found a corner spot near the farm, where the wind was calmer. I set the tent, and the bike, heated some baked bins and tried to enjoy the rain and wind outside.
-
-The night passed, and I couldn't sleep well. The wind was unbearable, and the noises from the farm beside me were like a thriller.<br>
+The night passed, and I couldn't sleep well. The wind was unbearable, and the noises from the farm beside me were like a thriller.
 
 When the sun rose, I set for my coffee.<br>
-I made myself an excellent dark roast espresso, added a bit of sugar and hot water, and enjoyed a nice cup of coffee by the lake.
+I made an exceptional dark roast espresso, added a bit of sugar and hot water, and enjoyed a nice cup of coffee by the lake.
 
-From there, I had a pleasant stroll around with the bike and started heading back to London
+From there, I had a pleasant ride around with the bike and started heading back to London.
+
+
 
 
 # Photo Gallery
