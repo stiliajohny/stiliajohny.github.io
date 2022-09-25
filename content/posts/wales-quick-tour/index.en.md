@@ -7,9 +7,9 @@ tags: ["Motorcycle", "Touring", "Checklist", "Gear", "Packing", "Riding", "Tips"
 
 resources:
   - name: featured-image
-    src: repo-strategy.png
+    src: wales-motortour13.jpg
   - name: featured-image-preview
-    src: repo-strategy.png
+    src: wales-motortour13.jpg
 
 draft: false
 lightgallery: true
