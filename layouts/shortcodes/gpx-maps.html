@@ -12,128 +12,88 @@
 {{ $gpxFileName := default "demo.gpx" (.Get 0) }}
 
 
+
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
-    <style type="text/css">
-        img {
-            box-shadow: inset 10px 10px 60px rgba(0,0,0,0.0);
-            -moz-border-radius:25px;
-            border-radius:10px;
+    <meta charset="utf-8" />
+    <title>GPX track</title>
+    <script src="//polyfill.io/v3/polyfill.min.js?features=document.querySelector%2CArray.prototype.at"></script>
+    <script src="//cdn.jsdelivr.net/gh/Luuka/GPXParser.js/dist/GPXParser.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.0/leaflet.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/iosphere/Leaflet.hotline/dist/leaflet.hotline.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.0/leaflet.css" />
+
+    <style>
+        h2 {
+            font-family: sans-serif;
         }
 
-        .gpx {
-            width: 90%;
+      #map {
+        height: 50vh;
+        width: 100%;
+        /* add round corners */
+        border-radius: 10px;
+        /* add border */
+        border: 1px solid #ccc;
+        /* add internal shadow */
+        box-shadow: inset 0 2px 3px rgba(0,0,0,0.8);
+
+
+      }
+      img {
+        box-shadow: inset 10px 10px 60px #fff;
+        -moz-border-radius:0px;
+        border-radius:0px;
         }
-
-        .gpx header {}
-
-        .gpx h3 {
-            margin: 0;
-            padding: 0;
-            font-weight: bold;
-        }
-
-        .gpx .start {
-            font-size: smaller;
-        }
-
-        .gpx .map {
-            border-left: none;
-            border-right: none;
-            /* make the width and height to be responsive to the screen */
-            width: 100%;
-            height: 500px;
-            margin: 0;
-        }
-
-        .gpx ul.info {
-            list-style: none;
-        }
-
-        .gpx ul.info li {
-            padding: 1px;
-            display: inline;
-        }
-
-        .gpx ul.info {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            font-size: smaller;
-          }
     </style>
 </head>
-
 <body>
-    <section id="demo" class="gpx" data-gpx-source="{{ $gpxFileName }}" data-map-target="demo-map">
-        <header>
-            <h3>Loading...</h3>
-            <ul class="info">
-                <li>Distance:&nbsp;<span class="distance"></span>&nbsp;mi</li>
-                <li> <a href="{{ $gpxFileName }}" download>Download GPX</a>
-                    </span></li>
-            </ul> <span class="start"></span>
-        </header>
+    <h2 id="lastUpdate"></h2>
+    <div id="map"></div>
 
-        <article>
-            <div class="map" id="demo-map"></div>
-        </article>
-
-    </section>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.5.1/gpx.js"></script>
-    <script type="application/javascript">
-        function display_gpx(elt) {
-            if (!elt) return;
-
-            var url = elt.getAttribute('data-gpx-source');
-            var mapid = elt.getAttribute('data-map-target');
-            if (!url || !mapid) return;
-
-            function _t(t) { return elt.getElementsByTagName(t)[0]; }
-            function _c(c) { return elt.getElementsByClassName(c)[0]; }
-
-            var map = L.map(mapid);
-            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: 'Map data &copy; <a href="http://www.osm.org">OpenStreetMap</a>'
-            }).addTo(map);
-
-            var control = L.control.layers(null, null).addTo(map);
-
-
-            new L.GPX(url, {
-                async: true,
-                marker_options: {
-                    startIconUrl: 'https://github.com/stiliajohny/stiliajohny.github.io/raw/master/static/green-pin.png',
-
-                    endIconUrl: 'https://github.com/stiliajohny/stiliajohny.github.io/raw/master/static/red-pin.png',
-                    shadowUrl: 'https://github.com/stiliajohny/stiliajohny.github.io/raw/master/static/pin-shadow.png',
-                    wptIconUrls: {
-                        '': 'https://github.com/stiliajohny/stiliajohny.github.io/raw/master/static/yellow-pin.png',
-                    },
-                    iconSize: [24, 24],
-                    iconAnchor: [10, 24],
-                    shadowAnchor: [12, 28],
-                    shadowSize: [36, 36],
-
+    <script>
+        let tagmap = L.map("map");
+        L.tileLayer("https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png", {
+            maxZoom: 19,
+        }).addTo(tagmap);
+        function drawTrack(track) {
+            let z = 0;
+            let coordinates = track.points.map((p) => [p.lat.toFixed(5), p.lon.toFixed(5), z++]);
+            let polyline = L.hotline(coordinates, {
+                min: 0,
+                max: z,
+                weight: 5,
+                palette: {
+                    0.0: "#00ff00",
+                    0.5: "#ffff00",
+                    1.0: "#ff0000",
                 },
-            }).on('loaded', function (e) {
-                var gpx = e.target;
-
-                map.fitBounds(gpx.getBounds());
-                control.addOverlay(gpx, gpx.get_name());
-
-                /*
-                 * Note: the code below relies on the fact that the demo GPX file is
-                 * an actual GPS track with timing and heartrate information.
-                 */
-                _t('h3').textContent = gpx.get_name();
-                _c('distance').textContent = gpx.get_distance_imp().toFixed(2);
-
-            }).addTo(map);
-        }
-
-        display_gpx(document.getElementById('demo'));
+                outlineColor: "#000000",
+                outlineWidth: 1,
+            }).addTo(tagmap);
+                        L.circle(coordinates.at(-1), { radius: 5 }).addTo(tagmap);
+                        // zoom the map to the polyline
+                        tagmap.fitBounds(polyline.getBounds());
+                    }
+                    let url_string = window.location.href;
+                    let url = new URL(url_string);
+                    let trackPath = url.searchParams.get("track");
+                    if (!trackPath) {
+                        trackPath = "{{ $gpxFileName }}";
+                    }
+                                                                        fetch(trackPath)
+                                                                            .then(function (response) {
+                                                                                return response.text();
+                                                                            })
+                                                                            .then(function (gpxData) {
+                                                                                let gpx = new gpxParser();
+                                                                                gpx.parse(gpxData);
+                                                                                drawTrack(gpx.tracks[0]);
+                                                                                document.getElementById("lastUpdate").innerText = gpx.tracks[0].points.at(-1).time.toLocaleString();
+                                                                            });
     </script>
 </body>
+</html>
