@@ -1,5 +1,5 @@
 ---
-title: "Quick Ride to Walles with new Bike"
+title: "Quick Ride to Walles with XSR900"
 date: 2022-09-25
 author: "John Stilia"
 categories: ["Motorcycle", "Tournig"]
@@ -33,9 +33,13 @@ img {
 }
 </style>
 
+Old tour, posting for reference.
+
 <!--more-->
 
 {{< gpx-maps quick-tour-to-wales.gpx >}}
+
+---
 
 
 # Details
@@ -45,23 +49,52 @@ img {
 **How long is it?** 273 miles <br>
 **How long does it take?** 6 hours <small>(without stops)</small><br>
 **What is the best time of year?** Summer/Autumn <br>
+**What is the best time of day?** Sunset/Sunrise <br>
 **Approximate fuel cost:**  £47.69 <small> (fuel: 1.72L,MPG:45.5)</small><br>
 **Places to stop:** <br>
 - [ ] Ace Cafe <br>
 - [ ] Bwlch y Groes
+- [ ] Lake Vyrnwy<br>
 - [ ] Pen-y-Pass
-- [ ] Llyn Ogwen
+- [ ] Llyn Ogwen <br>
 
-## The journey
+**CampSites:**
+- [ Gwern Gof Isaf Campsite ](https://gwerngofisaf.co.uk/)
+- [ Gwern Gof Uchaf ](http://www.tryfanwales.co.uk/)
 
-I will be taking the M40 till after Birmigham then follow the twistie roads passing through the Brecon Beacons National Park. I will be stopping at the Bwlch y Groes and Pen-y-Pass before heading to Llyn Ogwen.
+# The journey
+
+I will take the M40 till after Birmingham, then follow the twisty roads passing through the Brecon Beacons National Park. I will stop at the Bwlch y Groes and Pen-y-Pass before heading to Llyn Ogwen.
+
+The journey was brilliant with a bit of rain. I mostly took the motorway until I reached the first roads in Snowdonia, just around Lake Llanwddyn.
+
+From there, I took some twisty roads and enjoyed the ride and, admittedly, a good amount of rain.
+The roads were great. The journey was filled with nature, fresh air and excellent roads to enjoy a good ride.
+The days were getting dark, so I headed to Lake Ogwen and set the tent.
+I had no plan of where to stay; I only knew I wanted to stay next to a lake and make a coffee at sunrise.
 
 
-{{< gallery match="*" showExif="true" sortOrder="desc" loadJQuery="true" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'Alexandra', tags: 'Alexandra'}, {label: 'Adnan', tags: 'Adnan'}, {label: 'Anna-Marie', tags: 'Anna-Marie'}, {label: 'Claudia', tags: 'Claudia'}, {label: 'Gabriel - Poetry Night', tags: 'Gabriel - Poetry Night'}, {label: 'Omer', tags: 'Omer'}, {label: 'Shria', tags: 'Shria'}, {label: 'Joe', tags: 'Joe'}, {label: 'Tom', tags: 'Tom'},{label: 'Santana and Carla', tags: 'Santana and Carla'}]" >}}
+It was windy under the mountain. My first attempt to set the tent was proven unsuccessful, with the ten flying away. Under the clear sky and a half moon, I could see the sheep glowing in the field. This was when I realised there was a farm nearby. I found a corner spot near the farm, where the wind was calmer. I set the tent, and the bike, heated some baked bins and tried to enjoy the rain and wind outside.
+
+The night passed, and I couldn't sleep well. The wind was unbearable, and the noises from the farm beside me were like a thriller.<br>
+
+When the sun rose, I set for my coffee.<br>
+I made myself an excellent dark roast espresso, added a bit of sugar and hot water, and enjoyed a nice cup of coffee by the lake.
+
+From there, I had a pleasant stroll around with the bike and started heading back to London
+
+
+# Photo Gallery
+
+{{< gallery match="images/*" showExif="false" sortOrder="desc" loadJQuery="false" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'B-Roads' , tags: 'B-Roads' },{label: 'B-Roads', tags: 'B-Roads'}, {label: 'Bridge', tags: 'Bridge'}, {label: 'Camping', tags: 'Camping'},{label: 'Coffee', tags: 'Coffee'},{label: 'Farm', tags: 'Farm'},{label: 'Lake', tags: 'Lake'},{label: 'Night', tags: 'Night'},{label: 'Packing', tags: 'Packing'},{label: 'Riding', tags: 'Riding'},{label: 'River', tags: 'River'},{label: 'Sheeps', tags: 'Sheeps'},{label: 'Stars', tags: 'Stars'},{label: 'Sunset', tags: 'Sunset'},{label: 'Tent', tags: 'Tent'},{label: 'Wales', tags: 'Wales'},{label: 'XSR900', tags: 'XSR900'}]" >}}
 
 
 
-## References
+
+<!-- {label: 'B-Roads', tags: 'B-Roads'}, {label: 'Bridge', tags: 'Bridge'}, {label: 'Camping', tags: 'Camping'},{label: 'Coffee', tags: 'Coffee'},{label: 'Farm', tags: 'Farm'},{label: 'Lake', tags: 'Lake'},{label: 'Night', tags: 'Night'},{label: 'Packing', tags: 'Packing'},{label: 'Riding', tags: 'Riding'},{label: 'River', tags: 'River'},{label: 'Sheeps', tags: 'Sheeps'},{label: 'Stars', tags: 'Stars'},{label: 'Sunset', tags: 'Sunset'},{label: 'Tent', tags: 'Tent'},{label: 'Wales', tags: 'Wales'},{label: 'XSR900', tags: 'XSR900'}, -->
+
+
+# References
 
 - <https://www.bennetts.co.uk/bikesocial/news-and-views/features/travel/what-are-the-best-motorcycle-routes-in-the-uk>
 - <https://www.facebook.com/groups/283734250214471>
