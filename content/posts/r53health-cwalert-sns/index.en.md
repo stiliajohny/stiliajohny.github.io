@@ -116,3 +116,22 @@ resource "aws_sns_topic_subscription" "iusearchbtw_blog" {
 }
 
 ```
+
+# References
+
+- AWS
+  - [Route53 Health Check](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-checks.html)
+  - [CloudWatch Alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
+  - [SNS Topic](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)
+  - [SNS Subscription](https://docs.aws.amazon.com/sns/latest/dg/sns-subscription-filter-policies.html)
+- Terraform
+  - [aws_cloudwatch_metric_alarm](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm)
+  - [aws_route53_health_check](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_health_check)
+  - [aws_sns_topic](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic)
+  - [aws_sns_topic_subscription](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_subscription)
+
+---
+**This was made possible as I was listening to the following playlist**
+
+
+ {{< spotify type="playlist" id="1O6hF8LdVXkfVjZc8jrhn8" width="100%" height="250" >}}
