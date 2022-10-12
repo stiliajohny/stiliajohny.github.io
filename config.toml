@@ -154,7 +154,7 @@ timeout = 60000000
       # Home page config
       [languages.en.params.home]
         # amount of RSS pages
-        rss = 10
+        rss = 999
         # Home page profile
         [languages.en.params.home.profile]
           enable = true
@@ -310,7 +310,7 @@ timeout = 60000000
     # date format (month and day)
     dateFormat = "01-02"
     # amount of RSS pages
-    rss = 10
+    rss = 999
 
   # List (category or tag) page config
   [params.list]
@@ -319,7 +319,7 @@ timeout = 60000000
     # date format (month and day)
     dateFormat = "01-02"
     # amount of RSS pages
-    rss = 10
+    rss = 999
 
   # Page config
   [params.page]
