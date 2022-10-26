@@ -68,14 +68,6 @@ timeout = 60000000
         title = "Photo"
         weight = 4
       [[languages.en.menu.main]]
-        identifier = "bookmarks"
-        pre = "<i class='fas fa-bookmark'></i>"
-        post = ""
-        name = "Bookmarks"
-        url = "/my-bookmarks/"
-        title = "Bookmarks"
-        weight = 5
-      [[languages.en.menu.main]]
         identifier = "Pypi"
         pre = "<i class='fab fa-python fa-fw'></i>"
         post = ""
