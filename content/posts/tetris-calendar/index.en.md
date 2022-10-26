@@ -34,7 +34,7 @@ img {
 </style>
 
 
- I'd like to thank Tetris for making me really good at loading my dishwasher. I'd like to thank Tetris for making me really good at scheduling my meetings.
+I'd like to thank Tetris for making me really good at scheduling my meetings.
 
 <!--more-->
 
