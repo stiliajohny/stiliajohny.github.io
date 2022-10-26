@@ -2,8 +2,8 @@
 title: "Calendar Tetris"
 date: 2022-10-26
 author: "John Stilia"
-categories: ["calendar", "Mental Health"]
-tags: ["calendar", "Mental Health", "Meetings", "Productivity", "Time Management", "Tetris Effect"]
+categories: ["Calendar", "Mental Health"]
+tags: ["Calendar", "Mental Health", "Meetings", "Productivity", "Time Management", "Tetris Effect"]
 
 resources:
   - name: featured-image
