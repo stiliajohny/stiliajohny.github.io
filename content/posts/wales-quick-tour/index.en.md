@@ -90,7 +90,7 @@ From there, I had a pleasant ride around with the bike and started heading back 
 
 # Photo Gallery
 
-{{< gallery match="images/*" showExif="false" sortOrder="desc" loadJQuery="false" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'B-Roads' , tags: 'B-Roads' },{label: 'B-Roads', tags: 'B-Roads'}, {label: 'Bridge', tags: 'Bridge'}, {label: 'Camping', tags: 'Camping'},{label: 'Coffee', tags: 'Coffee'},{label: 'Farm', tags: 'Farm'},{label: 'Lake', tags: 'Lake'},{label: 'Night', tags: 'Night'},{label: 'Packing', tags: 'Packing'},{label: 'Riding', tags: 'Riding'},{label: 'River', tags: 'River'},{label: 'Sheeps', tags: 'Sheeps'},{label: 'Stars', tags: 'Stars'},{label: 'Sunset', tags: 'Sunset'},{label: 'Tent', tags: 'Tent'},{label: 'Wales', tags: 'Wales'},{label: 'XSR900', tags: 'XSR900'}]" >}}
+{{< gallery match="images/*" showExif="false" sortOrder="desc" loadJQuery="false" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'B-Roads', tags: 'B-Roads'}, {label: 'Bridge', tags: 'Bridge'}, {label: 'Camping', tags: 'Camping'},{label: 'Coffee', tags: 'Coffee'},{label: 'Farm', tags: 'Farm'},{label: 'Lake', tags: 'Lake'},{label: 'Night', tags: 'Night'},{label: 'Packing', tags: 'Packing'},{label: 'Riding', tags: 'Riding'},{label: 'River', tags: 'River'},{label: 'Sheeps', tags: 'Sheeps'},{label: 'Stars', tags: 'Stars'},{label: 'Sunset', tags: 'Sunset'},{label: 'Tent', tags: 'Tent'},{label: 'Wales', tags: 'Wales'},{label: 'XSR900', tags: 'XSR900'}]" >}}
 
 
 
