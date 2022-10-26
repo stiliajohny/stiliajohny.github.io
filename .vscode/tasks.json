@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Hugo Serve",
+      "type": "shell",
+      "command": "hugo server -v --buildDrafts -p 1313 --bind 127.0.0.1 --watch --enableGitInfo --ignoreCache",
+      "presentation": {
+        "reveal": "silent",
+      },
+      "runOptions": {
+        "runOn": "folderOpen",
+      }
+    },
+    {
+      "label": "Start Browser",
+      "type": "shell",
+      "command": "open http://127.0.0.1:1313",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "new"
+      },
+      "runOptions": {
+        "runOn": "folderOpen",
+      }
+    }
+  ]
+}
