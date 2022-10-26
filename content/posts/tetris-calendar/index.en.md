@@ -91,18 +91,6 @@ If a meeting is **60 minutes long**, you can **make it 50** minutes long. <br> s
 If a meeting is 30 minutes long, you can make it 20 minutes long, etc. <br>
 
 
-
-
-# The hiden issue - Mental Health
-
-The pandemic has made us all more aware of our mental health. We are all working from home, and we are all attending meetings. <br>
-Back in the office days, having a coffee with a colleague was a great opportunity to disconnect from work and recharge your batteries durring a busy day.
-
-Now it is impossible to disconnect from work. <br>
-There is **no shame** to say, I would rather take the time to recollect my day and come back fresh and ready to work. <br>
-
-Those 10 mins of water and reflection can make a huge difference in your day; dont be afraid to take them. <br>
-
 > "The best way to predict the future is to create it." - Abraham Lincoln
 
 
