@@ -63,7 +63,7 @@ Hitting Snowdonia with the Wife.
 {{< gpx-maps Bea-Bday-Day-1.gpx>}}
 
 <!-- add a download button for the gpx file-->
-[Download GPX file](./quick-tour-to-wales.gpx) | [Calimoto link](https://calimoto.com/calimotour/wales-trip-with-xsr900-r-H5OaldnSgr)
+[Download GPX file](./Bea-Bday-Day-1.gpx) | [Calimoto link](https://calimoto.com/calimotour/bea-bday-day-1-r-fgrS9AD29Y)
 
 - Start: 08:30
 - End: 17:00
