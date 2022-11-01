@@ -1,9 +1,9 @@
 ---
-title: "Wales 4 days round trip on a Tracer 9 GT"
+title: 'Wales 4 days round trip on a Tracer 9 GT'
 date: 2022-10-31
-author: "John Stilia"
-categories: ["Motorcycle", "Tournig"]
-tags: ["Motorcycle", "Touring", "Checklist", "Gear", "Packing", "Riding", "Tips", "Travel", "Trip"]
+author: 'John Stilia'
+categories: ['Motorcycle', 'Tournig']
+tags: ['Motorcycle', 'Touring', 'Checklist', 'Gear', 'Packing', 'Riding', 'Tips', 'Travel', 'Trip']
 
 resources:
   - name: featured-image
@@ -21,8 +21,6 @@ toc:
   auto: false
 comment:
   enable: true
-
-
 ---
 
 <style>
@@ -32,20 +30,29 @@ img {
     border-radius:10px;
 }
 </style>
+
 Hitting Snowdonia with the Wife.
 
 <!--more-->
 
+# The map
+
+{{< leaflet-map mapHeight="500px" mapWidth="100%" zoom="2" >}}
+{{< leaflet-track trackPath="Bea_Bday_Day_1.gpx" lineColor="#ff0080" lineWeight="2" >}}
+{{< leaflet-track trackPath="Bea_Bday_Day_2.gpx" lineColor="#ff0080" lineWeight="2" >}}
+{{< leaflet-track trackPath="Bea_bday_day_3.gpx" lineColor="#ff0080" lineWeight="2" >}}
+{{< leaflet-track trackPath="Bea_bday_day_4.gpx" lineColor="#ff0080" lineWeight="2" >}}
+{{< /leaflet-map >}}
 
 # Details
 
 - **How long is it?** 737 miles <br>
 - **How long does it take?** 21 hours <small>(without stops)</small><br>
 - **What is the best time of year?** Summer/Autumn <br>
-- **Approximate fuel cost:**  £54.30 <small> (fuel: £1.72L,MPG:52.3)</small><br>
-
+- **Approximate fuel cost:** £ #TODO add fuel total <small> (fuel: £1.72L,MPG:52.3)</small><br>
 
 **Accomodation:**
+
 - [Rustic Green Shepherds Hut under the Wenlock Edge](https://www.airbnb.co.uk/rooms/602604607035936002?guests=1&adults=1&s=67&unique_share_id=b7c7491c-5881-4df7-9d47-9c0f8cd535e9)
 - [Stacy's Waterfall Country Pods ](https://www.airbnb.co.uk/rooms/665720108188541492?guests=1&adults=1&s=67&unique_share_id=4275e7e5-c561-44a2-8059-15b021067584)
 
@@ -58,17 +65,6 @@ Hitting Snowdonia with the Wife.
 - Miles:
 - Fuel:
 
-### The map
-
-{{< gpx-maps Bea-Bday-Day-1.gpx>}}
-
-<!-- add a download button for the gpx file-->
-[Download GPX file](./Bea-Bday-Day-1.gpx) | [Calimoto link](https://calimoto.com/calimotour/bea-bday-day-1-r-fgrS9AD29Y)
-
-- Start: 08:30
-- End: 17:00
-- Fuel: # TODO add fuel consumption
-- Miles: 175
 ### The story
 
 The night before, we slept early, ready for the next adventurous morning. The luggage was packed, except for some items we would use in the morning.
@@ -84,9 +80,24 @@ We stopped, parked the motorbike at the local parking and headed to the closest 
 Finishing our lunch, at around four, two hours later, we start heading towards our accommodation for the night.<br>
 Next stop, the [Rustic Green Shepherds Hut under the Wenlock Edge](https://www.airbnb.co.uk/rooms/602604607035936002?guests=1&adults=1&s=67&unique_share_id=b7c7491c-5881-4df7-9d47-9c0f8cd535e9). We were there by five. We were both tired, and we were both hungry. We had a nice diner from the local petrol station and a couple of beers, and we headed to sleep early. <br>
 
-
-
 ## Day 2
+
+- Start: 10:00
+- End:
+- Miles:
+- Fuel:
+
+### The story
+
+We started the day early. None of us slept well overnight. The time was around five in the morning when we woke up as the cold was getting worst. The wind was whistling through the woods, and the rain was aggressively striking the Shepherds Hut roof all night. <br>
+
+I put some wood in the stove and started the fire; before we knew it, the Hut was warm enough to start moving again. We had a long day ahead. I made some coffee and started looking at the plans for the day. The SatNav showed approximately 160 miles, around four hours, with no stops. But I knew if we left at eight, we wouldn't finish the day before six in the evening. It's easy to double your journey, with some stops for pictures, a couple of coffees, and some food; the time adds up before you know it.
+
+We quickly packed our bags and got ready. We hit the road by nine o'clock, heading to Snowdonia. Today was the day that we would do the Walles Loop ride. It was a must for a rider to do that at least once. It was better to make an early start.
+
+The first stop was the Chainbridge in Llantysilio, where the A5 meets B5103. A great bridge near by the Horseshoe Falls. An excellent destination if you like river kayaking. After a quick stop, a couple of pictures, and some rain and cold, we continued our journey. We headed towards the Horseshoe Pass viewpoint. <br>
+
+As we got closer to the viewpoint, the fog became thicker and thicker. There was also some rain, but very thin, just enough to fall through the dense fog. Riding in these conditions was unsafe; I turned the indicators on and rode slower than usual. After ten minutes in this fog, I couldn't see in front of me for 100 yards. We had to stop. We were cold but not wet; the rainproofs kept the water out. There was a good investment if you ask me. Not the pretiest to wear, btu the dryest of al other options.
 
 ## Day 3
 
@@ -98,16 +109,9 @@ Next stop, the [Rustic Green Shepherds Hut under the Wenlock Edge](https://www.a
 
 # The challenge
 
-
-
-
 # Photo Gallery
 
 {{< gallery match="images/*" showExif="false" sortOrder="desc" loadJQuery="false" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'Day 1', tags: 'Day1'}]" >}}
-
-
-
-
 
 # References
 

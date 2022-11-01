@@ -68,7 +68,7 @@
     drawTrack(trackOpts, elevationOpts, markerOpts);
 </script>
 
-<div class="download-track" onclick="downloadFile('{{ "gpx" | absURL }}/{{ $trackPath }}');"><p class="download-track-link"><b>Download</b> {{ $trackPath }}</p></div>
+<div class="download-track" onclick="downloadFile('{{ "gpx" | absURL }}/{{ $trackPath }}');"><p class="download-track-link"><b>Download: </b> {{ $trackPath }}</p></div>
 
 {{ else }}
 {{ errorf "Leaflet Hugo Shortcode: impossible using track outside leaflet-map" }}

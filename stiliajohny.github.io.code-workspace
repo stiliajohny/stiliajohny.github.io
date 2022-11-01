@@ -29,10 +29,6 @@
       "**/.svn": true,
       "**/Thumbs.db": true,
       "**/node_modules": true,
-      "**/public": true,
-      "**/resources": true,
-      "**/static": true,
-      "**/themes": true
     },
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
@@ -74,5 +70,4 @@
       }
     ]
   },
-
 }

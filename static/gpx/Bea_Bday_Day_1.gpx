@@ -1,110 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gpx version="1.1" xmlns="http://www.topografix.com/GPX/1/1" creator="https://calimoto.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.topografix.com/GPX/1/1/gpx.xsd">
     <metadata>
-        <name>Bea Bday Day 1</name>
+        <name>Bea-Bday-Day-1-Pods-Home-M4</name>
         <desc></desc>
         <author>
-            <name>Created by stilia.johny</name>
+            <name>Discovered by stilia.johny</name>
             <link href="https://calimoto.com"/>
         </author>
     </metadata>
-    <wpt lat="51.478973" lon="-0.27812"/>
-    <wpt lat="52.005957" lon="-1.281263"/>
-    <wpt lat="51.984686" lon="-1.901643"/>
-    <wpt lat="52.245812" lon="-2.383358"/>
-    <wpt lat="52.297457" lon="-2.526465"/>
-    <wpt lat="52.463912" lon="-2.734706"/>
-    <wpt lat="52.529006" lon="-2.701864"/>
-    <rte>
-        <name>Bea Bday Day 1</name>
-        <rtept lat="51.478972" lon="-0.278121"/>
-        <rtept lat="51.474221" lon="-0.275599"/>
-        <rtept lat="51.473223" lon="-0.276301"/>
-        <rtept lat="51.489114" lon="-0.287406"/>
-        <rtept lat="51.490102" lon="-0.285631"/>
-        <rtept lat="51.491402" lon="-0.282659"/>
-        <rtept lat="51.491823" lon="-0.282316"/>
-        <rtept lat="51.529783" lon="-0.293011"/>
-        <rtept lat="51.52994" lon="-0.293873"/>
-        <rtept lat="51.731579" lon="-1.074456"/>
-        <rtept lat="51.942014" lon="-1.202621"/>
-        <rtept lat="51.946668" lon="-1.207591"/>
-        <rtept lat="51.947203" lon="-1.207524"/>
-        <rtept lat="51.957739" lon="-1.202727"/>
-        <rtept lat="51.9579" lon="-1.202818"/>
-        <rtept lat="52.005203" lon="-1.281724"/>
-        <rtept lat="52.00535" lon="-1.281685"/>
-        <rtept lat="52.005424" lon="-1.281849"/>
-        <rtept lat="52.005956" lon="-1.281263"/>
-        <rtept lat="52.005424" lon="-1.281849"/>
-        <rtept lat="52.00535" lon="-1.281685"/>
-        <rtept lat="52.005203" lon="-1.281724"/>
-        <rtept lat="52.01886" lon="-1.310653"/>
-        <rtept lat="52.008158" lon="-1.316151"/>
-        <rtept lat="52.014623" lon="-1.37553"/>
-        <rtept lat="52.016102" lon="-1.376204"/>
-        <rtept lat="52.010024" lon="-1.385672"/>
-        <rtept lat="52.008176" lon="-1.406841"/>
-        <rtept lat="52.001978" lon="-1.521609"/>
-        <rtept lat="51.985065" lon="-1.531289"/>
-        <rtept lat="51.97874" lon="-1.556711"/>
-        <rtept lat="51.978942" lon="-1.557241"/>
-        <rtept lat="51.957549" lon="-1.607229"/>
-        <rtept lat="51.957732" lon="-1.608759"/>
-        <rtept lat="51.929243" lon="-1.725042"/>
-        <rtept lat="51.932368" lon="-1.724187"/>
-        <rtept lat="51.932903" lon="-1.724582"/>
-        <rtept lat="51.984686" lon="-1.901644"/>
-        <rtept lat="51.990298" lon="-1.931521"/>
-        <rtept lat="51.990327" lon="-1.931861"/>
-        <rtept lat="52.00376" lon="-2.053468"/>
-        <rtept lat="52.003865" lon="-2.054252"/>
-        <rtept lat="51.996191" lon="-2.122366"/>
-        <rtept lat="51.997038" lon="-2.124509"/>
-        <rtept lat="52.164106" lon="-2.184616"/>
-        <rtept lat="52.168541" lon="-2.181569"/>
-        <rtept lat="52.169183" lon="-2.181629"/>
-        <rtept lat="52.172111" lon="-2.18461"/>
-        <rtept lat="52.172147" lon="-2.184813"/>
-        <rtept lat="52.16805" lon="-2.200734"/>
-        <rtept lat="52.167649" lon="-2.202339"/>
-        <rtept lat="52.16728" lon="-2.202951"/>
-        <rtept lat="52.1633" lon="-2.215131"/>
-        <rtept lat="52.163081" lon="-2.216106"/>
-        <rtept lat="52.167659" lon="-2.241978"/>
-        <rtept lat="52.167704" lon="-2.243039"/>
-        <rtept lat="52.181025" lon="-2.256566"/>
-        <rtept lat="52.181082" lon="-2.25756"/>
-        <rtept lat="52.188274" lon="-2.265871"/>
-        <rtept lat="52.188705" lon="-2.266547"/>
-        <rtept lat="52.190026" lon="-2.274803"/>
-        <rtept lat="52.201602" lon="-2.289886"/>
-        <rtept lat="52.209689" lon="-2.27426"/>
-        <rtept lat="52.237395" lon="-2.36254"/>
-        <rtept lat="52.245811" lon="-2.383359"/>
-        <rtept lat="52.297456" lon="-2.526466"/>
-        <rtept lat="52.311191" lon="-2.593685"/>
-        <rtept lat="52.314532" lon="-2.594523"/>
-        <rtept lat="52.315891" lon="-2.598665"/>
-        <rtept lat="52.343373" lon="-2.587903"/>
-        <rtept lat="52.374562" lon="-2.600322"/>
-        <rtept lat="52.376096" lon="-2.606367"/>
-        <rtept lat="52.353697" lon="-2.661836"/>
-        <rtept lat="52.352445" lon="-2.673624"/>
-        <rtept lat="52.364463" lon="-2.694505"/>
-        <rtept lat="52.36475" lon="-2.69484"/>
-        <rtept lat="52.375933" lon="-2.702467"/>
-        <rtept lat="52.376138" lon="-2.702931"/>
-        <rtept lat="52.38859" lon="-2.743087"/>
-        <rtept lat="52.454731" lon="-2.756982"/>
-        <rtept lat="52.464324" lon="-2.735748"/>
-        <rtept lat="52.463911" lon="-2.734707"/>
-        <rtept lat="52.464324" lon="-2.735748"/>
-        <rtept lat="52.510247" lon="-2.667191"/>
-        <rtept lat="52.53868" lon="-2.677587"/>
-        <rtept lat="52.531068" lon="-2.705084"/>
-        <rtept lat="52.529005" lon="-2.701864"/>
-    </rte>
     <trk>
         <name>Bea Bday Day 1</name>
         <trkseg>

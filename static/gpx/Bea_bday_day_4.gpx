@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gpx version="1.1" xmlns="http://www.topografix.com/GPX/1/1" creator="https://calimoto.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.topografix.com/GPX/1/1/gpx.xsd">
     <metadata>
-        <name>Tour of 2022-10-31</name>
+        <name>Bea-Bday-Day-1-Pods-Home-M4</name>
         <desc></desc>
         <author>
             <name>Discovered by stilia.johny</name>
             <link href="https://calimoto.com"/>
         </author>
     </metadata>
-    <wpt lat="51.75959407891082" lon="-3.5825000860859295"/>
-    <wpt lat="51.476839462025396" lon="-0.2818456126552571"/>
     <trk>
-        <name>Tour of 2022-10-31</name>
         <trkseg>
             <trkpt lat="51.75959407891082" lon="-3.5825000860859295"/>
             <trkpt lat="51.75953109043566" lon="-3.5826518126405564"/>
@@ -9092,21 +9089,7 @@
             <trkpt lat="51.42471062508368" lon="-0.8706335484957185"/>
             <trkpt lat="51.42477516729375" lon="-0.8702219636607876"/>
             <trkpt lat="51.42484280319332" lon="-0.8698073314633051"/>
-            <trkpt lat="51.424912216810576" lon="-0.8693907923170652"/>
-            <trkpt lat="51.4249882564496" lon="-0.8689860931833011"/>
-            <trkpt lat="51.478241663118304" lon="-0.28145601226746875"/>
-            <trkpt lat="51.47807298616091" lon="-0.2814771957485773"/>
-            <trkpt lat="51.47796747547172" lon="-0.2815137785074498"/>
-            <trkpt lat="51.47785355084633" lon="-0.2815556865387079"/>
-            <trkpt lat="51.477741591121195" lon="-0.2815987952731782"/>
-            <trkpt lat="51.477619469032646" lon="-0.2816451904245965"/>
-            <trkpt lat="51.477501557127745" lon="-0.28168613988517743"/>
-            <trkpt lat="51.47738371279212" lon="-0.2817273276020028"/>
-            <trkpt lat="51.47726932814894" lon="-0.2817627829764705"/>
-            <trkpt lat="51.47715874081002" lon="-0.28179509543517284"/>
-            <trkpt lat="51.477050757464" lon="-0.28182089558376555"/>
-            <trkpt lat="51.47694532248393" lon="-0.28184496462730374"/>
-            <trkpt lat="51.476839462025396" lon="-0.2818456126552571"/>
+
         </trkseg>
     </trk>
 </gpx>
