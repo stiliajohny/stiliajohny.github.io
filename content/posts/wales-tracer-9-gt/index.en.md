@@ -41,6 +41,7 @@ Hitting Snowdonia with the Wife.
 {{< leaflet-track trackPath="Bea_Bday_Day_1.gpx" lineColor="#ff0080" lineWeight="2" >}}
 {{< leaflet-track trackPath="Bea_Bday_Day_2.gpx" lineColor="#ff0080" lineWeight="2" >}}
 {{< leaflet-track trackPath="Bea_bday_day_3.gpx" lineColor="#ff0080" lineWeight="2" >}}
+{{< leaflet-track trackPath="Bea_Bday_Day_3_early.gpx" lineColor="#ff0080" lineWeight="2" >}}
 {{< leaflet-track trackPath="Bea_bday_day_4.gpx" lineColor="#ff0080" lineWeight="2" >}}
 {{< /leaflet-map >}}
 
@@ -95,19 +96,43 @@ I put some wood in the stove and started the fire; before we knew it, the Hut wa
 
 We quickly packed our bags and got ready. We hit the road by nine o'clock, heading to Snowdonia. Today was the day that we would do the Walles Loop ride. It was a must for a rider to do that at least once. It was better to make an early start.
 
-The first stop was the Chainbridge in Llantysilio, where the A5 meets B5103. A great bridge near by the Horseshoe Falls. An excellent destination if you like river kayaking. After a quick stop, a couple of pictures, and some rain and cold, we continued our journey. We headed towards the Horseshoe Pass viewpoint. <br>
+The first stop was the Chainbridge in Llantysilio, where the A5 meets B5103. A great bridge nearby the Horseshoe Falls. An excellent destination if you like river kayaking. After a quick stop, a couple of pictures, and some rain and cold. We headed towards the Horseshoe Pass viewpoint. <br>
 
-As we got closer to the viewpoint, the fog became thicker and thicker. There was also some rain, but very thin, just enough to fall through the dense fog. Riding in these conditions was unsafe; I turned the indicators on and rode slower than usual. After ten minutes in this fog, I couldn't see in front of me for 100 yards. We had to stop. We were cold but not wet; the rainproofs kept the water out. There was a good investment if you ask me. Not the pretiest to wear, btu the dryest of al other options.
+As we got closer to the viewpoint, the fog became thicker and thicker. There was also some rain, but very thin, just enough to fall through the dense fog. Riding in these conditions was unsafe; I turned the indicators on and rode slower than usual. After ten minutes in this fog, I couldn't see in front of me for 100 yards. We had to stop. We were cold but not wet; the rainproofs kept the water out. There was a good investment if you ask me. Not the prettiest to wear, but it is the dryest of all other options.
 
 ## Day 3
 
+- Start: 10:00
+- End:
+- Miles:
+- Fuel:
+
+### The story
+
 ## Day 4
+
+- Start: 10:00
+- End:
+- Miles:
+- Fuel:
+
+### The story
 
 # The gear
 
-# The bike
+## Bike
 
-# The challenge
+- Yamaha tracer 9 GT 2022
+
+## Clothing
+
+- Alpinestars Andes V3 Drystar Adventure Tourer ( jacket and trousers)
+- TCX Boots (X-Street Waterproof)
+- Oxford Rainproof Gloves
+- Shoei Neotec 2 Helmet
+- Sena SLR Bluetooth Headset
+
+# What did I learn?
 
 # Photo Gallery
 
