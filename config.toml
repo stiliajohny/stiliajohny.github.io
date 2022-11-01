@@ -242,7 +242,7 @@ timeout = 60000000
   # LoveIt theme version
   version = "0.2.X"
   # site default theme ("light", "dark", "auto")
-  defaultTheme = "auto"
+  defaultTheme = "dark"
   # public git repo url only then enableGitInfo is true
   gitRepo = "https://github.com/stiliajohny/stiliajohny.github.io"
   # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
