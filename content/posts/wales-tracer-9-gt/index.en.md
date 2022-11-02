@@ -39,7 +39,7 @@ Hitting Snowdonia with the Wife.
 
 add the lat and log of london
 
-{{< leaflet-map mapHeight="500px" mapWidth="100%" mapLat="51.5072" mapLog="0.1276" zoom="10" >}}
+{{< leaflet-map mapHeight="500px" mapWidth="100%" mapLat="51.6214" mapLog="3.9436" zoom="10" >}}
 
 {{< leaflet-track trackPath="Bea_Bday_Day_1.gpx" lineColor="#ff0080" lineWeight="2" >}}
 
@@ -173,3 +173,7 @@ As we were both tired. We had a nice dinner from the local Hotel and a couple of
 # Photo Gallery
 
 {{< gallery match="images/*" showExif="false" sortOrder="desc" loadJQuery="false" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'Wales Trip', tags: 'Wales-Trip'}, {label: 'Day 1', tags: 'Day1'}, {label: 'Day 2', tags: 'Day2'},{label: 'Day 3', tags: 'Day3'}]" >}}
+
+# Video
+
+{{< youtube NlgotJuacEs >}}
