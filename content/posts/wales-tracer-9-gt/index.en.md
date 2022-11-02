@@ -37,60 +37,68 @@ Hitting Snowdonia with the Wife.
 
 # The map
 
-{{< leaflet-map mapHeight="500px" mapWidth="100%" zoom="2" >}}
+add the lat and log of london
+
+{{< leaflet-map mapHeight="500px" mapWidth="100%" mapLat="51.5072" mapLog="0.1276" zoom="10" >}}
+
 {{< leaflet-track trackPath="Bea_Bday_Day_1.gpx" lineColor="#ff0080" lineWeight="2" >}}
+
 {{< leaflet-track trackPath="Bea_Bday_Day_2.gpx" lineColor="#ff0080" lineWeight="2" >}}
 {{< leaflet-track trackPath="Bea_bday_day_3.gpx" lineColor="#ff0080" lineWeight="2" >}}
 {{< leaflet-track trackPath="Bea_Bday_Day_3_early.gpx" lineColor="#ff0080" lineWeight="2" >}}
 {{< leaflet-track trackPath="Bea_bday_day_4.gpx" lineColor="#ff0080" lineWeight="2" >}}
+
 {{< /leaflet-map >}}
 
 # Details
 
-- **How long is it?** 737 miles <br>
+- **How long is it?** 532 miles <br>
 - **How long does it take?** 21 hours <small>(without stops)</small><br>
 - **What is the best time of year?** Summer/Autumn <br>
-- **Approximate fuel cost:** £ #TODO add fuel total <small> (fuel: £1.72L,MPG:52.3)</small><br>
+- **Approximate fuel cost:** £70 (fuel: £1.72L,MPG:52.3)</small><br>
 
 **Accomodation:**
 
 - [Rustic Green Shepherds Hut under the Wenlock Edge](https://www.airbnb.co.uk/rooms/602604607035936002?guests=1&adults=1&s=67&unique_share_id=b7c7491c-5881-4df7-9d47-9c0f8cd535e9)
+- Private AirBnB
 - [Stacy's Waterfall Country Pods ](https://www.airbnb.co.uk/rooms/665720108188541492?guests=1&adults=1&s=67&unique_share_id=4275e7e5-c561-44a2-8059-15b021067584)
 
 # The journey
 
 ## Day 1 - 28 Oct 2022
 
+### Details
+
 - Start: 08:34 BST
 - End: 18:16 BST
 - Miles: 216
-- Fuel: #TODO calculate the fuel price
 
 ### The story
 
 The night before, we slept early, ready for the next adventurous morning. The luggage was packed, except for some items we would use in the morning.
-We set the alarm for 7:00, but we snoozed it till 7:30. <br>
+We set the alarm for 7:00, but we slept till 7:30. <br>
 
-Visiting the countryside of the UK is different from most. My wife, Beatriz, and I were getting ready for four days long weekend adventure. All the way up to Wales and back. Going through valleys and mountains and enjoying the beautiful scenery.
+Visiting the countryside of the UK is different from most. My wife, Beatriz, and I were preparing for a four-day weekend adventure. All the way up to Wales and back. Going through valleys and mountains and enjoying the beautiful scenery.
 
 At around 8:00, we were both ready. All dressed up for a long journey and ready to hit the road. The next stop was the [SIFT Bakes & Brews](https://www.siftcakes.co.uk/) for a nice coffee and a pastry. I did the same last year when I went to Wales, and I was not disappointed. The coffee was great, and the pastry was delicious. I had a chocolate croissant, and my wife had a blueberry muffin. We both enjoyed it.<br>
 Helmets on, sync the audio and go. It took us about one hour and fifteen minutes to arrive at our next destination. [The Pig Place](https://thepigplace.co.uk/) is a great and different canalside camping and farm shop with a cafe serving breakfast and lunch. We grabbed a coffee and an egg and bacon sandwich. The coffee was great, and the sandwich was delicious. Beatriz, My wide, was enjoying a nice vegetarian breakfast. With a nice cup of coffee next to the canal. <br>
 After about 30 minutes, we started heading to our next destination; unsure where that was, we followed the GPS. We were heading to [Rustic Green Shepherds Hut under the Wenlock Edge](https://www.airbnb.co.uk/rooms/602604607035936002?guests=1&adults=1&s=67&unique_share_id=b7c7491c-5881-4df7-9d47-9c0f8cd535e9). We were not sure if we would make it before dark, but we were not in a hurry. We enjoyed the ride and the beautiful scenery. We were heading to the [Wenlock Edge](https://en.wikipedia.org/wiki/Wenlock_Edge), a 40-mile (64 km) long escarpment in Shropshire, England. The edge is formed by the Wenlock Limestone Formation, which is part of the Silurian Wenlock Series. The edge is a popular area for walkers and cyclists and is a Site of Special Scientific Interest (SSSI). <br>
-My wife was getting tired at around two o'clock, so we stopped for a break. We found a nice spot, and we had a nice break. We had a nice cup of tea and a nice sandwich. We were both feeling better. We found ourselves in a small ancient market town situated northwest of Worcestershire on the A456 road. Tenbury Wells is a small town with a population of about 3,000. It is a popular tourist destination with several attractions, including the Tenbury Museum, the Tenbury Pump Room, and the Tenbury Wells Golf Club. <br>
+My wife was tired at around two o'clock, so we stopped for a break. We found a nice spot, and we had a nice break. We had a nice cup of tea and a nice sandwich. We were both feeling better. We found ourselves in a small ancient market town northwest of Worcestershire on the A456 road. Tenbury Wells is a small town with a population of about 3,000. It is a popular tourist destination with several attractions, including the Tenbury Museum, the Tenbury Pump Room, and the Tenbury Wells Golf Club. <br>
 We stopped, parked the motorbike at the local parking and headed to the closest cafe. [Mr Thoms](www.Mr-Thoms-finest-handmade-chocolate.myshopify.com) is a lovely place to have a nice cup of tea and a nice sandwich. It is also a great place to get some handmade crafted Belgian chocolate.
 Finishing our lunch, at around four, two hours later, we start heading towards our accommodation for the night.<br>
-Next stop, the [Rustic Green Shepherds Hut under the Wenlock Edge](https://www.airbnb.co.uk/rooms/602604607035936002?guests=1&adults=1&s=67&unique_share_id=b7c7491c-5881-4df7-9d47-9c0f8cd535e9). We were there by five. We were both tired, and we were both hungry. We had a nice diner from the local petrol station and a couple of beers, and we headed to sleep early. <br>
+Next stop, the [Rustic Green Shepherds Hut under the Wenlock Edge](https://www.airbnb.co.uk/rooms/602604607035936002?guests=1&adults=1&s=67&unique_share_id=b7c7491c-5881-4df7-9d47-9c0f8cd535e9). We were there by five. We were both tired, and we were both hungry. We had a nice dinner from the local petrol station and a couple of beers and headed to sleep early. <br>
 
 ## Day 2 - 29 Oct 2022
+
+### Details
 
 - Start: 07:50 BST
 - End: 21:00 BST
 - Miles: 162
-- Fuel: #TODO calculate the cost
 
 ### The story
 
-We started the day early. None of us slept well overnight. The time was around five in the morning when we woke up as the cold was getting worst. The wind was whistling through the woods, and the rain was aggressively striking the Shepherds Hut roof all night. <br>
+We started the day early. None of us slept well overnight. The time was around five in the morning when we woke up as the cold was getting worst. The wind whistled through the woods, and the rain aggressively struck the Shepherds Hut roof all night. <br>
 
 I put some wood in the stove and started the fire; before we knew it, the Hut was warm enough to start moving again. We had a long day ahead. I made some coffee and started looking at the plans for the day. The SatNav showed approximately 160 miles, around four hours, with no stops. But I knew if we left at eight, we wouldn't finish the day before six in the evening. It's easy to double your journey, with some stops for pictures, a couple of coffees, and some food; the time adds up before you know it.
 
@@ -105,7 +113,7 @@ Somewhere that we would have a worm tea and something to eat.
 We made a stop at the [Rhug Estate](https://rhug.co.uk/). A lovely Organic Farm and Cafe.
 Our gloves were soaking wet, and we were a bit cold. The time was about noon, and we were both a bit hungry. We had a nice cup of tea and a nice sandwich. We were both feeling better. <br>
 
-We then continue our journey with the next stop bringing us next to a magnificent lake, the []Lake Mair](https://en.wikipedia.org/wiki/Llyn_Mair). A beautiful lake with a nice view. We stopped for a couple of pictures and a quick break. <br>
+We then continue our journey with the next stop bringing us next to a magnificent lake, [Lake Mair](https://en.wikipedia.org/wiki/Llyn_Mair). A beautiful lake with a nice view. We stopped for a couple of pictures and a quick break. <br>
 Then we headed to our final two hours ride towards our AirBNB for the night. We were both tired and hungry. We had a nice dinner from the local Hotel and a couple of beers and headed to sleep early. <br>
 
 ## Day 3 - 30 Oct 2022
@@ -113,9 +121,10 @@ Then we headed to our final two hours ride towards our AirBNB for the night. We 
 - Start: 08:17 BST
 - End: 18:13 BST
 - Miles: 154
-- Fuel: #TODO calculate the cost
 
 ### The story
+
+Probably the best day of the trip. We started the day early.<br>
 
 # The gear
 
@@ -145,10 +154,8 @@ Then we headed to our final two hours ride towards our AirBNB for the night. We 
 
 # Photo Gallery
 
-{{< gallery match="images/*" showExif="false" sortOrder="desc" loadJQuery="false" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'Day 1', tags: 'Day1'}]" >}}
+{{< gallery match="images/*" showExif="false" sortOrder="desc" loadJQuery="false" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'Wales Trip', tags: 'Wales-Trip'}, {label: 'Day 1', tags: 'Day1'}, {label: 'Day 2', tags: 'Day2'},{label: 'Day 3', tags: 'Day3'}]" >}}
 
 # References
 
-- <https://www.bennetts.co.uk/bikesocial/news-and-views/features/travel/what-are-the-best-motorcycle-routes-in-the-uk>
-- <https://www.facebook.com/groups/283734250214471>
-- <https://www.fleetnews.co.uk/costs/fuel-cost-calculator/?FuelType=Unleaded&PencePerLitre=172.84&Mileage=311&Mpg=45>
+-

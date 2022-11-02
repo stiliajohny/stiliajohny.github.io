@@ -2,7 +2,7 @@
 
 {{ $mapLat := default "" (.Get "mapLat") }}
 {{ $mapLon := default "" (.Get "mapLon") }}
-{{ $zoom := default "13" (.Get "zoom") }}
+{{ $zoom := default "10" (.Get "zoom") }}
 {{ $mapWidth := default "100%" (.Get "mapWidth") }}
 {{ $mapHeight := default "200px" (.Get "mapHeight") }}
 {{ $mapId := default (md5 (printf "%s%s" $mapLat $mapLon)) (.Get "mapId") }}
