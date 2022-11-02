@@ -244,7 +244,7 @@ timeout = 60000000
   # version = "0.1.X"
   # version = "1.0.X"
   # site default theme ("light", "dark", "auto")
-  defaultTheme = "auto"
+  defaultTheme = "dark"
   # public git repo url only then enableGitInfo is true
   gitRepo = "https://github.com/stiliajohny/stiliajohny.github.io"
   # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
