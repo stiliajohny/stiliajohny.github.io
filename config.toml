@@ -3,7 +3,7 @@ baseURL = "https://iusearchbtw.blog/"
 defaultContentLanguage = "en"
 # theme
 # theme = "LoveIt"
-theme = ["LoveIt", "hugo-shortcode-gallery"]
+theme = ["DoIt", "hugo-shortcode-gallery"]
 
 # website title
 title = "i use Arch btw (also, I use a macbook)"
@@ -117,9 +117,9 @@ timeout = 60000000
         # optional site title override for the app when added to an iOS home screen or Android launcher
         title = "i use Arch btw (also, I use a macbook)"
         # whether to omit favicon resource links
-        noFavicon = true
+        noFavicon = false
         # modern SVG favicon to use in place of older style .png and .ico files
-        svgFavicon = ""
+        svgFavicon = "https://avatars.githubusercontent.com/u/17669235?v=4"
         # Android browser theme color
         themeColor = "#ffffff"
         # Safari mask icon color
@@ -134,7 +134,7 @@ timeout = 60000000
         # max index length of the chunked content
         contentLength = 4000
         # placeholder of the search bar
-        placeholder = "Find Something"
+        placeholder = "Looking for Nemo?"
         # max number of results length
         maxResultLength = 10
         # snippet length of the result
@@ -163,7 +163,7 @@ timeout = 60000000
           # whether to show social links
           social = true
           # disclaimer (HTML format is supported)
-          disclaimer = ""
+          disclaimer = "All opinions are my own and do not reflect the opinions of my employer."
         # Home page posts
         [languages.en.params.home.posts]
           enable = true
@@ -241,6 +241,8 @@ timeout = 60000000
 [params]
   # LoveIt theme version
   version = "0.2.X"
+  # version = "0.1.X"
+  # version = "1.0.X"
   # site default theme ("light", "dark", "auto")
   defaultTheme = "dark"
   # public git repo url only then enableGitInfo is true
@@ -252,7 +254,7 @@ timeout = 60000000
   # website images for Open Graph and Twitter Cards
   images = ["card_image.png"]
 
-  galleryRowHeight    = 200
+  galleryRowHeight    = 500
   galleryMargins      = 10
   galleryResizeOptions= "800x800 q88"
   galleryPreviewType  = "blur"
