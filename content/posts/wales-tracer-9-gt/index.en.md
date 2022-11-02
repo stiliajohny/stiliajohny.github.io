@@ -1,5 +1,5 @@
 ---
-title: 'Wales 4 days round trip on a Tracer 9 GT'
+title: 'Wales 3 days round trip on a Tracer 9 GT'
 date: 2022-10-31
 author: 'John Stilia'
 categories: ['Motorcycle', 'Tournig']
@@ -59,12 +59,12 @@ Hitting Snowdonia with the Wife.
 
 # The journey
 
-## Day 1
+## Day 1 - 28 Oct 2022
 
-- Start: 10:00
-- End:
-- Miles:
-- Fuel:
+- Start: 08:34 BST
+- End: 18:16 BST
+- Miles: 216
+- Fuel: #TODO calculate the fuel price
 
 ### The story
 
@@ -81,12 +81,12 @@ We stopped, parked the motorbike at the local parking and headed to the closest 
 Finishing our lunch, at around four, two hours later, we start heading towards our accommodation for the night.<br>
 Next stop, the [Rustic Green Shepherds Hut under the Wenlock Edge](https://www.airbnb.co.uk/rooms/602604607035936002?guests=1&adults=1&s=67&unique_share_id=b7c7491c-5881-4df7-9d47-9c0f8cd535e9). We were there by five. We were both tired, and we were both hungry. We had a nice diner from the local petrol station and a couple of beers, and we headed to sleep early. <br>
 
-## Day 2
+## Day 2 - 29 Oct 2022
 
-- Start: 10:00
-- End:
-- Miles:
-- Fuel:
+- Start: 07:50 BST
+- End: 21:00 BST
+- Miles: 162
+- Fuel: #TODO calculate the cost
 
 ### The story
 
@@ -98,23 +98,22 @@ We quickly packed our bags and got ready. We hit the road by nine o'clock, headi
 
 The first stop was the Chainbridge in Llantysilio, where the A5 meets B5103. A great bridge nearby the Horseshoe Falls. An excellent destination if you like river kayaking. After a quick stop, a couple of pictures, and some rain and cold. We headed towards the Horseshoe Pass viewpoint. <br>
 
-As we got closer to the viewpoint, the fog became thicker and thicker. There was also some rain, but very thin, just enough to fall through the dense fog. Riding in these conditions was unsafe; I turned the indicators on and rode slower than usual. After ten minutes in this fog, I couldn't see in front of me for 100 yards. We had to stop. We were cold but not wet; the rainproofs kept the water out. There was a good investment if you ask me. Not the prettiest to wear, but it is the dryest of all other options.
+As we got closer to the viewpoint, the fog became thicker and thicker. There was also some rain, but very thin, just enough to fall through the dense fog. Riding in these conditions was unsafe; I turned the indicators on and rode slower than usual. After ten minutes in this fog, I couldn't see in front of me for 100 yards. We had to stop. We were cold but not wet; the rainproofs kept the water out. There was a good investment if you ask me. Not the prettiest to wear, but it is the dryest of all other options. <br>
 
-## Day 3
+As the fog cleared, we started cruising down towards our next stop.
+Somewhere that we would have a worm tea and something to eat.
+We made a stop at the [Rhug Estate](https://rhug.co.uk/). A lovely Organic Farm and Cafe.
+Our gloves were soaking wet, and we were a bit cold. The time was about noon, and we were both a bit hungry. We had a nice cup of tea and a nice sandwich. We were both feeling better. <br>
 
-- Start: 10:00
-- End:
-- Miles:
-- Fuel:
+We then continue our journey with the next stop bringing us next to a magnificent lake, the []Lake Mair](https://en.wikipedia.org/wiki/Llyn_Mair). A beautiful lake with a nice view. We stopped for a couple of pictures and a quick break. <br>
+Then we headed to our final two hours ride towards our AirBNB for the night. We were both tired and hungry. We had a nice dinner from the local Hotel and a couple of beers and headed to sleep early. <br>
 
-### The story
+## Day 3 - 30 Oct 2022
 
-## Day 4
-
-- Start: 10:00
-- End:
-- Miles:
-- Fuel:
+- Start: 08:17 BST
+- End: 18:13 BST
+- Miles: 154
+- Fuel: #TODO calculate the cost
 
 ### The story
 
@@ -132,7 +131,17 @@ As we got closer to the viewpoint, the fog became thicker and thicker. There was
 - Shoei Neotec 2 Helmet
 - Sena SLR Bluetooth Headset
 
-# What did I learn?
+## Accessories and gadgets
+
+- GoPRo Hero 10
+- Iphone 13 Pro Max
+- Samsung S21 Ultra
+
+# Lessons Learned
+
+- Always check the weather forecast before you go.
+- Always pack half of your given storage space.
+- Get a good waterproof suit, gloves and boots.
 
 # Photo Gallery
 
