@@ -43,10 +43,10 @@ add the lat and log of london
 
 {{< leaflet-track trackPath="Bea_Bday_Day_1.gpx" lineColor="#ff0080" lineWeight="2" >}}
 
-{{< leaflet-track trackPath="Bea_Bday_Day_2.gpx" lineColor="#ff0080" lineWeight="2" >}}
-{{< leaflet-track trackPath="Bea_bday_day_3.gpx" lineColor="#ff0080" lineWeight="2" >}}
-{{< leaflet-track trackPath="Bea_Bday_Day_3_early.gpx" lineColor="#ff0080" lineWeight="2" >}}
-{{< leaflet-track trackPath="Bea_bday_day_4.gpx" lineColor="#ff0080" lineWeight="2" >}}
+{{< leaflet-track trackPath="Walles_Day_2.gpx" lineColor="#ff0080" lineWeight="2" >}}
+{{< leaflet-track trackPath="Walles_day_3.gpx" lineColor="#ff0080" lineWeight="2" >}}
+{{< leaflet-track trackPath="Walles_Day_3_early.gpx" lineColor="#ff0080" lineWeight="2" >}}
+{{< leaflet-track trackPath="Walles_day_4.gpx" lineColor="#ff0080" lineWeight="2" >}}
 
 {{< /leaflet-map >}}
 
