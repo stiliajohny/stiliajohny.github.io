@@ -129,13 +129,13 @@ Then we headed to our final two hours ride towards our AirBNB for the night. We 
 The best day of the trip. We started the day early.<br>
 
 First, we went to the petrol station to fill the tank and check the bike.
-A quick check on the tyres' pressure and oil level, check the chain and the sprockets, check the luggage, and we were ready to go.
+A quick check on the tyres' pressure and oil level, checked the chain and the sprockets, checked the luggage, and we were ready to go.
 We hit the road by nine o'clock, heading to the South part of Snowdonia. We had a long day ahead. The SatNav showed approximately 150 miles, around four hours, with no stops. We first stopped at a Starbucks at Dolgellau. We grabbed a coffee and a pastry and hit the road again. <br>
 
 This time we headed to the Devil's Bridge.<br> The Devil's Bridge is a natural arch bridge in the Afon Dyfi, near Machynlleth, Wales. It is a popular tourist attraction, and the bridge is a Site of Special Scientific Interest (SSSI). <br> We stopped for a few pictures and a quick break. Some food to keep us going. <br>.
-We then head towards the National Cycle Route 81. <br>
+We then headed towards the National Cycle Route 81. <br>
 Leaving Devils Bridge, we took B4575 until it merged with the National Cycle Route 81. The views were amazing. The road was a bit bumpy, but it was a nice ride. <br>
-We then continiue into the A470 towards Builth Wells. We made a pitstop for fuel.
+We then continued into the A470 towards Builth Wells. We made a pitstop for fuel.
 
 After a few minutes of stretching and a quick break, we headed towards the last stretch of our journey through the Beacons National Park. <br>
 The weather was a bit rainy, but nothing to stop us. We saw rain, fog and wind on this trip. Our last stretch lasted for about one hour and 10 minutes. <br>
