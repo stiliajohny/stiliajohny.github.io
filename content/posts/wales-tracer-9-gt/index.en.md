@@ -113,7 +113,7 @@ Somewhere that we would have a warm tea and something to eat.
 We made a stop at the [Rhug Estate](https://rhug.co.uk/). A lovely Organic Farm and Cafe.
 Our gloves were soaking wet, and we were a bit cold. The time was about noon, and we were both a bit hungry. We had a nice cup of tea and a nice sandwich. We were both feeling better. <br>
 
-We then continue our journey with the next stop bringing us next to a magnificent lake, [Lake Mair](https://en.wikipedia.org/wiki/Llyn_Mair). A beautiful lake with a nice view. We stopped for a couple of pictures and a quick break. <br>
+We then continued our journey with the next stop bringing us next to a magnificent lake, [Lake Mair](https://en.wikipedia.org/wiki/Llyn_Mair). A beautiful lake with a nice view. We stopped for a couple of pictures and a quick break. <br>
 Then we headed to our final two hours ride towards our AirBNB for the night. We were both tired and hungry. We had a nice dinner from the local Hotel and a couple of beers and headed to sleep early. <br>
 
 ## Day 3 - 30 Oct 2022
