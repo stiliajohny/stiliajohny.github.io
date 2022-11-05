@@ -3,7 +3,7 @@ baseURL = "https://iusearchbtw.blog/"
 defaultContentLanguage = "en"
 # theme
 # theme = "LoveIt"
-theme = ["DoIt", "hugo-shortcode-gallery"]
+theme = ["LoveIt", "hugo-shortcode-gallery"]
 
 # website title
 title = "i use Arch btw (also, I use a macbook)"
