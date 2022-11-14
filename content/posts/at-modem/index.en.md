@@ -31,7 +31,7 @@ img {
 }
 </style>
 
-Sunday Night playing with AT commands and a SIM800L GSM modem
+Sunday night playing with AT commands and a SIM800L GSM modem.
 
 <!--more-->
 
