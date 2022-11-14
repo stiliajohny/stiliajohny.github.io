@@ -163,7 +163,7 @@ timeout = 60000000
           # whether to show social links
           social = true
           # disclaimer (HTML format is supported)
-          disclaimer = "All opinions are my own and do not reflect the opinions of my employer. <br><b><font color=red> This site runs Beef XSS on the client side, so don't click on anything you don't trust.</font></b>"
+          disclaimer = "All opinions are my own and do not reflect the opinions of my employer. <br><b><font color=red> This site might run Beef XSS on the client side, so don't click on anything you don't trust.</font></b>"
         # Home page posts
         [languages.en.params.home.posts]
           enable = true
