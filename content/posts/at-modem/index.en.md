@@ -1,5 +1,5 @@
 ---
-title: 'Playing with an GSM modem (SIM800L)'
+title: 'Playing with a GSM modem (SIM800L)'
 date: 2022-11-11
 author: 'John Stilia'
 categories: []
@@ -37,18 +37,18 @@ Sunday Night playing with AT commands and a SIM800L GSM modem
 
 # Introduction
 
-It has been a while that i bought a SIM800L GSM modem, but i never had the time to play with it. I was always busy with other projects, but this weekend i had some free time and i decided to play with it.
-The most challenging part is to work with AT commands as ther eis a massive list to go thought. I found a great website that has a list of AT commands for the SIM800L modem. I will use this website as a reference for the AT commands that i will use in this post.
+It has been a while since I bought a SIM800L GSM modem, but I needed more time to play with it. I was always busy with other projects, but I had some free time this weekend, and I decided to play with it.
+The most challenging part is to work with AT commands, as there is a massive list to go through. I found a great website with a list of AT commands for the SIM800L modem. I will use this website as a reference for the AT commands that I will use in this post.
 
 # Hardware
 
-The hardware that i used for this project is the following:
+The hardware that I used for this project is the following:
 
 - [SIM800L GSM modem](https://www.amazon.com/HiLetgo-Smallest-Breakout-Quad-band-3-7-4-2V/dp/B01DLIJM2E)
 - [USB to Serial converter](https://www.amazon.com/JANSANE-PL2303TA-Serial-Console-Raspberry/dp/B07D9R5JFK)
 - [Jumper wires](https://www.amazon.com/IZOKEE-Solderless-Breadboard-Arduino-Project/dp/B08151TQHG)
 
-If the power to the SIM800L is enough, the on-board LED starts blinking. If it is blinking every second, this means it is searching for a network. You will know if it's connected to the network when it blinks every three seconds. If the LED blinks very fast, this means it's connected through GPRS.
+If the power to the SIM800L is enough, the onboard LED starts blinking. If it blinks every second, it is searching for a network. You will know if it's connected to the network when it blinks every three seconds. If the LED blinks very fast, it's connected through GPRS.
 
 # Software
 
@@ -72,7 +72,7 @@ OK
 ## Check the modem
 
 Command: **AT+CGREG?** / **AT+CEREG**<br>
-Queries for the packet-switched network status. If the response is +CGREG: x, 5 or +CEREG: x,5 then you can jump ahead to step 5. The x in the x,5 part indicates the URC status and is not important for this step, the 5 indicates that the modem is registered to a network and is roaming. With Onomondo SIMs you will always be roaming which is why the response x,5 is always expected.
+Queries for the packet-switched network status. If the response is +CGREG: x, 5 or +CEREG: x,5, then you can jump ahead to step 5. The x in the x,5 part indicates the URC status and is not essential for this step; the 5 indicates that the modem is registered to a network and is roaming. With Onomondo SIMs, you will always be roaming, which is why the response x,5 is always expected.
 
 ```bash
 AT+CGREG?
@@ -118,7 +118,7 @@ OK
 ## Check the network selection mode
 
 Command: **AT+COPS?** <br>
-Checks if the modem is in automatic selection mode. Some modems are set by default and don't need to be set manually. If the response is anything other than +COPS: 0, you will need to set it to choose network operator automatically using AT+COPS=0.
+Checks if the modem is in automatic selection mode. Some modems are set by default and don't need to be set manually. If the response is anything other than +COPS: 0, you will need to set it to choose the network operator automatically using AT+COPS=0.
 
 Beware of manually using AT+COPS=0 and AT+COPS=2, however.
 
@@ -170,7 +170,7 @@ OK
 ## Repeat the last command
 
 Command: ATE1<br>
-This command will repeat the last command that was sent to the modem. This is useful if you want to repeat a command without having to type it again.
+This command will repeat the last command that was sent to the modem. This is useful if you want to repeat a command without typing it again.
 
 ```bash
 ATE1
@@ -189,7 +189,7 @@ OK
 ## Send SMS
 
 Command: **AT+CMGS="+447572785067"**<br>
-The +CMGS command is used to send SMS messages. The +CMGS command is followed by the phone number of the recipient. The phone number must be enclosed in double quotes. The phone number must be in international format. The +CMGS command is terminated by a carriage return (CR) character. The modem will then respond with >. This indicates that the modem is ready to receive the SMS message. The SMS message must be terminated by a CTRL+Z character. The modem will then respond with +CMGS: <message reference>, <message length>. The message reference is a number that uniquely identifies the SMS message. The message length is the length of the SMS message in bytes.
+The +CMGS command is used to send SMS messages. The +CMGS command is followed by the phone number of the recipient. The phone number must be enclosed in double quotes. The phone number must be in international format. The +CMGS command is terminated by a carriage return (CR) character. The modem will then respond with >. This indicates that the modem is ready to receive the SMS message. The SMS message must be terminated by a CTRL+Z character. The modem will then respond with +CMGS: <message reference>, <message length>. A message reference is a number that uniquely identifies the SMS message. The message length is the length of the SMS message in bytes.
 
 ```bash
 AT+CMGS="+447123456789"
