@@ -171,7 +171,7 @@ As we were both tired. We had a nice dinner from the local Hotel and a couple of
 
 # Photo Gallery
 
-{{< gallery match="images/*" showExif="false" sortOrder="desc" loadJQuery="false" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'Wales Trip', tags: 'Wales-Trip'}, {label: 'Day 1', tags: 'Day1'}, {label: 'Day 2', tags: 'Day2'},{label: 'Day 3', tags: 'Day3'}]" >}}
+{{< gallery match="images/*" showExif="false" sortOrder="desc" loadJQuery="false" embedPreview="true" filterOptions="[{label: 'All', tags: '.*'}, {label: 'Wales Trip', tags: 'Wales-Trip'}, {label: 'Day 1', tags: 'Day1'}, {label: 'Day 2', tags: 'Day2'},{label: 'Day 3', tags: 'Day3'}]" sortOrder="desc" rowHeight="100" margins="5" thumbnailResizeOptions="1024x768" showExif=false previewType="blur" embedPreview=true >}}
 
 # Video
 
