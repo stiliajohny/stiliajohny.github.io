@@ -1,4 +1,4 @@
-baseURL = "https://iusearchbtw.blog/"
+baseURL = "https://indraft.blog/"
 # [en, zh-cn, fr, pl, ...] determines default content language
 defaultContentLanguage = "en"
 # theme
@@ -232,7 +232,7 @@ timeout = 60000000
         XMPP = ""
         Matrix = ""
         Bilibili = ""
-        Email = "john.stilia@iusearchbtw.blog"
+        Email = "john.stilia@indraft.blog"
         RSS = true
 #        [languages.en.params.social.Mastodon]
 #          id = ""
@@ -600,7 +600,7 @@ timeout = 60000000
 # Author config
 [author]
   name = "John Stilia"
-  email = "john.stilia@iusearchbtw.blog"
+  email = "john.stilia@indraft.blog"
   link = ""
 
 # Sitemap config
