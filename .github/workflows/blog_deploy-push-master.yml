@@ -24,7 +24,7 @@ jobs:
           TOKEN: ${{ secrets.HUGO_TOKEN }}
           HUGO_EXTENDED: true
           # HUGO_ARGS: '-t academic'
-          CNAME: iusearchbtw.blog
+          CNAME: indraft.blog
 
   sitemap-ping:
     name: Google Sitemap Ping
@@ -37,7 +37,7 @@ jobs:
         env:
           MAP_URL: "NULL" # set custom URL if you use it
         run: |
-          BASE_URL="https://iusearchbtw.blog"
+          BASE_URL="https://indraft.blog"
           MAP_URL="${BASE_URL}/sitemap.xml"
           RSS_URL="${BASE_URL}/index.xml"
           sleep 3
