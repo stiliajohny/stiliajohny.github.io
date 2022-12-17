@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  hugo-deploy:
+  hugo-build:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-20.04
     steps:
@@ -21,7 +21,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install wget -y
-          wget https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_extended_0.108.0_Linux-64bit.tar.gz
+          wget -q https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_extended_0.108.0_Linux-64bit.tar.gz
           tar -xzf hugo_extended_0.108.0_Linux-64bit.tar.gz
           mv hugo /usr/local/bin
           hugo version
@@ -35,8 +35,22 @@ jobs:
           path: public
           retention-days: 1
 
+  commit_gh_pages:
+    name: Commit to gh-pages
+    runs-on: ubuntu-20.04
+    needs: hugo-build
+    steps:
+      - name: Download the site
+        uses: actions/download-artifact@v2
+        with:
+          name: hugo-site
+          path: public
 
-
+      - name: Install Hugo
+        env:
+          MAP_URL: "NULL" # set custom URL if you use it
+        run: |
+          ls -la
 
   #     - name: Deploy the site
   #       uses: benmatselby/hugo-deploy-gh-pages@main
