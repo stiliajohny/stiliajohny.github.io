@@ -19,8 +19,8 @@ jobs:
         env:
           MAP_URL: "NULL" # set custom URL if you use it
         run: |
-          apt update
-          apt install wget -y
+          sudo apt update
+          sudo apt install wget -y
           wget https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_0.108.0_Linux-64bit.tar.gz
           tar -xzf hugo_0.108.0_Linux-64bit.tar.gz
           mv hugo /usr/local/bin
