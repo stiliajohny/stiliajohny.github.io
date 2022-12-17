@@ -56,7 +56,7 @@ jobs:
           git init
           git add .
           git commit -m "Deploy to GitHub Pages"
-          git push --force --quiet "https://${{ github.token }}@github.com/stiliajohny/stiliajohny.github.io" master:gh-pages
+          git push --force --quiet "https://${{ secrets.HUGO_TOKEN }}@github.com/stiliajohny/stiliajohny.github.io" master:gh-pages
 
 
 
