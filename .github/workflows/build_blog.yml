@@ -100,13 +100,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Slack Notification
     needs: create-nojekyll
-
     steps:
-      # Set up the Slack action
-      - uses: actions/setup-slack-action@v1
-        with:
-          slack_token: ${{ secrets.SLACK_TOKEN }}
-      # Send the message to the Slack channel
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2
         env:
@@ -115,5 +109,5 @@ jobs:
           SLACK_ICON: https://github.com/rtCamp.png?size=48
           SLACK_MESSAGE: 'Post Content :rocket:'
           SLACK_TITLE: Post Title
-          SLACK_USERNAME: rtCamp
+          SLACK_USERNAME: "Hugo Deploy"
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
