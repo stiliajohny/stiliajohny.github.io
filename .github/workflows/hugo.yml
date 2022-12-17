@@ -63,7 +63,6 @@ jobs:
 
   # Deployment job
   deploy:
-    id: deploy
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -78,7 +77,7 @@ jobs:
 
   sitemap-ping:
     name: Google Sitemap Ping
-    needs: deploy
+    needs: deployment
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout Repository"
