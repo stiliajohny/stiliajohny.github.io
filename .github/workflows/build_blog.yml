@@ -25,8 +25,15 @@ jobs:
           tar -xzf hugo_extended_0.108.0_Linux-64bit.tar.gz
           mv hugo /usr/local/bin
           hugo version
-          ls
-          hugo -v
+          # build the site targeting the gh-pages branch
+          hugo -v --cleanDestinationDir --destination=public --baseURL=https://indraft.blog --config=config.toml
+
+      - name: Temporarily save the site
+        uses: actions/upload-artifact@v2
+        with:
+          name: hugo-site
+          path: public
+          retention-days: 1
 
 
 
