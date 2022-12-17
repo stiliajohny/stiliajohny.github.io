@@ -21,8 +21,8 @@ jobs:
         run: |
           sudo apt update
           sudo apt install wget -y
-          wget https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_0.108.0_Linux-64bit.tar.gz
-          tar -xzf hugo_0.108.0_Linux-64bit.tar.gz
+          wget https://github.com/gohugoio/hugo/releases/download/v0.108.0/hugo_extended_0.108.0_Linux-64bit.tar.gz
+          tar -xzf hugo_extended_0.108.0_Linux-64bit.tar.gz
           mv hugo /usr/local/bin
           hugo version
           ls
