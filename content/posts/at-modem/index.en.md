@@ -2,8 +2,8 @@
 title: 'Playing with a GSM modem (SIM800L)'
 date: 2022-11-11
 author: 'John Stilia'
-categories: []
-tags: []
+categories: [Hardware]
+tags: [Hardware, GSM, SIM800L, AT, Modem, Arduino, ESP32, ESP8266, Raspberry Pi]
 
 resources:
   - name: featured-image

@@ -2,7 +2,7 @@
 title: "Speed up Docker builds with a local cache proxy"
 date: 2022-05-05
 author: "John Stilia"
-categories: ["Docker", "Proxy"]
+categories: [DevOps]
 tags: ["Squid", "Docker", "Proxy", "Developement"]
 
 resources:

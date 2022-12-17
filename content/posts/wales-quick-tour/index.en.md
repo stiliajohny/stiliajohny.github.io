@@ -2,7 +2,7 @@
 title: "Quick Ride to Wales with XSR900"
 date: 2022-09-25
 author: "John Stilia"
-categories: ["Motorcycle", "Tournig"]
+categories: [Motorcycle]
 tags: ["Motorcycle", "Touring", "Checklist", "Gear", "Packing", "Riding", "Tips", "Travel", "Trip"]
 
 resources:

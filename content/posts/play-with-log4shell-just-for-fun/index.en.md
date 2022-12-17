@@ -3,7 +3,7 @@ title: 'Play with log4shell; just for fun.'
 date: 2021-12-12
 author: 'John Stilia'
 description: 'Log4Shell: RCE 0-day exploit in log4j 2, a Java logging package'
-categories: [Java, RCE, 0-day]
+categories: [Cyber Security]
 tags: [Java, 0-day, RCE, log4j, CVE-2021-44228, CVE]
 
 resources:

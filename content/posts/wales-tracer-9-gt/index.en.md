@@ -2,7 +2,7 @@
 title: 'Wales 3 days round trip on a Tracer 9 GT'
 date: 2022-10-31
 author: 'John Stilia'
-categories: ['Motorcycle', 'Tournig']
+categories: [Motorcycle]
 tags: ['Motorcycle', 'Touring', 'Checklist', 'Gear', 'Packing', 'Riding', 'Tips', 'Travel', 'Trip']
 
 resources:

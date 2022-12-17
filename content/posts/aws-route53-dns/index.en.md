@@ -2,7 +2,7 @@
 title: "Use AWS as DNS instead of your Domain Registrar (in simple steps)."
 date: 2022-09-11
 author: "John Stilia"
-categories: ["AWS", "DNS", Hosting]
+categories: [AWS]
 tags: ["AWS", "Route53", "DNS", "Hosting", "Domain", "Nameserver"]
 
 resources:

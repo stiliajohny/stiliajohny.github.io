@@ -2,7 +2,7 @@
 title: "Ways to Support Your Coworkers With ADHD v1.0"
 date: 2022-05-08
 author: "John Stilia"
-categories: ["ADHD", "Mental Health", "Neurodiversity"]
+categories: ["Mental Health"]
 tags: ["Mental Health", "Neurodiversity", "ADHD", "Coworkers", "Mental Support"]
 
 resources:

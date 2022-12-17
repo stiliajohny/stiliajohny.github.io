@@ -2,7 +2,7 @@
 title: "Mono-repo VS Multi-repo VS Poly-as-Mono"
 date: 2022-05-18
 author: "John Stilia"
-categories: ["Version Control", "Ways of Working"]
+categories: [DevOps]
 tags: ["Version Control", "Ways of Working", "Git", "DevOps", "Debate"]
 
 resources:

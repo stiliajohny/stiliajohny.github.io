@@ -2,7 +2,7 @@
 title: "Building a GPS tracker for fun and profit"
 date: 2022-08-29
 author: "John Stilia"
-categories: ["Hardware", "PCB"]
+categories: [Hardware]
 tags: ["GPS", "Tracker", "Hardware", "PCB", "Arduino", "ARM", "Microcontrolers", "Microprocessors"]
 
 resources:

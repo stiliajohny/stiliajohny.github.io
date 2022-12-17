@@ -2,9 +2,10 @@
 Title: Top Cloud Computing Services in 2022 with Prons and Cons
 date: 2022-11-05
 author: 'John Stilia'
+draft: true
 description: ''
-categories: ['Cloud']
-tags: []
+categories: [DevOps]
+tags: [Cloud Providers, Cloud Computing, Cloud Services]
 
 resources:
   - name: featured-image

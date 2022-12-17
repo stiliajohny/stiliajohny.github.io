@@ -2,7 +2,7 @@
 title: "[note to my self] AWS Route53 Health Check Monitoring"
 date: 2022-10-11
 author: "John Stilia"
-categories: ["AWS", "Terraform"]
+categories: [AWS]
 tags: ["AWS", "Terraform", "Route53", "Health Check", "CloudWatch", "SNS"]
 
 resources:

@@ -3,8 +3,8 @@ title: "Github Container Registry"
 date: 2021-08-17
 author: "John Stilia"
 description: "Containerize all the things and store them in GitHub Container Registry"
-categories: [Software, Container, Docker]
-tags: [GitHub, Dontainer, Docker, GHCR]
+categories: [DevOps]
+tags: [GitHub, Dontainer, Docker, GHCR, Container Registry, Containerize]
 
 resources:
   - name: "featured-image"

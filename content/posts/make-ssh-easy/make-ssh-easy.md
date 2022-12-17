@@ -3,7 +3,7 @@ Title: SSH made easy
 date: 2021-08-30
 author: "John Stilia"
 description: "Streamline your SSH workflow by PIMPing your SSH config"
-categories: [Software, Config, SSH, Linux]
+categories: [DevOps]
 tags: [Software, Config, SSH, Linux]
 
 # resources:

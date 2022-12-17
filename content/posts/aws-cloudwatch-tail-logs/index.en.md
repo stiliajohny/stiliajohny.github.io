@@ -3,7 +3,7 @@ title: "View AWS CLI logs in Real-Time"
 date: 2021-12-28
 author: "John Stilia"
 description: "Almost traditional log viewing in the AWS Console, but in real-time on your terminal!"
-categories: ["AWS", "CloudWatch"]
+categories: [AWS]
 tags: ["AWS", "CloudWatch", "Logs"]
 
 # resources:

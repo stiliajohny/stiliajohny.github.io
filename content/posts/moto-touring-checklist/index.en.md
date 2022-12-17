@@ -2,7 +2,7 @@
 title: "Motorcycle Touring Checklist"
 date: 2022-09-24
 author: "John Stilia"
-categories: ["Motorcycle", "Tournig"]
+categories: [Motorcycle]
 tags:
   [
     "Motorcycle",
