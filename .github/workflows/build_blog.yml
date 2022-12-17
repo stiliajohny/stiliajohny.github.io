@@ -40,23 +40,25 @@ jobs:
     needs: hugo-build
     steps:
       - name: Download the siten from the previous step
+        #  ignore failure
+
         uses: actions/download-artifact@v2
         with:
           name: hugo-site
           path: public
 
-      # Create the gh-pages branch if it doesn't exist
-      - run: git branch --orphan gh-pages
-      # Checkout the gh-pages branch
-      - run: git checkout gh-pages
-      # Remove all existing files from the branch
-      - run: git rm -rf .
-      # Add the contents of the folder to the staging area
-      - run: git add public/*
-      # Commit the changes with a message
-      - run: git commit -m "Committing folder to gh-pages branch"
-      # Push the changes to the gh-pages branch
-      - run: git push origin gh-pages
+      - name: Commit to gh-pages
+        run: |
+          # Set up git
+          git config --global user.name "stiliajohny"
+          git config --global user.email "stilia.john@gmail.com
+          cd public
+          git init
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+          git push --force --quiet "https://${{ github.token }}@github.com/stiliajohny/stiliajohny.github.io" master:gh-pages
+
+
 
       # delete-artifact
       - uses: geekyeggo/delete-artifact@v2
