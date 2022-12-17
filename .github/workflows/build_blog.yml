@@ -7,7 +7,7 @@ on:
 
 jobs:
   hugo-build:
-    name: Deploy to GitHub Pages
+    name: install hugo and build site
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
@@ -16,8 +16,6 @@ jobs:
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Install Hugo
-        env:
-          MAP_URL: "NULL" # set custom URL if you use it
         run: |
           sudo apt update
           sudo apt install wget -y
@@ -40,17 +38,21 @@ jobs:
     runs-on: ubuntu-20.04
     needs: hugo-build
     steps:
-      - name: Download the site
+      - name: Download the siten from the previous step
         uses: actions/download-artifact@v2
         with:
           name: hugo-site
           path: public
 
-      - name: Install Hugo
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
         env:
-          MAP_URL: "NULL" # set custom URL if you use it
-        run: |
-          ls -la
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: /
+          MESSAGE: "Deploy to GitHub Pages from master commit ${{ github.sha }}"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
   #     - name: Deploy the site
   #       uses: benmatselby/hugo-deploy-gh-pages@main
