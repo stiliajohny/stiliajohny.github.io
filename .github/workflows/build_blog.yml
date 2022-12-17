@@ -44,12 +44,12 @@ jobs:
           name: hugo-site
           path: public
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
           BRANCH: gh-pages
-          FOLDER: /
+          FOLDER: /public
           MESSAGE: "Deploy to GitHub Pages from master commit ${{ github.sha }}"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
