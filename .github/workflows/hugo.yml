@@ -63,6 +63,7 @@ jobs:
 
   # Deployment job
   deploy:
+    id: deploy
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -72,3 +73,54 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
+
+
+  sitemap-ping:
+    name: Google Sitemap Ping
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout Repository"
+        uses: actions/checkout@v2
+      - name: ping
+        env:
+          MAP_URL: "NULL" # set custom URL if you use it
+        run: |
+          BASE_URL="https://indraft.blog"
+          MAP_URL="${BASE_URL}/sitemap.xml"
+          RSS_URL="${BASE_URL}/index.xml"
+          sleep 3
+          curl -v "http://www.google.com/ping?sitemap=${MAP_URL}" &> /dev/null &
+          curl -v "http://www.bing.com/ping?sitemap=${RSS_URL}" &> /dev/null &
+          curl -v "http://www.google.com/ping?sitemap=${MAP_URL}" &> /dev/null &
+          curl -v "http://www.bing.com/ping?sitemap=${RSS_URL}" &> /dev/null &
+          wait
+          echo "Done"
+
+  create-nojekyll:
+    name: File .nojekyll
+    needs: sitemap-ping
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create .nojekyll file
+        uses: "finnp/create-file-action@master"
+        env:
+          FILE_NAME: ".nojekyll"
+          FILE_DATA: ""
+
+  slack-notification:
+    runs-on: ubuntu-latest
+    name: Slack Notification
+    needs: create-nojekyll
+    steps:
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: github
+          SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_MESSAGE: 'Deployed to GitHub Pages.\n check it out here: https://indraft.blog '
+          SLACK_TITLE: Deployment successful
+          SLACK_USERNAME: "Hugo Deploy"
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
