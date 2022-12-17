@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Deploy the site
-        uses: benmatselby/hugo-deploy-gh-pages@master
+        uses: benmatselby/hugo-deploy-gh-pages@main
         env:
           HUGO_VERSION: 0.91.2
           TARGET_REPO: stiliajohny/stiliajohny.github.io
