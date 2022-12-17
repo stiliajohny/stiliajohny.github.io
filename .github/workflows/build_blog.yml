@@ -53,9 +53,8 @@ jobs:
           HUGO_PUBLISH_DIR: public
           CNAME: indraft.blog
         run: |
-          sudo apt update
-
           TARGET_REPO_URL="https://${GITHUB_TOKEN}@github.com/${TARGET_REPO}.git"
+          echo "TARGET_REPO_URL=${TARGET_REPO_URL}"
 
           rm -rf .git
           cd ${HUGO_PUBLISH_DIR}
