@@ -7,10 +7,11 @@ on:
 
 jobs:
   hugo-build:
-    name: install hugo and build site
+    name: Install hugo and build site
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
+        name: Checkout
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
@@ -44,14 +45,56 @@ jobs:
           name: hugo-site
           path: public
 
-      - name: Deploy to GitHub Pages
-        uses: s0/git-publish-subdir-action@develop
+      - name: Install Hugo
+          # add vars
         env:
-          REPO: self
-          BRANCH: gh-pages
-          FOLDER: /public
-          MESSAGE: "Deploy to GitHub Pages from master commit ${{ github.sha }}"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_REPO: stiliajohny/stiliajohny.github.io
+          TARGET_BRANCH: gh-pages
+          HUGO_PUBLISH_DIR: public
+          CNAME: indraft.blog
+        run: |
+          sudo apt update
+
+          TARGET_REPO_URL="https://${GITHUB_TOKEN}@github.com/${TARGET_REPO}.git"
+
+          rm -rf .git
+          cd ${HUGO_PUBLISH_DIR}
+
+          if [[ -n "${CNAME}" ]]; then
+              echo "CNAME set to ${CNAME}, creating file CNAME"
+              echo "${CNAME}" > CNAME
+          fi
+
+          echo "Committing the site to git and pushing"
+
+          git init
+
+          if ! git config --get user.name; then
+              git config --global user.name "${GITHUB_ACTOR}"
+          fi
+
+          if ! git config --get user.email; then
+              git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          fi
+
+          echo "Getting hash for base repository commit"
+          HASH=$(echo "${GITHUB_SHA}" | cut -c1-7)
+
+          ###
+          # Now add all the changes and commit and push
+          ###
+          git checkout -b ${TARGET_BRANCH}
+
+          git add . && \
+          git commit -m "Auto publishing site from ${GITHUB_REPOSITORY}@${HASH}" && \
+          git push --force "${TARGET_REPO_URL}" ${TARGET_BRANCH}
+
+          echo "Complete"
+
+      # delete-artifact
+      - uses: geekyeggo/delete-artifact@v2
+        with:
+            name: hugo-site
 
 
   #     - name: Deploy the site
