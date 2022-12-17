@@ -45,50 +45,18 @@ jobs:
           name: hugo-site
           path: public
 
-      - name: Install Hugo
-          # add vars
-        env:
-          TARGET_REPO: stiliajohny/stiliajohny.github.io
-          TARGET_BRANCH: gh-pages
-          HUGO_PUBLISH_DIR: public
-          CNAME: indraft.blog
-        run: |
-          TARGET_REPO_URL="https://${GITHUB_TOKEN}@github.com/${TARGET_REPO}.git"
-          echo "TARGET_REPO_URL=${TARGET_REPO_URL}"
-
-          rm -rf .git
-          cd ${HUGO_PUBLISH_DIR}
-
-          if [[ -n "${CNAME}" ]]; then
-              echo "CNAME set to ${CNAME}, creating file CNAME"
-              echo "${CNAME}" > CNAME
-          fi
-
-          echo "Committing the site to git and pushing"
-
-          git init
-
-          if ! git config --get user.name; then
-              git config --global user.name "GitHub Actions"
-          fi
-
-          if ! git config --get user.email; then
-              git config --global user.email "github_action@users.noreply.github.com"
-          fi
-
-          echo "Getting hash for base repository commit"
-          HASH=$(echo "${GITHUB_SHA}" | cut -c1-7)
-
-          ###
-          # Now add all the changes and commit and push
-          ###
-          git checkout -b ${TARGET_BRANCH}
-
-          git add . && \
-          git commit -m "Auto publishing site from ${GITHUB_REPOSITORY}@${HASH}" && \
-          git push --force "${TARGET_REPO_URL}" ${TARGET_BRANCH}
-
-          echo "Complete"
+      # Create the gh-pages branch if it doesn't exist
+      - run: git branch --orphan gh-pages
+      # Checkout the gh-pages branch
+      - run: git checkout gh-pages
+      # Remove all existing files from the branch
+      - run: git rm -rf .
+      # Add the contents of the folder to the staging area
+      - run: git add public/*
+      # Commit the changes with a message
+      - run: git commit -m "Committing folder to gh-pages branch"
+      # Push the changes to the gh-pages branch
+      - run: git push origin gh-pages
 
       # delete-artifact
       - uses: geekyeggo/delete-artifact@v2
