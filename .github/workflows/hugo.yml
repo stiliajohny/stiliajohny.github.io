@@ -106,7 +106,7 @@ jobs:
           SLACK_CHANNEL: github
           SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
           SLACK_ICON: https://github.com/rtCamp.png?size=48
-          SLACK_MESSAGE: 'Deployed to GitHub Pages.\n check it out here: https://indraft.blog '
+          SLACK_MESSAGE: "Deployed to GitHub Pages.\n check it out here: https://indraft.blog"
           SLACK_TITLE: Deployment successful
           SLACK_USERNAME: "Hugo Deploy"
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
