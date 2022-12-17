@@ -7,9 +7,12 @@ categories: [DevOps]
 tags: [GitHub, Dontainer, Docker, GHCR, Container Registry, Containerize]
 
 resources:
-  - name: "featured-image"
-    src: "featured-image.jpg"
+  - name: featured-image
+    src: featured-image-preview.png
+  - name: featured-image-preview
+    src: featured-image-preview.png
 
+draft: false
 lightgallery: true
 fontawesome: true
 linkToMarkdown: true
@@ -19,6 +22,15 @@ toc:
   auto: false
 comment:
   enable: true
+---
+
+<style>
+img {
+    box-shadow: inset 10px 10px 60px #fff;
+    -moz-border-radius:25px;
+    border-radius:10px;
+}
+</style>
 ---
 
 Containerize all the things and store them in GitHub Container Registry

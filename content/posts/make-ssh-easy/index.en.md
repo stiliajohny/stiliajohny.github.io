@@ -6,11 +6,12 @@ description: "Streamline your SSH workflow by PIMPing your SSH config"
 categories: [DevOps]
 tags: [Software, Config, SSH, Linux]
 
-# resources:
-# - name: featured-image
-#   src: java-vurn.png
-# - name: featured-image-preview
-#   src: log4j-1.png
+
+resources:
+  - name: featured-image
+    src: featured-image.jpeg
+  - name: featured-image-preview
+    src: featured-image-preview.png
 
 draft: false
 lightgallery: true
@@ -23,6 +24,15 @@ toc:
 comment:
   enable: true
 ---
+
+<style>
+img {
+    box-shadow: inset 10px 10px 60px #fff;
+    -moz-border-radius:25px;
+    border-radius:10px;
+}
+</style>
+
 
 Streamline your SSH workflow by PIMPing your SSH config
 
