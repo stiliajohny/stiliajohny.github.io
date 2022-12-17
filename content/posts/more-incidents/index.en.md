@@ -179,7 +179,7 @@ In order to effectively manage and learn from infrastructure incidents, organiza
 - Incident post-mortem reports can play an important role in improving systems and processes by providing a transparent and detailed account of infrastructure incidents and the actions being taken to prevent similar incidents from occurring in the future.
 - By embracing infrastructure incidents as opportunities for growth and improvement, organizations can build stronger, more resilient infrastructure and a more robust organization overall.
 
-### References
+## References
 - <https://devops.com/why-more-incidents-are-better>
 - <https://www.cigionline.org/articles/danger-critical-infrastructure-interdependency/>
 - <https://www.brookings.edu/blog/the-avenue/2018/05/10/do-our-infrastructure-systems-put-people-at-risk/>
