@@ -51,7 +51,7 @@ jobs:
         run: |
           # Set up git
           git config --global user.name "stiliajohny"
-          git config --global user.email "stilia.john@gmail.com
+          git config --global user.email "stilia.john@gmail.com"
           cd public
           git init
           git add .
