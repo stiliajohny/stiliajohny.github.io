@@ -269,7 +269,7 @@ timeout = 60000000
     # Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "./draft.png"
+      logo = "https://github.com/stiliajohny/stiliajohny.github.io/raw/master/static/draft.png"
       # title name
       name = " in draft"
       # you can add extra information before the name (HTML format is supported), such as icons
