@@ -1,0 +1,83 @@
+<style>
+  .booklist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-image {
+    width: 210px;
+    height: 297px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  .book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .book-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    /* Set a fixed height */
+  }
+
+  .book-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .book-link {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .book-link:hover {
+    color: #333;
+  }
+
+  .shopping-cart {
+    margin-right: 5px;
+  }
+</style>
+
+<div class="booklist">
+  {{- with .Inner -}}
+  {{- $books := split . "\n" -}}
+  {{- range $book := $books -}}
+  {{- $bookInfo := split $book "\"" -}}
+  {{- if gt (len $bookInfo) 2 -}}
+  {{- $title := trim (index $bookInfo 1) " " -}}
+  {{- $url := trim (index $bookInfo 3) " " -}}
+  {{- $image := trim (index $bookInfo 5) " " -}}
+  <div class="book">
+    <div class="book-image">
+      <img src="{{ $image }}" alt="{{ $title }}" />
+    </div>
+    <div class="book-details">
+      <h3 class="book-title">{{ $title }}</h3>
+      <a href="{{ $url }}" class="book-link">
+        <span class="shopping-cart">🛒</span>
+        Buy on Amazon
+      </a>
+    </div>
+  </div>
+  {{- end -}}
+  {{- end -}}
+  {{- end -}}
+</div>
