@@ -68,6 +68,15 @@ timeout = 60000000
         title = "Photo"
         weight = 4
       [[languages.en.menu.main]]
+        identifier = "books"
+        pre = "<i class='fas fa-book'></i>"
+        post = ""
+        name = "Books"
+        url = "/books/"
+        title = "Books"
+        weight = 5
+
+      [[languages.en.menu.main]]
         identifier = "Pypi"
         pre = "<i class='fab fa-python fa-fw'></i>"
         post = ""
