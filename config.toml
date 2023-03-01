@@ -44,21 +44,13 @@ timeout = 60000000
         title = ""
         weight = 1
       [[languages.en.menu.main]]
-        identifier = "tags"
-        pre = "<i class='fas fa-tag fa-fw'></i>"
-        post = ""
-        name = "Tags"
-        url = "/tags/"
-        title = ""
-        weight = 2
-      [[languages.en.menu.main]]
         identifier = "categories"
         pre = "<i class='fas fa-stream fa-fw'></i>"
         post = ""
         name = "Categories"
         url = "/categories/"
         title = ""
-        weight = 3
+        weight = 2
       [[languages.en.menu.main]]
         identifier = "photography"
         pre = "<i class='fas fa-camera'></i>"
@@ -66,7 +58,7 @@ timeout = 60000000
         name = "Photo"
         url = "/photography/"
         title = "Photo"
-        weight = 4
+        weight = 3
       [[languages.en.menu.main]]
         identifier = "books"
         pre = "<i class='fas fa-book'></i>"
@@ -74,32 +66,8 @@ timeout = 60000000
         name = "Books"
         url = "/books/"
         title = "Books"
-        weight = 5
+        weight = 4
 
-      [[languages.en.menu.main]]
-        identifier = "Pypi"
-        pre = "<i class='fab fa-python fa-fw'></i>"
-        post = ""
-        name = "Pypi"
-        url = "https://pypi.org/user/stilia.johny/"
-        title = "Pypi"
-        weight = 6
-      [[languages.en.menu.main]]
-        identifier = "Ansible Galaxy"
-        pre = "<i class='fab fa-brands fa-adn'></i>"
-        post = ""
-        name = "Ansible Galaxy"
-        url = "https://galaxy.ansible.com/stiliajohny"
-        title = "Ansible Galaxy"
-        weight = 7
-      [[languages.en.menu.main]]
-        identifier = "github"
-        pre = "<i class='fab fa-github fa-fw'></i>"
-        post = ""
-        name = "GitHub"
-        url = "https://github.com/stiliajohny"
-        title = "GitHub"
-        weight = 8
       [[languages.en.menu.main]]
         identifier = "about"
         pre = "<i class='fas fa-snowboarding fa-fw'></i>"
@@ -107,7 +75,7 @@ timeout = 60000000
         name = "About"
         url = "/about/"
         title = ""
-        weight =9
+        weight =6
       [[languages.en.menu.main]]
         identifier = "CV"
         pre = "<i class='fas fa-file-pdf fa-fw'></i>"
@@ -115,7 +83,31 @@ timeout = 60000000
         name = "CV"
         url = "https://github.com/stiliajohny/latex-my-cv/raw/gh-pages/JohnStilia-CV.pdf"
         title = ""
-        weight =10
+        weight =7
+      [[languages.en.menu.main]]
+        identifier = "Pypi"
+        pre = "<i class='fab fa-python fa-fw'></i>"
+        post = ""
+        name = ""
+        url = "https://pypi.org/user/stilia.johny/"
+        title = "Pypi"
+        weight = 8
+      [[languages.en.menu.main]]
+        identifier = "Ansible Galaxy"
+        pre = "<i class='fab fa-brands fa-adn'></i>"
+        post = ""
+        name = ""
+        url = "https://galaxy.ansible.com/stiliajohny"
+        title = "Ansible Galaxy"
+        weight = 8
+      [[languages.en.menu.main]]
+        identifier = "github"
+        pre = "<i class='fab fa-github fa-fw'></i>"
+        post = ""
+        name = ""
+        url = "https://github.com/stiliajohny"
+        title = "GitHub"
+        weight = 9
     [languages.en.params]
       # site description
       description = "in draft"
@@ -604,7 +596,7 @@ timeout = 60000000
   # 目录设置
   [markup.tableOfContents]
     startLevel = 1
-    endLevel = 6
+    endLevel = 3
 
 # Author config
 [author]
