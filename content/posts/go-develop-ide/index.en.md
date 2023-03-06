@@ -31,7 +31,7 @@ img {
 }
 </style>
 
-Sunday night playing with AT commands and a SIM800L GSM modem.
+Monday in France Installing Go on MacOS.
 
 <!--more-->
 
