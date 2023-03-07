@@ -33,4 +33,9 @@ Tsundoku (積ん読) is a beautiful Japanese word describing the habit of acquir
 "Kubernetes in Action" "https://amzn.to/3xY0NIh" "https://m.media-amazon.com/images/P/1617293725.01._SCLZZZZZZZ_SX500_.jpg"
 "Architecture Patterns with Python" "https://amzn.to/3EHcGG9" "https://m.media-amazon.com/images/I/51oQ+yRo49L._SX379_BO1,204,203,200_.jpg"
 "Two Scoops of Django" "https://amzn.to/3xSGdcn" "https://m.media-amazon.com/images/I/61N6E7om+KL._SX404_BO1,204,203,200_.jpg"
+"DevOps for Dummies" "https://amzn.to/3STKrde" "https://m.media-amazon.com/images/P/1119552222.01._SCLZZZZZZZ_SX500_.jpg"
+"Building Successful Communities of Practice" "https://amzn.to/3mvqX2B" "https://m.media-amazon.com/images/P/B01BYH07P0.01._SCLZZZZZZZ_SX500_.jpg"
+"Learn You a Haskell for Great Good!" "https://amzn.to/3yfhnDw" "https://m.media-amazon.com/images/I/41GrpZUcGfL._SX376_BO1,204,203,200_.jpg"
+"Operator Handbook: Red Team + OSINT + Blue Team Reference" "https://amzn.to/3Yseeeb" "https://m.media-amazon.com/images/P/B085RR67H5.01._SCLZZZZZZZ_SX500_.jpg"
+
 {{< /booklist >}}
