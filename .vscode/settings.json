@@ -1,3 +1,4 @@
 {
-    "deepscan.ignoreConfirmWarning": true
+    "deepscan.ignoreConfirmWarning": true,
+    "yolocommit.push_to_remote": false
 }
