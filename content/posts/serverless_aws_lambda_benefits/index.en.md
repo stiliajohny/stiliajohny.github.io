@@ -30,8 +30,6 @@ img {
 </style>
 
 {{< read-aloud >}}
-This is the text that will be read aloud.
-{{< /read-aloud >}}
 
 # A Look At The Pros And Cons Of AWS Lambda For Serverless App Development
 
@@ -68,3 +66,5 @@ Monitoring and debugging code can sometimes be a challenge with AWS Lambda. Sinc
 ## Conclusion
 
 AWS Lambda is a powerful tool for serverless application development, but like any technology, it has its pros and cons. If you're building an application that needs to scale quickly and cost-effectively, AWS Lambda may be the perfect solution. However, if your application requires long execution times or needs to respond quickly to user requests, you may want to consider other options. Ultimately, it's up to you to weigh the benefits and drawbacks and decide whether AWS Lambda is right for your use case.
+
+{{< /read-aloud >}}
