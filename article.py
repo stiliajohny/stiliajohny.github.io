@@ -5,10 +5,12 @@ import os
 import json
 import datetime
 import requests
+import sys
 
 
-# get the api key from os environment variable OPENAI_API_KEY
-openai_key = os.environ.get("OPENAI_TOKEN")
+# get the api key from first input argument
+openai_key = sys.argv[1]
+print("OpenAI API Key: " + openai_key)
 
 # Set up your OpenAI API key
 openai.api_key = openai_key
