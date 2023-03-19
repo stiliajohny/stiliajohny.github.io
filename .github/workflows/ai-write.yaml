@@ -11,26 +11,14 @@ on:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
-# Default to bash
-defaults:
-  run:
-    shell: bash
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
-        uses: actions/checkout@v2 # checkout the repository content
+        uses: actions/checkout@v3 # checkout the repository content
 
       - name: setup python
         uses: actions/setup-python@v4
@@ -42,8 +30,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install openai
 
-      # - name: Setup tmate session
-      #   uses: mxschmitt/action-tmate@v3
-
       - name: execute py script # run main.py
         run: python article.py ${{ secrets.OPENAI_TOKEN }}
+
+      - name: commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Got New Article
+          commit_options: "--no-verify --signoff"
+          commit_user_name: John Stilia
+          commit_user_email: stilia.johny@gmil.com
