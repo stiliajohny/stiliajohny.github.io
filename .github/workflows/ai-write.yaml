@@ -46,4 +46,4 @@ jobs:
       #   uses: mxschmitt/action-tmate@v3
 
       - name: execute py script # run main.py
-        run: python article.py {{ secrets.OPENAI_TOKEN }}
+        run: python article.py ${{ secrets.OPENAI_TOKEN }}
