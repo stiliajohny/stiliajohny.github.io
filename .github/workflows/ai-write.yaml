@@ -42,8 +42,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install openai
 
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
+      # - name: Setup tmate session
+      #   uses: mxschmitt/action-tmate@v3
 
       - name: execute py script # run main.py
-        run: python article.py
+        run: python article.py {{ secret.OPENAI_TOKEN }}
