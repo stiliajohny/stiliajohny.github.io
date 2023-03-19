@@ -1,0 +1,134 @@
+<script>
+  function toggleReadAloud(button) {
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.cancel();
+      button.style.backgroundColor = "#0077FF";
+      button.innerHTML = '<span class="read-aloud-button-icon">&#128266;</span> Narrate';
+      return;
+    }
+
+    var voicesSelect = document.getElementById("read-aloud-voices");
+    var voice = window.speechSynthesis.getVoices().find(function (v) {
+      return v.name === voicesSelect.value;
+    });
+
+    if (!voice) {
+      return;
+    }
+
+    var text = document.getElementById("read-aloud-text").textContent.trim();
+    if (!text) {
+      return;
+    }
+
+    var utterance = new SpeechSynthesisUtterance(text);
+    utterance.voice = voice;
+    utterance.onstart = function () {
+      button.style.backgroundColor = "#28A745";
+      button.innerHTML = '<span class="read-aloud-button-icon">&#9612;&#9612;</span> Pause';
+    };
+    utterance.onend = function () {
+      button.style.backgroundColor = "#0077FF";
+      button.innerHTML = '<span class="read-aloud-button-icon">&#128266;</span> Narrate';
+    };
+    window.speechSynthesis.speak(utterance);
+  }
+
+  window.onload = function () {
+    var voicesSelect = document.getElementById("read-aloud-voices");
+    window.speechSynthesis.onvoiceschanged = function () {
+      window.speechSynthesis.getVoices().forEach(function (v) {
+        var option = document.createElement("option");
+        option.text = v.name;
+        voicesSelect.add(option);
+      });
+      voicesSelect.disabled = false;
+    };
+  };
+</script>
+
+<style>
+  .read-aloud-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 4px;
+    background-color: #0077FF;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .read-aloud-button:hover {
+    background-color: #005BCC;
+  }
+
+  .read-aloud-button:active {
+    background-color: #0052B8;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .read-aloud-button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: #FFF;
+    color: #0077FF;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  #read-aloud-voices {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 16px;
+    margin-left: 8px;
+    border-radius: 4px;
+    background-color: #FFF;
+    color: #0077FF;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+  }
+
+  #read-aloud-voices:hover {
+    background-color: #F3F3F3;
+  }
+
+  #read-aloud-voices:focus {
+    outline: none;
+  }
+
+  #read-aloud-voices option {
+    background-color: #FFF;
+    color: #0077FF;
+  }
+</style>
+
+<div>
+  <button id="read-aloud-button" class="read-aloud-button" onclick="toggleReadAloud(this)">
+    <span class="read-aloud-button-icon">&#128266;</span>
+    Narrate
+  </button>
+  <select id="read-aloud-voices" class="read-aloud-voices"></select>
+  <div id="read-aloud-text" style="display: none;">
+    {{ .Inner }}
+  </div>
+</div>
