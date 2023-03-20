@@ -20,7 +20,7 @@ topic = "Technology, DevOps, DevSecOps, SecOps, Microcontrolers, FPV drones, 3D 
 
 def ai_query(query):
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo", messages=[{"role": "user", "content": query}])
+        model="gpt-3.5-turbo", messages=[{"role": "user", "content": query}], request_timeout=5000)
     answer = response.choices[0].message.content
     return answer
 
@@ -42,7 +42,7 @@ def remove_empty_lines(string):
     return '\n'.join([line for line in string.split('\n') if line.strip()])
 
 
-def generate_markdown(title, date, category, tags, article):
+def generate_markdown(title, date, category, tags, sort, article):
     return f'''
 ---
 title: {title}
@@ -76,6 +76,10 @@ img {{
     border-radius:10px;
 }}
 </style>
+
+{sort}
+
+<!--more-->
 
 {article}
 '''
@@ -144,7 +148,7 @@ image_url = image_resp["data"][0]["url"]
 print("Generating Markdown file...")
 # generate todays date for the article in the format of YYYY-MM-DD
 date = datetime.datetime.now().strftime("%Y-%m-%d")
-article = generate_markdown(get_title, date, get_category, get_tags, get_article)
+article = generate_markdown(get_title, date, get_category, get_tags, get_sort, get_article)
 # print(article)
 
 
