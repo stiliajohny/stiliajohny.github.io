@@ -29,6 +29,10 @@ img {
 }
 </style>
 
+The article weighs the pros and cons of AWS Lambda for serverless application development.
+
+<!--more-->
+
 {{< read-aloud >}}
 
 # A Look At The Pros And Cons Of AWS Lambda For Serverless App Development
