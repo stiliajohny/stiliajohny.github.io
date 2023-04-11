@@ -31,7 +31,7 @@ img {
 }
 </style>
 
-Steer clear of code review blunders by focusing on the big picture, providing clear feedback, testing thoroughly, and recognizing good work.
+Make the most of your first 90 days as a Senior DevOps Engineer: prioritize process improvement, security & compliance, knowledge sharing, and seeking feedback
 
 <!--more-->
 
