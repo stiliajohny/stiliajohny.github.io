@@ -20,6 +20,179 @@ timeout = 60000000
 
 
 [languages]
+  [languages.gr]
+    weight = 1
+    # language code
+    languageCode = "gr"
+    # language name
+    languageName = "Greek"
+    # whether to include Chinese/Japanese/Korean
+    hasCJKLanguage = false
+    # default amount of posts in each pages
+    paginate = 12
+    # [UA-XXXXXXXX-X] google analytics code
+    googleAnalytics = "UA-215528291-1"
+    # copyright description used only for seo schema
+    copyright = "Αυτό το έργο διανέμεται υπό την άδεια Creative Commons Attribution-NonCommercial 4.0 International License."
+    # Menu config
+    [languages.gr.menu]
+      [[languages.gr.menu.main]]
+        identifier = "posts"
+        pre = "<i class='fas fa-newspaper fa-fw'></i>"
+        post = ""
+        name = "Αναρτήσεις"
+        url = "/posts/"
+        title = ""
+        weight = 1
+      [[languages.gr.menu.main]]
+        identifier = "categories"
+        pre = "<i class='fas fa-stream fa-fw'></i>"
+        post = ""
+        name = "Κατηγορίες"
+        url = "/categories/"
+        title = ""
+        weight = 2
+      [[languages.gr.menu.main]]
+        identifier = "photography"
+        pre = "<i class='fas fa-camera'></i>"
+        post = ""
+        name = "Φωτογραφία"
+        url = "/photography/"
+        title = "Photo"
+        weight = 3
+      [[languages.gr.menu.main]]
+        identifier = "books"
+        pre = "<i class='fas fa-book'></i>"
+        post = ""
+        name = "Βιβλία"
+        url = "/books/"
+        title = "Books"
+        weight = 4
+      [[languages.gr.menu.main]]
+        identifier = "about"
+        pre = "<i class='fas fa-snowboarding fa-fw'></i>"
+        post = ""
+        name = "Σχετικά"
+        url = "/about/"
+        title = ""
+        weight =6
+      [[languages.gr.menu.main]]
+        identifier = "CV"
+        pre = "<i class='fas fa-file-pdf fa-fw'></i>"
+        post = ""
+        name = "CV"
+        url = "https://github.com/stiliajohny/latex-my-cv/raw/gh-pages/JohnStilia-CV.pdf"
+        title = ""
+        weight =7
+      [[languages.gr.menu.main]]
+        identifier = "Pypi"
+        pre = "<i class='fab fa-python fa-fw'></i>"
+        post = ""
+        name = ""
+        url = "https://pypi.org/user/stilia.johny/"
+        title = "Pypi"
+        weight = 8
+      [[languages.gr.menu.main]]
+        identifier = "Ansible Galaxy"
+        pre = "<i class='fab fa-brands fa-adn'></i>"
+        post = ""
+        name = ""
+        url = "https://galaxy.ansible.com/stiliajohny"
+        title = "Ansible Galaxy"
+        weight = 8
+      [[languages.gr.menu.main]]
+        identifier = "github"
+        pre = "<i class='fab fa-github fa-fw'></i>"
+        post = ""
+        name = ""
+        url = "https://github.com/stiliajohny"
+        title = "GitHub"
+        weight = 9
+    [languages.gr.params]
+      # site description
+      description = "in draft"
+      # site keywords
+      keywords = ["John", "Stilia", "Blog", "Security", "Hugo", "Arch", "Arch Linux", "Linux"]
+      # App icon config
+      [languages.gr.params.app]
+        # optional site title override for the app when added to an iOS home screen or Android launcher
+        title = "Σε φάση σχεδίασης"
+        # whether to omit favicon resource links
+        noFavicon = false
+        # modern SVG favicon to use in place of older style .png and .ico files
+        svgFavicon = "https://avatars.githubusercontent.com/u/17669235?v=4"
+        # Android browser theme color
+        themeColor = "#ffffff"
+        # Safari mask icon color
+        iconColor = "#5bbad5"
+        # Windows v8-10 tile color
+        tileColor = "#da532c"
+      # Search config
+      [languages.gr.params.search]
+        enable = true
+        # type of search engine ("lunr", "algolia")
+        type = "lunr"
+        # max index length of the chunked content
+        contentLength = 4000
+        # placeholder of the search bar
+        placeholder = "Ψάχνεις τον Νέμο;"
+        # max number of results length
+        maxResultLength = 10
+        # snippet length of the result
+        snippetLength = 30
+        # HTML tag name of the highlight part in results
+        highlightTag = "em"
+        # whether to use the absolute URL based on the baseURL in search index
+        absoluteURL = true
+      # Home page config
+      [languages.gr.params.home]
+        # amount of RSS pages
+        rss = 999
+        # Home page profile
+        [languages.gr.params.home.profile]
+          enable = true
+          # Gravatar Email for preferred avatar in home page
+          gravatarEmail = ""
+          # URL of avatar shown in home page
+          avatarURL = "https://avatars.githubusercontent.com/u/17669235?v=4"
+          # title shown in home page (HTML format is supported)
+          title = "Ιωάννης Στυλιανάκος"
+          # subtitle shown in home page
+          subtitle = "Χρήστης του Arch Linux, Δημιουργός Containers, Λάτρης του Λειτουργικού Προγραμματισμού, Ερασιτέχνης Ηλεκτρονικός"
+          # whether to use typeit animation for subtitle
+          typeit = true
+          # whether to show social links
+          social = true
+          # disclaimer (HTML format is supported)
+          disclaimer = "Όλες οι απόψεις είναι προσωπικές και δεν αντικατοπτρίζουν τις απόψεις του εργοδότη μου. <br><b><font color=#af0000>Αυτή η ιστοσελίδα μπορεί να εκτελεί Beef XSS στην πλευρά του πελάτη, για αυτό μην κάνετε κλικ σε τίποτα που δεν εμπιστεύεστε.</font></b>"
+        # Home page posts
+        [languages.gr.params.home.posts]
+          enable = true
+          # special amount of posts in each home posts page
+          paginate = 6
+      # Social config in home page
+      [languages.gr.params.social]
+        GitHub = "stiliajohny"
+        Linkedin = "johnstilia"
+        Twitter = "midnight_devsec"
+        Instagram = ""
+        Facebook = ""
+        Telegram = ""
+        Medium = "@stilia-johny"
+        Gitlab = ""
+        Youtubelegacy = "stiliajohny"
+        Youtubecustom = ""
+        Youtubechannel = "UCdpolUhsS0rl4qmgPVf8phw"
+        Keybase = "stiliajohny"
+        Reddit = "Stiliajohny"
+        Spotify = "stilia.johny1988"
+        Hackernews = ""
+        Whatsapp = "+4407572785067"
+        Thingiverse = ""
+        Devto = "stiliajohny"
+        Email = "john.stilia@indraft.blog"
+        RSS = true
+
   [languages.en]
     weight = 1
     # language code
@@ -68,7 +241,6 @@ timeout = 60000000
         url = "/books/"
         title = "Books"
         weight = 4
-
       [[languages.en.menu.main]]
         identifier = "about"
         pre = "<i class='fas fa-snowboarding fa-fw'></i>"
