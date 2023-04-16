@@ -9,7 +9,7 @@ resources:
   - name: featured-image
     src: featured-image.png
   - name: featured-image-preview
-    src: featured-image.png
+    src: featured-image-preview
 
 draft: false
 lightgallery: true
