@@ -2,7 +2,7 @@
 title: 'Benefits And Drawbacks Of Using Aws Lambda For Serverless Application Development.'
 date: 2023-03-19
 author: 'gpt-3.5-turbo'
-categories: [Technology]
+categories: [DevOps]
 tags: [Aws Lambda, Serverless Computing, Cloud Computing, Benefits, Drawbacks, Application Development]
 
 resources:
