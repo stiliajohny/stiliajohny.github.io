@@ -80,7 +80,7 @@ The great benefit that Kubernetes has is that it is a portable platform. You can
 - Visit the Docker Desktop for Mac [download page](https://docs.docker.com/desktop/install/mac-install/) and download the latest version of Docker Desktop for Mac. Once the download is complete, open the downloaded file and follow the installation instructions.
 - Enable Kubernetes on the Docker Desktop for Mac application. To do this, open the Docker Desktop for Mac application and go to Preferences > Kubernetes. Check the Enable Kubernetes checkbox and click Apply & Restart.
 
-<img src="docker-desktop-k8s.png" alt="Docker Desktop Kubernetes Setup Image" >
+![Docker Desktop Kubernetes Setup Image](docker-desktop-k8s.png)
 
 After this, you can see the Kubernetes cluster is running; you can use the `kubectl` command to interact with the cluster.
 
@@ -102,7 +102,7 @@ On the other side of the architecture, we have the Node.js API. It is deployed u
 
 This setup creates a well-structured and scalable architecture that allows for efficient communication between the Node.js API and the MySQL database while maintaining the flexibility to modify the configuration easily.
 
-<img src="arch-diagram.drawio.png"  >
+![Architecture Diagram](arch-diagram.drawio.png)
 
 # Creating Kubernetes Deployments and API Code
 
