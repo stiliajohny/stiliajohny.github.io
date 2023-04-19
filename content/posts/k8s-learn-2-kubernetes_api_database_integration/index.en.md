@@ -19,7 +19,7 @@ tags:
 
 resources:
   - name: featured-image
-    src: featured-image.png
+    src: featured-image.jpg
   - name: featured-image-preview
     src: featured-image-preview.png
 
