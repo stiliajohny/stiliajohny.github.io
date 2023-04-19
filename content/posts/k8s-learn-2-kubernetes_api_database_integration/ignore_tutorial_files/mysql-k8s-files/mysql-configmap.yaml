@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+data:
+  database_host: mysql-service
+  database_port: "3306"
+  database_user: root
+  database_password: your_root_password
+  database_name: your_database_name

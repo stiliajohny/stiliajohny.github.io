@@ -1,0 +1,27 @@
+{{ $file := .Get "file" }}
+{{ $text := .Get "text" | default "Download Files" }}
+{{ $icon := .Get "icon" | default "fas fa-download" }}
+{{ $class := .Get "class" | default "download-button" }}
+
+<style>
+  .download-button {
+    display: inline-block;
+    background-color: #007bff80;
+    color: #131313;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.2s;
+  }
+
+  .download-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+  }
+</style>
+
+<a href="{{ $file }}" class="{{ $class }}" download>
+  <i class="{{ $icon }}"></i> {{ $text }}
+</a>

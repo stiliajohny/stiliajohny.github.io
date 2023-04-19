@@ -61,6 +61,7 @@
     "task.allowAutomaticTasks": "on",
     "deepscan.enable": true,
     "todo-tree.tree.showBadges": true,
+    "liveServer.settings.multiRootWorkspaceName": "stiliajohny.github.io",
   },
   "tasks": {
     "version": "2.0.0",

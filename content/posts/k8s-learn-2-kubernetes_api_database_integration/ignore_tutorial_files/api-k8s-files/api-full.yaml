@@ -1,0 +1,61 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-api-service-deployment
+spec:
+  selector:
+    matchLabels:
+      app: my-api-service
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        app: my-api-service
+    spec:
+      containers:
+        - name: my-api-service
+          image: local_development/k8s_tutorial:v1
+          env:
+            - name: MYSQL_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: database_host
+            - name: MYSQL_USER
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: database_user
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: database_password
+            - name: MYSQL_DATABASE
+              valueFrom:
+                configMapKeyRef:
+                  name: db-config
+                  key: database_name
+          ports:
+            - containerPort: 3000
+          resources:
+            limits:
+              cpu: 500m
+              memory: 512Mi
+            requests:
+              cpu: 250m
+              memory: 256Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-api-service
+spec:
+  selector:
+    app: my-api-service
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+  type: LoadBalancer

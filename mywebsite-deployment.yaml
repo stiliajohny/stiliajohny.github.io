@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: indraftblog-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: indraftblog
+  template:
+    metadata:
+      labels:
+        app: indraftblog
+    spec:
+      containers:
+        - name: indraftblog-hugo
+          image: stiliajohny/mywebsite:v1
+          imagePullPolicy: "Always"
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              cpu: 500m
+              memory: 512Mi
+            requests:
+              cpu: 250m
+              memory: 256Mi
