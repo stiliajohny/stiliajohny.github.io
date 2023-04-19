@@ -54,7 +54,7 @@ This is intentional to enable individuals to understand the concepts and the pro
 For more information on best practices, please refer to the official documentation. or use Chat GPT ;)
 {{< /admonition >}}
 
-{{< download file="/downloads/k8s-learn-2-kubernetes_api_database_integration/k8s-learn-2-kubernetes_api_database_integration_tutorial_files.zip" text="Download tutorial files" icon="fas fa-download" >}}
+{{< download file="/download-files/k8s-learn-2-kubernetes_api_database_integration/k8s-learn-2-kubernetes_api_database_integration_tutorial_files.zip" text="Download tutorial files" icon="fas fa-download" >}}
 
 # Introduction
 

@@ -7,7 +7,9 @@ theme = ["LoveIt", "hugo-shortcode-gallery"]
 # website title
 title = "in draft"
 
-ignoreFiles = "content/posts/k8s-learn-2-kubernetes_api_database_integration/ignore_tutorial_files"
+ignoreFiles = [
+"content/posts/k8s-learn-2-kubernetes_api_database_integration/ignore_tutorial_files"
+]
 
 # whether to use robots.txt
 enableRobotsTXT = true
