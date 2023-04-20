@@ -35,6 +35,8 @@ timeout = 60000000
     paginate = 12
     # [UA-XXXXXXXX-X] google analytics code
     googleAnalytics = "UA-215528291-1"
+    googleAdsense = "ca-pub-2401235182695548"
+
     # copyright description used only for seo schema
     copyright = "Αυτό το έργο διανέμεται υπό την άδεια Creative Commons Attribution-NonCommercial 4.0 International License."
     # Menu config
@@ -208,6 +210,8 @@ timeout = 60000000
     paginate = 12
     # [UA-XXXXXXXX-X] google analytics code
     googleAnalytics = "UA-215528291-1"
+    googleAdsense = "ca-pub-2401235182695548"
+
     # copyright description used only for seo schema
     copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
     # Menu config

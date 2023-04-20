@@ -1,0 +1,8 @@
+{{ if .Site.Params.googleAdsense }}
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="{{ .Site.Params.googleAdsense }}"
+  data-ad-slot="1234567890" data-ad-format="auto"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+{{ end }}
