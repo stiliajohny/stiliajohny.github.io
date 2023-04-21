@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: my-api-service
-          image: local_development/k8s_tutorial:v1
+          image: stiliajohny/k8s-training-api
           env:
             - name: MYSQL_HOST
               valueFrom:

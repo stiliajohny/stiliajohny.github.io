@@ -302,6 +302,9 @@ docker build -t local_development/k8s_tutorial:v1 .
 
 ```
 
+> I have already pushed this image to Docker Hub. You can pull it using `docker pull stiliajohny/k8s-training-api`
+> The existing image will be used on the k8s deployment.
+
 Docker will build the image and tag it with `local_development/k8s_tutorial:v1`. You can change the tag to whatever you want.
 
 {{< admonition warning "API connectivity issue" true >}}
@@ -522,7 +525,7 @@ spec:
     spec:
       containers:
         - name: my-api-service
-          image: local_development/k8s_tutorial:v1
+          image: stiliajohny/k8s-training-api
           imagePullPolicy: Never # this is for local development only, it will pull the image from your local docker registry, the image would need to be build in advance
           env:
             - name: MYSQL_HOST
