@@ -7,9 +7,9 @@ tags: []
 
 resources:
   - name: featured-image
-    src: featured-image.png
+    src: featured-image.PNG
   - name: featured-image-preview
-    src: featured-image-preview
+    src: featured-image-preview.PNG
 
 draft: false
 lightgallery: true
