@@ -14,6 +14,7 @@ const dbConfig = {
   database: process.env.MYSQL_DATABASE || 'your_database_name',
 };
 
+
 async function createTableIfNeeded(connection) {
   const createTableSql = `
         CREATE TABLE IF NOT EXISTS messages (
@@ -55,6 +56,7 @@ app.get('/api/messages', async (req, res) => {
 });
 
 app.post('/api/messages', async (req, res) => {
+  console.log('Trying to insert a message into the database. DB config:', dbConfig);
   const connection = await connectToDatabase();
   if (!connection) {
     res.status(500).json({ error: 'Error connecting to the database' });

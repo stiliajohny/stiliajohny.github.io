@@ -56,15 +56,44 @@ Building Docker images that work on multiple platforms can be challenging, espec
 
 - A MacBook M2 or other non-x86 machine running macOS 11.3 or later.
 - Docker Desktop for Mac version 3.3.0 or later installed on your machine. You can download Docker Desktop for Mac from the Docker website.
-- Docker Buildx plugin installed on your machine. To install Docker Buildx, open a terminal window and run the following command:
-
-  ```bash
-  docker buildx install
-  ```
-
 - Basic knowledge of Docker and Dockerfile syntax. If you're new to Docker, you may want to check out the Docker documentation for an introduction to containers and images.
+- Docker Buildx plugin installed on your machine.
 
 By the end of this article, you should have a basic understanding of how Docker Buildx works and how to use it to build and push multi-architecture Docker images on a MacBook M2.
+
+## Install BuildX
+
+Open a terminal and run the following:
+
+- Install docker buildx:
+
+  ```bash
+  ARCH=amd64 # change to 'arm64' if you have M1 chip
+  VERSION=v0.8.2
+  curl -LO https://github.com/docker/buildx/releases/download/${VERSION}/buildx-${VERSION}.darwin-${ARCH}
+  mkdir -p ~/.docker/cli-plugins
+  mv buildx-${VERSION}.darwin-${ARCH} ~/.docker/cli-plugins/docker-buildx
+  chmod +x ~/.docker/cli-plugins/docker-buildx
+  docker buildx version # verify installation
+  ```
+
+- After installing buildx we need to create a new builder instace. Builder instances are isolated environments where builds can be invoked.
+
+  ```bash
+  docker buildx create --name builder
+  ```
+
+- When new builder instance is created we need to switch to it from the default one:
+
+  ```bash
+  docker buildx use builder
+  ```
+
+- Now let's see more informations about our builder instance. We will also pass `--bootstrap` option to ensure that the builder is running before inspecting it.
+
+  ```bash
+  docker buildx inspect --bootstrap
+  ```
 
 ## Understanding Docker Buildx
 
@@ -81,77 +110,15 @@ In the next section, I'll show you how to create a multi-architecture Dockerfile
 
 ## Creating a Multi-Architecture Dockerfile
 
-To build multi-architecture Docker images with Docker Buildx, you need to start by creating a Dockerfile that can be built for different platforms. One way to do this is by using platform-specific FROM statements to specify the base image for each architecture.
+To build multi-architecture Docker images with Docker Buildx, you need to start by creating a Dockerfile that can be built for different platforms.
 
-Here are teo examples Dockerfile that uses platform-specific FROM statements to build an image for ARMv7, ARM64, and x86 architectures:
+Most base images (node, python, go, etc) do support multi-architecture, so you can use them as a base image for your Dockerfile. However, if you're using a custom base image, you'll need to make sure that it supports multiple platforms.
 
-### Multi FROM build stages
-
-```Dockerfile
-# Dockerfile
-
-# Base image for ARMv7 architecture
-FROM arm32v7/node:14-alpine AS armv7
-
-# Base image for ARM64 architecture
-FROM arm64v8/node:14-alpine AS arm64
-
-# Base image for x86 architecture
-FROM node:14-alpine AS x86
-
-# Common image configuration
-WORKDIR /app
-COPY . .
-
-# Build for ARMv7 architecture
-FROM armv7 AS build-armv7
-RUN npm install && npm run build-armv7
-
-# Build for ARM64 architecture
-FROM arm64 AS build-arm64
-RUN npm install && npm run build-arm64
-
-# Build for x86 architecture
-FROM x86 AS build-x86
-RUN npm install && npm run build-x86
-
-# Create the final multi-architecture image
-FROM --platform=$BUILDPLATFORM armv7 AS final
-COPY --from=build-armv7 /app/dist /app/dist
-COPY --from=build-arm64 /app/dist /app/dist
-COPY --from=build-x86 /app/dist /app/dist
-
-
-WORKDIR /app
-
-COPY package*.json ./
-RUN npm install
-
-COPY . .
-
-EXPOSE 3000
-
-CMD ["npm", "start"]
-
-```
-
-In this example, we start by specifying three different base images: arm32v7/node:14-alpine for ARMv7, arm64v8/node:14-alpine for ARM64, and node:14-alpine for x86. We then define a common image configuration that copies the application files into the image.
-
-Next, we create separate build stages for each architecture, using the appropriate FROM statement for each platform. In each build stage, we run the necessary build commands to generate the platform-specific artifacts.
-
-Finally, we create a final image that uses the --platform option to specify the target platform, and copies the appropriate artifacts from each build stage into the final image.
-
-In the next section, we'll show you how to use Docker Buildx to build this Dockerfile for different platforms.
-
-### Single FROM statement
-
-When you use a single FROM statement with the --platform option, you're telling Docker Buildx to generate a platform-specific build kit for the specified platform. This build kit contains the necessary files and configuration to build the Docker image for the specified platform.
-
-For example, let's say you want to build a Docker image for both ARMv7 and x86 architectures. You could use a single FROM statement with the --platform option like this:
+Bellow you can find an example of a Dockerfile that uses a base node image that supports multiple platforms:
 
 ```dockerfile
-
-FROM --platform=$BUILDPLATFORM  node:14-alpine
+# Use a builder stage to build the app
+FROM node:14-alpine AS builder
 
 WORKDIR /app
 
@@ -159,6 +126,17 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
+# RUN npm run build
+
+# Use a runtime stage to run the app
+FROM node:14-alpine AS runtime
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install --only=production
+
+COPY --from=builder /app /app
 
 EXPOSE 3000
 

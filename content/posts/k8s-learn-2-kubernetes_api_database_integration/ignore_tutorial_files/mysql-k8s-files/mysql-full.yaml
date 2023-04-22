@@ -41,13 +41,13 @@ spec:
           volumeMounts:
             - name: mysql-persistent-storage
               mountPath: /var/lib/mysql
-          resources:
-            limits:
-              cpu: 100m
-              memory: 128Mi
-            requests:
-              cpu: 75m
-              memory: 128Mi
+          # resources:
+          #   limits:
+          #     cpu: 1000m
+          #     memory: 512Mi
+          #   requests:
+          #     cpu: 500m
+          #     memory: 128Mi
       volumes:
         - name: mysql-persistent-storage
           persistentVolumeClaim:
@@ -75,6 +75,6 @@ metadata:
 data:
   database_host: mysql-service
   database_port: "3306"
-  database_user: user
-  database_password: password
-  database_name: database_name
+  database_user: root
+  database_password: your_root_password
+  database_name: your_database_name
