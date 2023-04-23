@@ -19,9 +19,9 @@ tags:
 
 resources:
   - name: featured-image
-    src: featured-image.PNG
+    src: featured-image-preview.png
   - name: featured-image-preview
-    src: featured-image-preview.PNG
+    src: featured-image-preview.png
 
 draft: false
 lightgallery: true
