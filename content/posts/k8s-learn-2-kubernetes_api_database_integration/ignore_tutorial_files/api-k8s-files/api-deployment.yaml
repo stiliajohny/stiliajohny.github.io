@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api-service-deployment
+  name: my-api-service-deployment
 spec:
   selector:
     matchLabels:
-      app: api-service
-  replicas: 4
+      app: my-api-service
+  replicas: 1
   template:
     metadata:
       labels:
-        app: api-service
+        app: my-api-service
     spec:
       containers:
-        - name: api-service
+        - name: my-api-service
           image: stiliajohny/k8s-training-api
-          imagePullPolicy: Never # this is for local development only, it will pull the image from your local docker registry, the image would need to be build in advance
+          imagePullPolicy: Always
           env:
             - name: MYSQL_HOST
               valueFrom:
@@ -42,8 +42,8 @@ spec:
             - containerPort: 3000
           resources:
             limits:
-              cpu: 500m
-              memory: 512Mi
+              cpu: 100m
+              memory: 128Mi
             requests:
-              cpu: 250m
-              memory: 256Mi
+              cpu: 0m
+              memory: 64Mi
