@@ -19,7 +19,7 @@ tags:
 
 resources:
   - name: featured-image
-    src: featured-image.PNG
+    src: featured-image-preview.PNG
   - name: featured-image-preview
     src: featured-image-preview.PNG
 
@@ -43,7 +43,7 @@ img {
 }
 </style>
 
-REPLACE THIS WITH THE POST CONTENT
+Unleashing the npm vs. yarn battle: a concise guide to choosing your JavaScript package manager.
 
 <!--more-->
 
