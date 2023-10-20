@@ -9,6 +9,12 @@ Tsundoku (積ん読) is a beautiful Japanese word describing the habit of acquir
 ---
 
 {{< booklist >}}
+
+"Cybersecurity Myths and Misconceptions" "https://amzn.to/46E1upQ" "https://m.media-amazon.com/images/I/617HfNg3mGL.jpg"
+"The Phoenix Project" "https://amzn.to/3S8YoWr" "https://m.media-amazon.com/images/I/71NMJeBW1AL._SL1500_.jpg"
+"Project Zero Trust" "https://amzn.to/3S8Pg46" "https://m.media-amazon.com/images/I/71yf6K5QinL._SL1500_.jpg"
+"Hyperfocus: How to Be More Productive in a World of Distraction" "https://amzn.to/45Lbb4l" "https://m.media-amazon.com/images/I/81QlSiSIiSL._SL1500_.jpg"
+"The Art of Attack: Attacker Mindset for Security Professionals" "https://amzn.to/3Q3l2Nq" "https://m.media-amazon.com/images/I/71CSoym09KL._SL1500_.jpg"
 "The Staff Engineer's Path" "https://amzn.to/3EA1s6r" "https://m.media-amazon.com/images/I/41WdQrPJgQL._SX331_BO1,204,203,200_.jpg"
 "Secure By Design" "https://amzn.to/3EA1jQr" "https://m.media-amazon.com/images/P/B09782VMYT.01._SCLZZZZZZZ_SX500_.jpg"
 "JavaScript from Beginner to Professional" "https://amzn.to/41wZUEe" "https://m.media-amazon.com/images/P/1800562527.01._SCLZZZZZZZ_SX500_.jpg"
