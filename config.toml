@@ -438,6 +438,7 @@ timeout = 60000000
   galleryRowHeight    = 100
   galleryMargins      = 10
   galleryThumbnailResizeOptions = "100x100 q100 Bilinear"
+  galleryImageResizeOptions = "1000x1000 q100 Bilinear"
   galleryPreviewType  = "none"
   galleryThumbnailHoverEffect = "enlarge"
 

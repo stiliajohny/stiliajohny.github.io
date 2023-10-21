@@ -18,9 +18,9 @@
 
 {{ $margins := .Get "margins" | default (.Site.Params.galleryRowMargins | default 5) }}
 
-{{ $thumbnailResizeOptions := .Get "thumbnailResizeOptions" | default (.Site.Params.galleryThumbnailResizeOptions | default "100x50 q100 Bilinear") }}
+{{ $thumbnailResizeOptions := .Get "thumbnailResizeOptions" | default (.Site.Params.galleryThumbnailResizeOptions | default "600x600 q100 Bilinear") }}
 
-{{ $imageResizeOptions := .Get "imageResizeOptions" | default .Site.Params.galleryImageResizeOptions | default "100x50 q85 Bilinear"}}
+{{ $imageResizeOptions := .Get "imageResizeOptions" | default .Site.Params.galleryImageResizeOptions | default "600x600 q85 Bilinear"}}
 
 {{ $loadJQuery := .Get "loadJQuery" | default (.Site.Params.galleryLoadJQuery | default true) }}
 
