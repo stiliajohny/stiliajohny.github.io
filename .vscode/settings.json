@@ -1,4 +1,15 @@
 {
     "deepscan.ignoreConfirmWarning": true,
-    "yolocommit.push_to_remote": true
+    "yolocommit.push_to_remote": true,
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        }
+    },
+    "[html]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.formatOnType": false,
+        "editor.formatOnSave": false
+    }
 }
