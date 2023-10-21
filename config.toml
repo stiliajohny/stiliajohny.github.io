@@ -435,10 +435,10 @@ timeout = 60000000
   # website images for Open Graph and Twitter Cards
   images = ["card_image.png"]
 
-  galleryRowHeight    = 500
+  galleryRowHeight    = 100
   galleryMargins      = 10
-  galleryResizeOptions= "800x800 q88"
-  galleryPreviewType  = "blur"
+  galleryThumbnailResizeOptions = "100x100 q100 Bilinear"
+  galleryPreviewType  = "none"
   galleryThumbnailHoverEffect = "enlarge"
 
   # Header config
