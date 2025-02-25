@@ -1,4 +1,4 @@
-baseURL = "https://indraft.blog/"
+baseURL = "https://indraft.me/"
 # [en, zh-cn, fr, pl, ...] determines default content language
 defaultContentLanguage = "en"
 # theme
