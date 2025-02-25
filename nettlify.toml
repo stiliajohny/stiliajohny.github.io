@@ -5,6 +5,8 @@
 [build.environment]
   HUGO_VERSION = "0.87.0"
   HUGO_BASEURL = "/"
+  HUGO_ENV=production
+
 
 [[headers]]
   for = "/*" # This defines which paths this specific [[headers]] block will cover.
